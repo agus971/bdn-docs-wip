@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Filters | BenchmarkDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Filters | BenchmarkDotNet ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="../../logo/icon-32.png">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo/icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="filters">Filters</h1>
+
+<p>Sometimes you don't want to run all of your benchmarks.
+In this case, you can <em>filter</em> some of them with the help of <em>filters</em>.</p>
+<p>Predefined filters:</p>
+<ul>
+<li><code>SimpleFilter</code></li>
+<li><code>NameFilter</code></li>
+<li><code>DisjunctionFilter</code></li>
+<li><code>CategoryFilter</code></li>
+<li><code>AnyCategoriesFilter</code></li>
+<li><code>AllCategoriesFilter</code></li>
+</ul>
+<p>Usage examples:</p>
+<pre><code class="lang-cs">[Config(typeof(Config))]
+public class IntroFilters
+{
+    private class Config : ManualConfig
+    {
+        // We will benchmark ONLY method with names (which contains &quot;A&quot; OR &quot;1&quot;) AND (have length &lt; 3)
+        public Config()
+        {
+            Add(new DisjunctionFilter(
+                new NameFilter(name =&gt; name.Contains(&quot;A&quot;)),
+                new NameFilter(name =&gt; name.Contains(&quot;1&quot;))
+            )); // benchmark with names which contains &quot;A&quot; OR &quot;1&quot;
+            Add(new NameFilter(name =&gt; name.Length &lt; 3)); // benchmark with names with length &lt; 3
+        }
+    }
+
+    [Benchmark] public void A1() =&gt; Thread.Sleep(10); // Will be benchmarked
+    [Benchmark] public void A2() =&gt; Thread.Sleep(10); // Will be benchmarked
+    [Benchmark] public void A3() =&gt; Thread.Sleep(10); // Will be benchmarked
+    [Benchmark] public void B1() =&gt; Thread.Sleep(10); // Will be benchmarked
+    [Benchmark] public void B2() =&gt; Thread.Sleep(10);
+    [Benchmark] public void B3() =&gt; Thread.Sleep(10);
+    [Benchmark] public void C1() =&gt; Thread.Sleep(10); // Will be benchmarked
+    [Benchmark] public void C2() =&gt; Thread.Sleep(10);
+    [Benchmark] public void C3() =&gt; Thread.Sleep(10);
+    [Benchmark] public void Aaa() =&gt; Thread.Sleep(10);
+}
+</code></pre>
+<pre><code class="lang-cs">[DryJob]
+[CategoriesColumn]
+[BenchmarkCategory(&quot;Awesome&quot;)]
+[AnyCategoriesFilter(&quot;A&quot;, &quot;1&quot;)]
+public class IntroCategories
+{
+    [Benchmark]
+    [BenchmarkCategory(&quot;A&quot;, &quot;1&quot;)]
+    public void A1() =&gt; Thread.Sleep(10); // Will be benchmarked
+    
+    [Benchmark]
+    [BenchmarkCategory(&quot;A&quot;, &quot;2&quot;)]
+    public void A2() =&gt; Thread.Sleep(10); // Will be benchmarked
+
+    [Benchmark]
+    [BenchmarkCategory(&quot;B&quot;, &quot;1&quot;)]
+    public void B1() =&gt; Thread.Sleep(10); // Will be benchmarked
+    
+    [Benchmark]
+    [BenchmarkCategory(&quot;B&quot;, &quot;2&quot;)]
+    public void B2() =&gt; Thread.Sleep(10);
+}
+</code></pre>
+<p>Command line examples:</p>
+<pre><code>--category=A
+--allCategories=A,B
+--anyCategories=A,B
+</code></pre>
+<p>If you are using <code>BenchmarkSwitcher</code> and want to run all the benchmarks with a category from all types and join them into one summary table, use the <code>--join</code> option (or <code>BenchmarkSwitcher.RunAllJoined</code>):</p>
+<pre><code>* --join --category=MyAwesomeCategory
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotnet/BenchmarkDotNet/blob/master/docs/articles/configs/filters.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2013–2018 .NET Foundation and contributors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

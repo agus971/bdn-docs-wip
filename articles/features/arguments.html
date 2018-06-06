@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Arguments | BenchmarkDotNet </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Arguments | BenchmarkDotNet ">
+    <meta name="generator" content="docfx 2.36.1.0">
+    
+    <link rel="shortcut icon" href="../../logo/icon-32.png">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo/icon.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="arguments">Arguments</h1>
+
+<p>As an alternative to using <code>[Params]</code>, you can specify arguments for your benchmarks. There are several ways to do it (described below).</p>
+<p><strong>Important:</strong> InProcessToolchain does not support Arguments (yet!). See <a href="https://github.com/dotnet/BenchmarkDotNet/issues/687">#687</a> for more details.</p>
+<h2 id="arguments-1">[Arguments]</h2>
+<p>The [ArgumentsAttribute] allows you to provide a set of values. Every value must be a compile-time constant (it's C# lanugage limitation for attributes in general).
+You can also combine <code>Arguments</code> with <code>Params</code>. As a result, you will get results for each combination of params values.</p>
+<pre><code class="lang-cs">public class IntroArguments
+{
+    [Params(true, false)] // Arguments can be combined with Params
+    public bool AddExtra5Miliseconds;
+
+    [Benchmark]
+    [Arguments(100, 10)]
+    [Arguments(100, 20)]
+    [Arguments(200, 10)]
+    [Arguments(200, 20)]
+    public void Benchmark(int a, int b)
+    {
+        if (AddExtra5Miliseconds)
+            Thread.Sleep(a + b + 5);
+        else
+            Thread.Sleep(a + b);
+    }
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>AddExtra5Miliseconds</th>
+<th>a</th>
+<th>b</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+<th style="text-align: right;">StdDev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Benchmark</td>
+<td>False</td>
+<td>100</td>
+<td>10</td>
+<td style="text-align: right;">110.1 ms</td>
+<td style="text-align: right;">0.0056 ms</td>
+<td style="text-align: right;">0.0044 ms</td>
+</tr>
+<tr>
+<td>Benchmark</td>
+<td>False</td>
+<td>100</td>
+<td>20</td>
+<td style="text-align: right;">120.1 ms</td>
+<td style="text-align: right;">0.0155 ms</td>
+<td style="text-align: right;">0.0138 ms</td>
+</tr>
+<tr>
+<td>Benchmark</td>
+<td>False</td>
+<td>200</td>
+<td>10</td>
+<td style="text-align: right;">210.2 ms</td>
+<td style="text-align: right;">0.0187 ms</td>
+<td style="text-align: right;">0.0175 ms</td>
+</tr>
+<tr>
+<td>Benchmark</td>
+<td>False</td>
+<td>200</td>
+<td>20</td>
+<td style="text-align: right;">220.3 ms</td>
+<td style="text-align: right;">0.1055 ms</td>
+<td style="text-align: right;">0.0986 ms</td>
+</tr>
+<tr>
+<td>Benchmark</td>
+<td>True</td>
+<td>100</td>
+<td>10</td>
+<td style="text-align: right;">115.3 ms</td>
+<td style="text-align: right;">0.1375 ms</td>
+<td style="text-align: right;">0.1286 ms</td>
+</tr>
+<tr>
+<td>Benchmark</td>
+<td>True</td>
+<td>100</td>
+<td>20</td>
+<td style="text-align: right;">125.3 ms</td>
+<td style="text-align: right;">0.1212 ms</td>
+<td style="text-align: right;">0.1134 ms</td>
+</tr>
+<tr>
+<td>Benchmark</td>
+<td>True</td>
+<td>200</td>
+<td>10</td>
+<td style="text-align: right;">215.4 ms</td>
+<td style="text-align: right;">0.0779 ms</td>
+<td style="text-align: right;">0.0691 ms</td>
+</tr>
+<tr>
+<td>Benchmark</td>
+<td>True</td>
+<td>200</td>
+<td>20</td>
+<td style="text-align: right;">225.4 ms</td>
+<td style="text-align: right;">0.0775 ms</td>
+<td style="text-align: right;">0.0725 ms</td>
+</tr>
+</tbody>
+</table>
+<h2 id="argumentssource">[ArgumentsSource]</h2>
+<p>In case you want to use a lot of values, you should use <code>[ArgumentsSource]</code>.</p>
+<p>You can mark one or several fields or properties in your class by the <code>ArgumentsSource</code> attribute. In this attribute, you have to specify the name of public method/property which is going to provide the values (something that implements <code>IEnumerable</code>). The source must be within benchmarked type!</p>
+<pre><code class="lang-cs">public class IntroArgumentsSource
+{
+    [Benchmark]
+    [ArgumentsSource(nameof(Numbers))]
+    public double Pow(double x, double y) =&gt; Math.Pow(x, y);
+
+    public IEnumerable&lt;object[]&gt; Numbers()
+    {
+        yield return new object[] { 1.0, 1.0 };
+        yield return new object[] { 2.0, 2.0 };
+        yield return new object[] { 4.0, 4.0 };
+        yield return new object[] { 10.0, 10.0 };
+    }
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>x</th>
+<th>y</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+<th style="text-align: right;">StdDev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pow</td>
+<td>1</td>
+<td>1</td>
+<td style="text-align: right;">9.360 ns</td>
+<td style="text-align: right;">0.0190 ns</td>
+<td style="text-align: right;">0.0149 ns</td>
+</tr>
+<tr>
+<td>Pow</td>
+<td>2</td>
+<td>2</td>
+<td style="text-align: right;">40.624 ns</td>
+<td style="text-align: right;">0.3413 ns</td>
+<td style="text-align: right;">0.3192 ns</td>
+</tr>
+<tr>
+<td>Pow</td>
+<td>4</td>
+<td>4</td>
+<td style="text-align: right;">40.537 ns</td>
+<td style="text-align: right;">0.0560 ns</td>
+<td style="text-align: right;">0.0524 ns</td>
+</tr>
+<tr>
+<td>Pow</td>
+<td>10</td>
+<td>10</td>
+<td style="text-align: right;">40.395 ns</td>
+<td style="text-align: right;">0.3274 ns</td>
+<td style="text-align: right;">0.3063 ns</td>
+</tr>
+</tbody>
+</table>
+<p>If the values are complex types you need to override <code>ToString</code> method to change the display names used in the results.</p>
+<pre><code class="lang-cs">[DryJob]
+public class WithNonPrimitiveArgumentsSource
+{
+    [Benchmark]
+    [ArgumentsSource(nameof(NonPrimitive))]
+    public void Simple(SomeClass someClass, SomeStruct someStruct)
+    {
+        for (int i = 0; i &lt; someStruct.RangeEnd; i++)
+            Console.WriteLine($&quot;// array.Values[{i}] = {someClass.Values[i]}&quot;);
+    }
+
+    public IEnumerable&lt;object[]&gt; NonPrimitive()
+    {
+        yield return new object[] { new SomeClass(Enumerable.Range(0, 10).ToArray()), new SomeStruct(10) };
+        yield return new object[] { new SomeClass(Enumerable.Range(0, 15).ToArray()), new SomeStruct(15) };
+    }
+
+    public class SomeClass
+    {
+        public SomeClass(int[] initialValues) =&gt; Values = initialValues.Select(val =&gt; val * 2).ToArray();
+
+        public int[] Values { get; }
+
+        public override string ToString() =&gt; $&quot;{Values.Length} items&quot;;
+    }
+
+    public struct SomeStruct
+    {
+        public SomeStruct(int rangeEnd) =&gt; RangeEnd = rangeEnd;
+
+        public int RangeEnd { get; }
+
+        public override string ToString() =&gt; $&quot;{RangeEnd}&quot;;
+    }
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>someClass</th>
+<th>someStruct</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Simple</td>
+<td>10 items</td>
+<td>10</td>
+<td style="text-align: right;">887.2 us</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr>
+<td>Simple</td>
+<td>15 items</td>
+<td>15</td>
+<td style="text-align: right;">963.1 us</td>
+<td style="text-align: right;">NA</td>
+</tr>
+</tbody>
+</table>
+<h2 id="allocation-cost">Allocation cost</h2>
+<p>The cost of creating the arguments is not included in the benchmark. So if you want to pass an array as an argument, we are going to allocate it before running the benchmark, and the benchmark will not include this operation.</p>
+<pre><code class="lang-cs">[MemoryDiagnoser]
+public class IntroArrayParam
+{
+    [Benchmark]
+    [ArgumentsSource(nameof(Data))]
+    public int ArrayIndexOf(int[] array, int value) =&gt; Array.IndexOf(array, value);
+
+    [Benchmark]
+    [ArgumentsSource(nameof(Data))]
+    public int ManualIndexOf(int[] array, int value)
+    {
+        for (int i = 0; i &lt; array.Length; i++)
+            if (array[i] == value)
+                return i;
+
+        return -1;
+    }
+
+    public IEnumerable&lt;object[]&gt; Data()
+    {
+        yield return new object[] { ArrayParam&lt;int&gt;.ForPrimitives(new[] { 1, 2, 3 }), 4 };
+        yield return new object[] { ArrayParam&lt;int&gt;.ForPrimitives(Enumerable.Range(0, 100).ToArray()), 4 };
+        yield return new object[] { ArrayParam&lt;int&gt;.ForPrimitives(Enumerable.Range(0, 100).ToArray()), 101 };
+    }
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>array</th>
+<th>value</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">Error</th>
+<th style="text-align: right;">StdDev</th>
+<th style="text-align: right;">Allocated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ArrayIndexOf</strong></td>
+<td><strong>Array[100]</strong></td>
+<td><strong>4</strong></td>
+<td style="text-align: right;"><strong>15.558 ns</strong></td>
+<td style="text-align: right;"><strong>0.0638 ns</strong></td>
+<td style="text-align: right;"><strong>0.0597 ns</strong></td>
+<td style="text-align: right;"><strong>0 B</strong></td>
+</tr>
+<tr>
+<td>ManualIndexOf</td>
+<td>Array[100]</td>
+<td>4</td>
+<td style="text-align: right;">5.345 ns</td>
+<td style="text-align: right;">0.0668 ns</td>
+<td style="text-align: right;">0.0625 ns</td>
+<td style="text-align: right;">0 B</td>
+</tr>
+<tr>
+<td><strong>ArrayIndexOf</strong></td>
+<td><strong>Array[3]</strong></td>
+<td><strong>4</strong></td>
+<td style="text-align: right;"><strong>14.334 ns</strong></td>
+<td style="text-align: right;"><strong>0.1758 ns</strong></td>
+<td style="text-align: right;"><strong>0.1558 ns</strong></td>
+<td style="text-align: right;"><strong>0 B</strong></td>
+</tr>
+<tr>
+<td>ManualIndexOf</td>
+<td>Array[3]</td>
+<td>4</td>
+<td style="text-align: right;">2.758 ns</td>
+<td style="text-align: right;">0.0905 ns</td>
+<td style="text-align: right;">0.1208 ns</td>
+<td style="text-align: right;">0 B</td>
+</tr>
+<tr>
+<td><strong>ArrayIndexOf</strong></td>
+<td><strong>Array[100]</strong></td>
+<td><strong>101</strong></td>
+<td style="text-align: right;"><strong>78.359 ns</strong></td>
+<td style="text-align: right;"><strong>1.8853 ns</strong></td>
+<td style="text-align: right;"><strong>2.0955 ns</strong></td>
+<td style="text-align: right;"><strong>0 B</strong></td>
+</tr>
+<tr>
+<td>ManualIndexOf</td>
+<td>Array[100]</td>
+<td>101</td>
+<td style="text-align: right;">80.421 ns</td>
+<td style="text-align: right;">0.6391 ns</td>
+<td style="text-align: right;">0.5978 ns</td>
+<td style="text-align: right;">0 B</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotnet/BenchmarkDotNet/blob/master/docs/articles/features/arguments.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright &copy; 2013–2018 .NET Foundation and contributors
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5924 @@
+{
+  "homepages": [],
+  "source_base_path": "/Users/akinshin/Work/BenchmarkDotNet/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.AnalyserBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.AnalyserBase.html",
+          "hash": "mW93Yf02OfUQ9//33dm3kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.CompositeAnalyser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.CompositeAnalyser.html",
+          "hash": "MHWRyjLiJ3pYfcSi2sVWNA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.Conclusion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.Conclusion.html",
+          "hash": "P66lCFNUslr2u6dl0RypfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.ConclusionHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.ConclusionHelper.html",
+          "hash": "AIlvBf8ZcMxLettUgZ54ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.ConclusionKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.ConclusionKind.html",
+          "hash": "UoulMV+eYuEvGv0tLWdy8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.EnvironmentAnalyser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.EnvironmentAnalyser.html",
+          "hash": "9K1KRQhsvrXxYVzl5V769g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.IAnalyser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.IAnalyser.html",
+          "hash": "4pMkUFHKKMsxu4ZA5a2VKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.IterationSetupCleanupAnalyser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.IterationSetupCleanupAnalyser.html",
+          "hash": "rjevnZ7ljBgKhGVw8GKLsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.MinIterationTimeAnalyser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.MinIterationTimeAnalyser.html",
+          "hash": "eKzTaaYVhHC5oSYp5GFjtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.MultimodalDistributionAnalyzer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.MultimodalDistributionAnalyzer.html",
+          "hash": "ZyBQ9+GqN3cVlEBJRiEoEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.OutliersAnalyser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.OutliersAnalyser.html",
+          "hash": "6TBf5PW/bWGEGRCkI9iwDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.RuntimeErrorAnalyser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.RuntimeErrorAnalyser.html",
+          "hash": "stdtIaYXYlFSixC7PfotGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Analysers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Analysers.html",
+          "hash": "yfXRNa5wet8876ggU7N5hA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.ArgumentsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.ArgumentsAttribute.html",
+          "hash": "P10CeVgFZe6MVln3ErVeng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.ArgumentsSourceAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.ArgumentsSourceAttribute.html",
+          "hash": "zdC0ykClcXixR2nng5UIoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.ArtifactsPathAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.ArtifactsPathAttribute.html",
+          "hash": "G/MjHaZkU0Rag1n7WJhsgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.BenchmarkAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.BenchmarkAttribute.html",
+          "hash": "xcjIGlBG2uoOHA8tmKqI7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.BenchmarkCategoryAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.BenchmarkCategoryAttribute.html",
+          "hash": "zmLMw3GMfwVX0EprW5Nl0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.CleanupAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.CleanupAttribute.html",
+          "hash": "+9Y7EM8fPdPM+sez1Rqa4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.AllStatisticsColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.AllStatisticsColumnAttribute.html",
+          "hash": "zf9JdUM+MqxnTe3dfB8l5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.CategoriesColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.CategoriesColumnAttribute.html",
+          "hash": "UT1jelWBaYxLQHmg7BGR0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.ColumnConfigBaseAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.ColumnConfigBaseAttribute.html",
+          "hash": "e0Q5SjFXg5gVu6sJS5pguA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.ConfidenceIntervalErrorColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.ConfidenceIntervalErrorColumnAttribute.html",
+          "hash": "7rxSZVxuDO+Vf89Cf+6G5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.IsBaselineColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.IsBaselineColumnAttribute.html",
+          "hash": "qCfVe7oSkwBKffMv5uGuBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.IterationsColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.IterationsColumnAttribute.html",
+          "hash": "D4+1+Gq6Ee75G2cQeF7r0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.KurtosisColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.KurtosisColumnAttribute.html",
+          "hash": "PfKFYx48U/70cVqk6tV0OQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.LogicalGroupColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.LogicalGroupColumnAttribute.html",
+          "hash": "/U+ar9hjH/EjkJyKF1pGug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.MValueColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.MValueColumnAttribute.html",
+          "hash": "CjKtOfIxTwJGLZ48fCI11g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.MaxColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.MaxColumnAttribute.html",
+          "hash": "qLDwp2mpte9HRby6XTXRNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.MeanColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.MeanColumnAttribute.html",
+          "hash": "J5ccZ8B2mzqUwYrX7AyM3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.MedianColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.MedianColumnAttribute.html",
+          "hash": "vlvr7lqzdF8mNcMWJTOgEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.MinColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.MinColumnAttribute.html",
+          "hash": "n2ZcOVsqEZjqV7OcKDHT2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.NamespaceColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.NamespaceColumnAttribute.html",
+          "hash": "jAPwpw0DDCSA5Ah/zHhb2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.Q1ColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.Q1ColumnAttribute.html",
+          "hash": "kXoRpyo8MsIBPg9bpe7TtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.Q3ColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.Q3ColumnAttribute.html",
+          "hash": "RD6URKsqw3XgcoZkAzvpvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.RankColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.RankColumnAttribute.html",
+          "hash": "GueelvWynDrsptMFcUD8Hg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.SkewnessColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.SkewnessColumnAttribute.html",
+          "hash": "fr7FXuafw/Rs8QpcmYAV9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.StdDevColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.StdDevColumnAttribute.html",
+          "hash": "bG3UM1jUGEeTzU91h6F1/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.StdErrorColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.StdErrorColumnAttribute.html",
+          "hash": "hnvZtQoh0Nyejj3qrou/ng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.WelchTTestPValueColumnAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.WelchTTestPValueColumnAttribute.html",
+          "hash": "V/IFWTI04ftHuOKL1890eA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Columns.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Columns.html",
+          "hash": "/puFx/jQnC/TKwYFVggvCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.ConfigAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.ConfigAttribute.html",
+          "hash": "CBMHWsgwpVUQCLcWVbc58A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.DisassemblyDiagnoserAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.DisassemblyDiagnoserAttribute.html",
+          "hash": "HYwwEJaav9n/jFWK1rGs7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.AsciiDocExporterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.AsciiDocExporterAttribute.html",
+          "hash": "2ayQ0uMNYe0e/iTzL3cawQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.CsvExporterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.CsvExporterAttribute.html",
+          "hash": "pxrIaZHQParpfAlgLUjlNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.CsvMeasurementsExporterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.CsvMeasurementsExporterAttribute.html",
+          "hash": "t7Dzcwyx7624pgoQ86Y7PA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.ExporterConfigBaseAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.ExporterConfigBaseAttribute.html",
+          "hash": "rIG3hquVHhvD3tw4U3OWoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.HtmlExporterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.HtmlExporterAttribute.html",
+          "hash": "qtL5HiIpvDdx23eQa86wVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.JsonExporterAttribute.BriefAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.JsonExporterAttribute.BriefAttribute.html",
+          "hash": "2e/s2MJT3TQ4UVQLg4VMkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.JsonExporterAttribute.BriefCompressed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.JsonExporterAttribute.BriefCompressed.html",
+          "hash": "RHPyRPVxspzDyl3me/nx9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.JsonExporterAttribute.Full.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.JsonExporterAttribute.Full.html",
+          "hash": "y/RkLIfQc+Juo+Xwgy05pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.JsonExporterAttribute.FullCompressed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.JsonExporterAttribute.FullCompressed.html",
+          "hash": "f5p2VfhtAdHtcAIfz5RATA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.JsonExporterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.JsonExporterAttribute.html",
+          "hash": "KO+joycnFK6E5mEnPcMVcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.MarkdownExporterAttribute.Atlassian.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.MarkdownExporterAttribute.Atlassian.html",
+          "hash": "H2AaBKtpPBo8bqKzFNL0Wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.MarkdownExporterAttribute.Default.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.MarkdownExporterAttribute.Default.html",
+          "hash": "XnXvwkzfCQBpYR5xhjRz+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.MarkdownExporterAttribute.GitHub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.MarkdownExporterAttribute.GitHub.html",
+          "hash": "6dlkpgnuMZ32TlhQOJ2KRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.MarkdownExporterAttribute.StackOverflow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.MarkdownExporterAttribute.StackOverflow.html",
+          "hash": "9oF4hGiEnOm658uXiIAjUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.MarkdownExporterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.MarkdownExporterAttribute.html",
+          "hash": "rfyUoqLo8Tq1Eu6G1uJKpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.PlainExporterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.PlainExporterAttribute.html",
+          "hash": "Oi1JVssRFkcRrrRw+wKctQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.RPlotExporterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.RPlotExporterAttribute.html",
+          "hash": "BlxKIuw5t/iSZPE/9Hg2fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.XmlExporterAttribute.Brief.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.XmlExporterAttribute.Brief.html",
+          "hash": "dIMspYeSHBp41ZM+KQ9wNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.XmlExporterAttribute.BriefCompressed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.XmlExporterAttribute.BriefCompressed.html",
+          "hash": "a3QqhEe2FdFbAKEuJF+dzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.XmlExporterAttribute.Full.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.XmlExporterAttribute.Full.html",
+          "hash": "V+sS+cV22JaILulwurql5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.XmlExporterAttribute.FullCompressed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.XmlExporterAttribute.FullCompressed.html",
+          "hash": "UYpRPqvxRtrCkmNEZ+u7YQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.XmlExporterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.XmlExporterAttribute.html",
+          "hash": "sZBlIkDS8DXQl9SdZV9Jdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Exporters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Exporters.html",
+          "hash": "kzIDV4bXWX1xZBlWMYGf3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Filters.AllCategoriesFilterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Filters.AllCategoriesFilterAttribute.html",
+          "hash": "UDgStrJKNbtxjRrnZilGSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Filters.AnyCategoriesFilterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Filters.AnyCategoriesFilterAttribute.html",
+          "hash": "jkczd7axb6zu5JCXnPEmmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Filters.CategoryFilterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Filters.CategoryFilterAttribute.html",
+          "hash": "uRN/DnTYJv3uovNlfC0Z3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Filters.FilterConfigBaseAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Filters.FilterConfigBaseAttribute.html",
+          "hash": "xJ/7i+VW4sQ3G0hE+jPu6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Filters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Filters.html",
+          "hash": "ek0oIJJIy7Hx+ePGY7FoWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.GenericTypeArgumentsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.GenericTypeArgumentsAttribute.html",
+          "hash": "iQJn2oCT7S2u819FUXGJ5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.GlobalCleanupAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.GlobalCleanupAttribute.html",
+          "hash": "PyZtutoeCD6JYPQV81yeNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.GlobalSetupAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.GlobalSetupAttribute.html",
+          "hash": "OWbGmPEwGHg5MAGhc8hlxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.GroupBenchmarksByAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.GroupBenchmarksByAttribute.html",
+          "hash": "ztGetKo38l+AgERNiDyXnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.HardwareCountersAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.HardwareCountersAttribute.html",
+          "hash": "JkIG629UbddOb0WiWlaFhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.IterationCleanupAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.IterationCleanupAttribute.html",
+          "hash": "a1/9UrHokrvYAYkxyv4aog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.IterationSetupAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.IterationSetupAttribute.html",
+          "hash": "d5CbIQPyPmwNjJpVEfi8uA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.ClrJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.ClrJobAttribute.html",
+          "hash": "/Y680MvgDhRITWEQs9w7Cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.CoreJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.CoreJobAttribute.html",
+          "hash": "y0BZ/j8DbMjt6VO8tK5WiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.CoreRtJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.CoreRtJobAttribute.html",
+          "hash": "N6CZ8d2XaZnK6Vv/SZX4fQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.DryClrJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.DryClrJobAttribute.html",
+          "hash": "h2w0OByL5NEz1qLs8Zcmhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.DryCoreJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.DryCoreJobAttribute.html",
+          "hash": "ReAfW/QnJFzy5XiyexXFLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.DryCoreRtJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.DryCoreRtJobAttribute.html",
+          "hash": "TnHYaF7JidXCiEBW1F5hMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.DryJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.DryJobAttribute.html",
+          "hash": "QnU0VrvptKgtbf0Z1+JiWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.DryMonoJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.DryMonoJobAttribute.html",
+          "hash": "1GO6l4SygJw376f2/f0h2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.InProcessAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.InProcessAttribute.html",
+          "hash": "/mF+jHKI015i1d+nm1ZQ3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.JobConfigBaseAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.JobConfigBaseAttribute.html",
+          "hash": "JRfQ52kn5s9VRkHqN/RIjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.LegacyJitX64JobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.LegacyJitX64JobAttribute.html",
+          "hash": "grBbM5j60CNdhJvwvn3QoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.LegacyJitX86JobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.LegacyJitX86JobAttribute.html",
+          "hash": "VbpEtcLTDttR+Q9Q+cAtsg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.LongRunJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.LongRunJobAttribute.html",
+          "hash": "KHl+VwEtYyXAI1zxXrri3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.MediumRunJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.MediumRunJobAttribute.html",
+          "hash": "MZqfEYKN7OzjM7sxj1zidQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.MonoJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.MonoJobAttribute.html",
+          "hash": "4ib0AGJni6OiOOWeIJuNkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.RyuJitX64JobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.RyuJitX64JobAttribute.html",
+          "hash": "kMGrenPqtTEa4vXo0QeveA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.RyuJitX86JobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.RyuJitX86JobAttribute.html",
+          "hash": "JLjwB374QOOXfL+WB0pc0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.ShortRunJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.ShortRunJobAttribute.html",
+          "hash": "YUUKJMjXPEep3GRf3B+tTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.SimpleJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.SimpleJobAttribute.html",
+          "hash": "4KMbAdMu9JroGqf/T2W2aQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.VeryLongRunJobAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.VeryLongRunJobAttribute.html",
+          "hash": "hjzD4vz9Ek7oe9B3OFBg4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Jobs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Jobs.html",
+          "hash": "ljBpsRb/XRL2JDI0chtIAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.KeepBenchmarkFilesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.KeepBenchmarkFilesAttribute.html",
+          "hash": "TN1KBA1LTxgpf03g2p6cmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.MemoryDiagnoserAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.MemoryDiagnoserAttribute.html",
+          "hash": "57cXyOD7hcpSy8pXnnLFiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.OrderProviderAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.OrderProviderAttribute.html",
+          "hash": "oQk/jmMxeyPC/Ut4ZhdDhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.ParamsAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.ParamsAttribute.html",
+          "hash": "TB2LnNqUOyclYnUZ1+X/gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.ParamsSourceAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.ParamsSourceAttribute.html",
+          "hash": "xm5zPDxovRApnDhZM+8qhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.SetupAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.SetupAttribute.html",
+          "hash": "TJHNwSrQrFqbyKN0Ks8UdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.TargetedAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.TargetedAttribute.html",
+          "hash": "1KEqHX/i+HoUED+uGH0ZGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Validators.ExecutionValidatorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Validators.ExecutionValidatorAttribute.html",
+          "hash": "/0jPF07uaDTQUZ8Kmj9OAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Validators.ReturnValueValidatorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Validators.ReturnValueValidatorAttribute.html",
+          "hash": "3xc8RTBSOdTGRCufQaxYJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Validators.ValidatorConfigBaseAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Validators.ValidatorConfigBaseAttribute.html",
+          "hash": "yuRj8e/jzeK6e+vFs06wmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.Validators.html",
+          "hash": "xUdCCnybrYH4uWs4DquKaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Attributes.html",
+          "hash": "G61f/GUMfWTFpX7mGnjDiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.Characteristic-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.Characteristic-1.html",
+          "hash": "/sPTK9ROA9gH47SZWbOayg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.Characteristic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.Characteristic.html",
+          "hash": "h/FzRLzyEM6ox+nxON9cnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicHelper.html",
+          "hash": "Le2Li5BJFTIOKcepdAAMKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicObject-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicObject-1.html",
+          "hash": "wygEkJ7oslUwIYagXgkpTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicObject.html",
+          "hash": "6x6j526FdCWtfa5yCtvu8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicPresenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicPresenter.html",
+          "hash": "Jv7eGdCpd7GHI/Ixk+FaMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicSet.html",
+          "hash": "jMGMAGvQpeFRr5FbCPDfEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicSetPresenter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.CharacteristicSetPresenter.html",
+          "hash": "d9MsfQjeaMeaLQ9cNXMqfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.CompositeResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.CompositeResolver.html",
+          "hash": "Uzwr5PFXVeAwqzf1AW7U2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.IResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.IResolver.html",
+          "hash": "h0+MGIfS5fMIVzMfokJRcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.Resolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.Resolver.html",
+          "hash": "tsCOlC25+d5TuzEQ5nTtHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Characteristics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Characteristics.html",
+          "hash": "rH8YafCwHT0AxtXQf1Akdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Code.ArrayParam-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Code.ArrayParam-1.html",
+          "hash": "atfQnDTf9TMeiu4AdB+rgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Code.IParam.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Code.IParam.html",
+          "hash": "EB2EIKEbOjPCqWFjOVxdIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Code.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Code.html",
+          "hash": "3vZHMkKcT7R0+Q9YJGQoWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.BaselineScaledColumn.DiffKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.BaselineScaledColumn.DiffKind.html",
+          "hash": "lmkozZKOBx9own9BCTjKZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.BaselineScaledColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.BaselineScaledColumn.html",
+          "hash": "g10NTB/wWZF/xFVsXsMtuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.CategoriesColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.CategoriesColumn.html",
+          "hash": "Iq7UyyVFshkwJNhnSxvQjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.ColumnCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.ColumnCategory.html",
+          "hash": "m1vrwqNyFbF/VGL4+MToDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.ColumnExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.ColumnExtensions.html",
+          "hash": "basxmPIo5Mr6F26K2wjqpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.CompositeColumnProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.CompositeColumnProvider.html",
+          "hash": "Ofy0N/MyjGW0SUZUxohl5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.DefaultColumnProviders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.DefaultColumnProviders.html",
+          "hash": "vRAZRkR+5KNXmCBl2NCLGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.EmptyColumnProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.EmptyColumnProvider.html",
+          "hash": "nmI+cYXqdU0x4P6cXgNn+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.IColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.IColumn.html",
+          "hash": "+zOsVdx3pEPW+SmrblbXvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.IColumnProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.IColumnProvider.html",
+          "hash": "u3ZqweUS+QFUgf4NBBqUXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.IsBaselineColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.IsBaselineColumn.html",
+          "hash": "HNbE7GhrFcTGM/QmS+J/3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.JobCharacteristicColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.JobCharacteristicColumn.html",
+          "hash": "UouP46SUFzf/xRVCDa2p+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.LogicalGroupColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.LogicalGroupColumn.html",
+          "hash": "89/Cvg1M7JCti1/UiDXHLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.ParamColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.ParamColumn.html",
+          "hash": "O0+1BxnvgfwOtbJTnHEv/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.RankColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.RankColumn.html",
+          "hash": "c9JtTo3orBg72npUlgF7kA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.SimpleColumnProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.SimpleColumnProvider.html",
+          "hash": "50/zc3+qe7oo2m7mElBwBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.SizeUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.SizeUnit.html",
+          "hash": "r4+60m3BhdXRD9wpyxg5Bw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.StatisticColumn.Priority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.StatisticColumn.Priority.html",
+          "hash": "sWREK3WyWXToXf5KGX4o+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.StatisticColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.StatisticColumn.html",
+          "hash": "bdEaXxUDzlCtSqEHTWppzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.TagColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.TagColumn.html",
+          "hash": "FItG+s+YqtucvxpVDXh2lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.TargetMethodColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.TargetMethodColumn.html",
+          "hash": "ZIprMociUXEjpkaoTRR/vQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.UnitType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.UnitType.html",
+          "hash": "EEoIsVK7ThBSNH0psuK23w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Columns.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Columns.html",
+          "hash": "kOVpBgzCnQcmO4CmuttMjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Configs.BenchmarkLogicalGroupRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Configs.BenchmarkLogicalGroupRule.html",
+          "hash": "Wfi3iB/K8XZorxLKt/FtyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Configs.ConfigExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Configs.ConfigExtensions.html",
+          "hash": "XfrBbTtOVQTwOr61js5AjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Configs.ConfigParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Configs.ConfigParser.html",
+          "hash": "21pNSRh5DEisAdluHZ3CdQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Configs.ConfigUnionRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Configs.ConfigUnionRule.html",
+          "hash": "F6nckfvf/B7MWM6Fu0p4ZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Configs.DefaultConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Configs.DefaultConfig.html",
+          "hash": "dKQq7fjvtQm2JITt+MRdPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Configs.IConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Configs.IConfig.html",
+          "hash": "vwtbagI2waAWL3X/ItYV7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Configs.IConfigSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Configs.IConfigSource.html",
+          "hash": "durfNNMrkvv9n4qr2IjaeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Configs.ManualConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Configs.ManualConfig.html",
+          "hash": "Euqb+vKk3EjwQFcKgbAk7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Configs.ReadOnlyConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Configs.ReadOnlyConfig.html",
+          "hash": "ie8gdY4SuuhwOhrYXPY2uw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Configs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Configs.html",
+          "hash": "AuSe/a8EhyM/e16sfH12dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.Asm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.Asm.html",
+          "hash": "4fQy/CLzKiPCVRSNJ4yf7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.Code.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.Code.html",
+          "hash": "RbmzHFyisK9k6p1DycirgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.CompositeDiagnoser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.CompositeDiagnoser.html",
+          "hash": "yBgGGGoF0Wx3hWgJamcDIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.DiagnoserActionParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.DiagnoserActionParameters.html",
+          "hash": "f4h9lYI4Hhm6o9Rmmk7iXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.DiagnoserResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.DiagnoserResults.html",
+          "hash": "EA3pakvqBw4gkTodSnbJEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.DisassembledMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.DisassembledMethod.html",
+          "hash": "FnTKldZZVs/mB+/lNKfH8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.DisassemblerConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.DisassemblerConstants.html",
+          "hash": "b6MitNqrof6FUJ3MMKLQLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.DisassemblyAnalyzer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.DisassemblyAnalyzer.html",
+          "hash": "45WFnwM4g8RqVEuC+saaBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.DisassemblyDiagnoser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.DisassemblyDiagnoser.html",
+          "hash": "tcnGZP+TW6Ic1usyLBtcKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.DisassemblyDiagnoserConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.DisassemblyDiagnoserConfig.html",
+          "hash": "AFVCQIDC5tIQB489gxUqfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.DisassemblyResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.DisassemblyResult.html",
+          "hash": "ai69pz0APV+R0cuQHxyuDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.HardwareCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.HardwareCounter.html",
+          "hash": "mS/OOcmJ13TzPpY4Z1WSZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.HardwareCounterExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.HardwareCounterExtensions.html",
+          "hash": "jYkO9psA+wpvz8a15chIMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.IConfigurableDiagnoser-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.IConfigurableDiagnoser-1.html",
+          "hash": "8IEDknMyCHePrwW48ZVh3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.IDiagnoser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.IDiagnoser.html",
+          "hash": "rnVQMPQXzKJPLbXLgGVwPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.IL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.IL.html",
+          "hash": "qgLYjDok1UCFoEEzGKR8xQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.Map.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.Map.html",
+          "hash": "iKDW0/pYCq8v41BOUi4FRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.MemoryDiagnoser.AllocationColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.MemoryDiagnoser.AllocationColumn.html",
+          "hash": "l2N/0tfJaV0TfCQjLWddog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.MemoryDiagnoser.GCCollectionColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.MemoryDiagnoser.GCCollectionColumn.html",
+          "hash": "yz99bLaFRB1wqRVXRXNzZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.MemoryDiagnoser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.MemoryDiagnoser.html",
+          "hash": "TuFa2hMOwLjBfu7FB5eztA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.PmcStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.PmcStats.html",
+          "hash": "9BWv8Kf44oOAyO9mMW09pQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.PreciseMachineCounter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.PreciseMachineCounter.html",
+          "hash": "HeOn+8Dh/NuhqTef13vthA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.RunMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.RunMode.html",
+          "hash": "amZquPMQ5Of1bIPn1THIVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.Sharp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.Sharp.html",
+          "hash": "RB0M35PRpVdPKbUzR4a9Ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.UnresolvedDiagnoser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.UnresolvedDiagnoser.html",
+          "hash": "cpQF7jBO41nmUiPOtO7ziQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Diagnosers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Diagnosers.html",
+          "hash": "T/WQFgKXMgvDDts8MQoG3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.ConsoleHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.ConsoleHost.html",
+          "hash": "QdGy5FlhRsK1M4R+VAJl0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.Consumer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.Consumer.html",
+          "hash": "pYv9EB4eINYSjriH5MK51g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.DeadCodeEliminationHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.DeadCodeEliminationHelper.html",
+          "hash": "yfv2JC6sKAYcBasUBil2Cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.Engine.Signals.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.Engine.Signals.html",
+          "hash": "MJY2yUUsdx5qQSFIeoAWLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.Engine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.Engine.html",
+          "hash": "ddpK0yp/1lmSfRmgPSLu0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.EngineFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.EngineFactory.html",
+          "hash": "YbjvgklybTZ2xYiPDkYRRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.EngineParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.EngineParameters.html",
+          "hash": "IPVcr5CEZ3pAthjAi56JFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.EngineResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.EngineResolver.html",
+          "hash": "RXPpDaPfu000bsrP9VHN6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.EngineStage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.EngineStage.html",
+          "hash": "tIMQKt6zCEfbUbjM14wRsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.EngineTargetStage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.EngineTargetStage.html",
+          "hash": "uieoS3vYkO2ixSkmdo7Chg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.GcStats.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.GcStats.html",
+          "hash": "utOXgCKbNvENEFknOoJG8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.HostExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.HostExtensions.html",
+          "hash": "Q9yrCw9M7e/VIriq5O7RVA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.HostSignal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.HostSignal.html",
+          "hash": "zOjA6jxrY1Vexf+3Eh65Ng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.IEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.IEngine.html",
+          "hash": "fJoB8CWhXliVd30uXEoM/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.IEngineFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.IEngineFactory.html",
+          "hash": "frbcuD3xFS+XKUQpWMrlwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.IHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.IHost.html",
+          "hash": "fEr5ybIbc3rr/WpkMzi8ow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.IterationData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.IterationData.html",
+          "hash": "SzQmlvmXOhOEU51imCmFeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.IterationMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.IterationMode.html",
+          "hash": "91T+D1j1YnSMyR4y92OQKQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.IterationModeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.IterationModeExtensions.html",
+          "hash": "PljXu9rq9LXXsEaduWZGgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.RunResults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.RunResults.html",
+          "hash": "EeEQ1onCyULp7nmSUmgJpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.RunStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.RunStrategy.html",
+          "hash": "WeelQY8Se9bdH7C6CvJ0Xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.RunStrategyExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.RunStrategyExtensions.html",
+          "hash": "1G2FyznNfBaCuevzCxo6hA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Engines.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Engines.html",
+          "hash": "vQyCU2YjLw+KYq2ArXbPFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.BenchmarkEnvironmentInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.BenchmarkEnvironmentInfo.html",
+          "hash": "4OlOYUkcgT/r83j3VHiB8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.ClrRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.ClrRuntime.html",
+          "hash": "NCzRF0XEmH5pgtjKOWS3AQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.CoreRtRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.CoreRtRuntime.html",
+          "hash": "Q/HH/ZKVwDQE411y34tabw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.CoreRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.CoreRuntime.html",
+          "hash": "7z75+mf3AL/jot8Hv5sCIw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.EnvResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.EnvResolver.html",
+          "hash": "gb41eGFtaZENwijXjTbmNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.GcResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.GcResolver.html",
+          "hash": "A/1j6uE1Iv/q2oQW6+VrjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.HostEnvironmentInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.HostEnvironmentInfo.html",
+          "hash": "VmWIQQ2Mx/2MKU8R5rY63g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.InfrastructureResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.InfrastructureResolver.html",
+          "hash": "soYnyaqWFncLp+q/mm8QTQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.Jit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.Jit.html",
+          "hash": "HZj7ANdpm9vVS8lOetiimA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.MonoRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.MonoRuntime.html",
+          "hash": "EQqHiqroAqNODbogtyQ2MQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.OsBrandStringHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.OsBrandStringHelper.html",
+          "hash": "P3vDuQC+wthHiCWbAxKUgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.Platform.html",
+          "hash": "7+JMSqWNl+++brEL+JZiDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.ProcessorBrandStringHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.ProcessorBrandStringHelper.html",
+          "hash": "fPGB5E5Z0zCIoyd6jHHxpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.Runtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.Runtime.html",
+          "hash": "2MgvoieSXZAkT82umGGqJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Environments.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Environments.html",
+          "hash": "iyVA1Od7FO4EpXwTzDcIxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.AsciiDocExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.AsciiDocExporter.html",
+          "hash": "aScbgtdplM8PEOSKmpNNjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.BenchmarkReportExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.BenchmarkReportExporter.html",
+          "hash": "A8YCuEW9zTcLP7ky5Z7ACg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.CombinedDisassemblyExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.CombinedDisassemblyExporter.html",
+          "hash": "1HGhp5OvlYnwYrmXaZdN9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.CompositeExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.CompositeExporter.html",
+          "hash": "9d9A006vSOJ5BBP0YyHKAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Csv.CsvExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Csv.CsvExporter.html",
+          "hash": "jWxnX6WKWuVzCi0bBi6Mhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Csv.CsvHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Csv.CsvHelper.html",
+          "hash": "Rf1ben6Vk+3w3t7m1v7+QA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Csv.CsvMeasurementsExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Csv.CsvMeasurementsExporter.html",
+          "hash": "EpQ85djqyZv1oJ1AAFUTWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Csv.CsvSeparator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Csv.CsvSeparator.html",
+          "hash": "eSadCt/XRoF2JhKaWx1asA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Csv.CsvSeparatorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Csv.CsvSeparatorExtensions.html",
+          "hash": "7nlXieuZDIaQBvtSnykeXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Csv.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Csv.html",
+          "hash": "VOn4tnb2PE02Wq7wPuKgvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.DefaultExporters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.DefaultExporters.html",
+          "hash": "s/whB/hV24Vdkg9QDOv8AA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.ExporterBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.ExporterBase.html",
+          "hash": "i+C/jtePKJlttCITmwStNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.HtmlExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.HtmlExporter.html",
+          "hash": "7X+zTq4WKOn5UriQjF0o9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.IExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.IExporter.html",
+          "hash": "gFMp+bcCOK8vJ22ThRMkAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.InstructionPointerExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.InstructionPointerExporter.html",
+          "hash": "i4+Ev4zjAk0DE4zE8Y3P2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Json.JsonExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Json.JsonExporter.html",
+          "hash": "8fzrG96w50ZtidsYGAn7sQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Json.JsonExporterBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Json.JsonExporterBase.html",
+          "hash": "YaVwT4CV3BCUKPRP4qwODw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Json.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Json.html",
+          "hash": "46KEUChz6Xj204XyN9NMOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.MarkdownExporter.MarkdownHighlightStrategy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.MarkdownExporter.MarkdownHighlightStrategy.html",
+          "hash": "XQRrN030L9RLqlzs1THnyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.MarkdownExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.MarkdownExporter.html",
+          "hash": "WXfIXkAhAH20i4zZ6FeDRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.PlainExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.PlainExporter.html",
+          "hash": "IFgs7LvAsg66ZrGqSVgQpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.PrettyDisassemblyExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.PrettyDisassemblyExporter.html",
+          "hash": "EUBij5jnLXsGaw9xq5dGPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.RPlotExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.RPlotExporter.html",
+          "hash": "FpXL6kFE1oikvVVarxSkoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.RawDisassemblyExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.RawDisassemblyExporter.html",
+          "hash": "GsYm8sUig/H7KBMxvO59pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Xml.XmlExporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Xml.XmlExporter.html",
+          "hash": "u2wHYCF9t0gUMOGMS00/Kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Xml.XmlExporterBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Xml.XmlExporterBase.html",
+          "hash": "3nGlkpqenLJM3N5lfkC9pA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.Xml.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.Xml.html",
+          "hash": "CA1i5n8RcVKVcFOD/0NSRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Exporters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Exporters.html",
+          "hash": "++9vqYAFlw7UqORrnplpWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Extensions.CommonExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Extensions.CommonExtensions.html",
+          "hash": "sMEeVD6GdnJJVhIx/jq0sQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Extensions.ReportExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Extensions.ReportExtensions.html",
+          "hash": "I12sPZnUPplw6VFU5AUiJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Extensions.StatisticsExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Extensions.StatisticsExtensions.html",
+          "hash": "xIEKLjMhW2pfQOMzb4jwYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Extensions.StringAndTextExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Extensions.StringAndTextExtensions.html",
+          "hash": "5q/DMQmd2HdAA3tpEEOS+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Extensions.html",
+          "hash": "LyK6tEOHcuuM1r1szIrUbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Filters.AllCategoriesFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Filters.AllCategoriesFilter.html",
+          "hash": "LOkfECp7HLScaeKdTsbz8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Filters.AnyCategoriesFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Filters.AnyCategoriesFilter.html",
+          "hash": "BaxYRSH9bymJpm2L4+CaZg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Filters.CategoryFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Filters.CategoryFilter.html",
+          "hash": "trAfqF0Er3peGZPtggkXvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Filters.DisjunctionFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Filters.DisjunctionFilter.html",
+          "hash": "trq63pilfLaoe5ZIaZsIdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Filters.IFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Filters.IFilter.html",
+          "hash": "gtWAl1dy3Ccdgzsrkmpntg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Filters.NameFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Filters.NameFilter.html",
+          "hash": "WgXHpAjFYmxpW1ZudMYOTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Filters.SimpleFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Filters.SimpleFilter.html",
+          "hash": "7gxy0x1CVH9IEPeXXAeR7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Filters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Filters.html",
+          "hash": "QQqhLzuzUhn5tC60Nhsthw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Helpers.ExternalToolsHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Helpers.ExternalToolsHelper.html",
+          "hash": "WumoNPRTNp7sDePQJ74w9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Helpers.FolderNameHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Helpers.FolderNameHelper.html",
+          "hash": "HqVwmyg7eWZs9m4BSaGEKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Helpers.SourceCodeHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Helpers.SourceCodeHelper.html",
+          "hash": "t0SNLOq2NYQIKfkdsE00mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Helpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Helpers.html",
+          "hash": "cC9kk4ccq5Okha25Cu3zuA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Horology.Chronometer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Horology.Chronometer.html",
+          "hash": "unp9CJl4IR94blk5743X0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Horology.ClockExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Horology.ClockExtensions.html",
+          "hash": "o5jMo6QyvVMrltZsp+fbUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Horology.ClockSpan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Horology.ClockSpan.html",
+          "hash": "wt7n8FPdX+XepArezjrHng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Horology.Frequency.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Horology.Frequency.html",
+          "hash": "lL4a0EQcEefc7MU7A6LgJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Horology.FrequencyUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Horology.FrequencyUnit.html",
+          "hash": "6/Nmadb4E6ma+RreKESMdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Horology.HardwareTimerKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Horology.HardwareTimerKind.html",
+          "hash": "j7FKUMT8MkKJDrD7oDzsYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Horology.IClock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Horology.IClock.html",
+          "hash": "WjYTmgzfhi7KRy2Ijq/wKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Horology.StartedClock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Horology.StartedClock.html",
+          "hash": "zj6HahnpOoiOv/RqSsAQEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Horology.TimeInterval.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Horology.TimeInterval.html",
+          "hash": "6VHtlR9V3KAxNx+rWORWOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Horology.TimeUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Horology.TimeUnit.html",
+          "hash": "RvnTo7tBdRp+x5PCgyKncw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Horology.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Horology.html",
+          "hash": "rSe3wfPrP1EecdHBffpHfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.AccuracyMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.AccuracyMode.html",
+          "hash": "JcjjhEgYX/uNKoMJ/Hnhyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.Argument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.Argument.html",
+          "hash": "+6j5jy4HJcr3AotdMXrNqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.EnvMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.EnvMode.html",
+          "hash": "klR+U5bbiN4E1A2fpSGviA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.EnvironmentVariable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.EnvironmentVariable.html",
+          "hash": "tlfQe96HsDk1SJjR+xoEdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.GcMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.GcMode.html",
+          "hash": "Jn1pA/+o+AjJ1LauBPY1RQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.GcModeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.GcModeExtensions.html",
+          "hash": "pI6eymRz8sA9GBmYvoZxXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.InfrastructureMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.InfrastructureMode.html",
+          "hash": "kTMKX2VFI5SvWnsudmPP5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.Job.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.Job.html",
+          "hash": "bF74f+rFnUVkzEoldfoOWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.JobExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.JobExtensions.html",
+          "hash": "zcnsnJqf5x66iUEfGHWrBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.JobIdGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.JobIdGenerator.html",
+          "hash": "l71VYKtxCwbJHukPI5LgUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.JobMode-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.JobMode-1.html",
+          "hash": "49WiVA1Oh4TxzvOdlL9/bA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.MetaMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.MetaMode.html",
+          "hash": "x8KRh6ERq9+0oBO3/ry95g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.MonoArgument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.MonoArgument.html",
+          "hash": "HqmPYDKwAWqTT3aXmoSLHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.MsBuildArgument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.MsBuildArgument.html",
+          "hash": "9PjY14WIiKVRX9mpmy1h2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.RunMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.RunMode.html",
+          "hash": "uQf4/bp+VSJ9OFuLRCgaxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Jobs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Jobs.html",
+          "hash": "zHmvPqIsw3IUgqjVicxkGg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Loggers.AccumulationLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Loggers.AccumulationLogger.html",
+          "hash": "+8ti4lD8Nu7zn8DoSr2ThQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Loggers.CompositeLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Loggers.CompositeLogger.html",
+          "hash": "qacQ8ZUz7+Rpo8EVuko0jA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Loggers.ConsoleLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Loggers.ConsoleLogger.html",
+          "hash": "kM3GDPYzNHMvTWsh5rjwow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Loggers.ILogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Loggers.ILogger.html",
+          "hash": "IN/HoiAV3pfv4xVpPSGanQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Loggers.LogKind.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Loggers.LogKind.html",
+          "hash": "ZtPgrR8DhTgPJ4LYrgvSNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Loggers.LoggerExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Loggers.LoggerExtensions.html",
+          "hash": "4TED0RhCHQBoW33kWXP1SA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Loggers.LoggerWithPrefix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Loggers.LoggerWithPrefix.html",
+          "hash": "ML2JvMzK6c5bI+Qcgjh4xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Loggers.NullLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Loggers.NullLogger.html",
+          "hash": "e24JprrobpSFCtHjjiiltA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Loggers.StreamLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Loggers.StreamLogger.html",
+          "hash": "hutCSyPbok0SUfmmjmtaCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Loggers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Loggers.html",
+          "hash": "I+RTC8kot8kjXLdXJlYrww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.ConfidenceInterval.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.ConfidenceInterval.html",
+          "hash": "LCZL7pi1mao1EX42DOzHvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.ConfidenceLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.ConfidenceLevel.html",
+          "hash": "ub1BmR7qDoW6ql2q1R2E0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.ConfidenceLevelExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.ConfidenceLevelExtensions.html",
+          "hash": "o4if87iHvjn7limsEUG34A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.AdaptiveHistogramBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.AdaptiveHistogramBuilder.html",
+          "hash": "8A8Iho+AxwXflQKWKeQGsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.BinSizeRule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.BinSizeRule.html",
+          "hash": "m7CAGDqP+95Lgh6++88j2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.Histogram.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.Histogram.html",
+          "hash": "f08h0T9loxEAOe5Oe8hc9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.HistogramBin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.HistogramBin.html",
+          "hash": "m0jBgk3JoVHs8DEDw6OFdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.HistogramBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.HistogramBuilder.html",
+          "hash": "lvomL2EA6lRR7NxXlXLl7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.html",
+          "hash": "byS8PjU4t6JMMCapSaJ5Dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.IHistogramBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.IHistogramBuilder.html",
+          "hash": "KxfV5xnQopKcxmDZeOJyGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.Histograms.html",
+          "hash": "Wxa+v+kWQaf2hHdB0xRZ3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.MathHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.MathHelper.html",
+          "hash": "DI9b5JzP8T9BD4q1+9RTRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.NumeralSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.NumeralSystem.html",
+          "hash": "cZAD2EPqpb4h22ysX/3brg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.NumeralSystemExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.NumeralSystemExtensions.html",
+          "hash": "NYPUsMfBifRvIoO2Q4XQRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.OutlierMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.OutlierMode.html",
+          "hash": "whblvPSM1UpgP1JrH22lpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.PercentileValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.PercentileValues.html",
+          "hash": "ehhxCntiQVHiA1B8SfOO+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.Statistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.Statistics.html",
+          "hash": "8PkM3ydTXEphlc3pWyjwCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.WelchTTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.WelchTTest.html",
+          "hash": "TZniorV/TRiQrR4br653YA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Mathematics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Mathematics.html",
+          "hash": "1W2vasyrk7NwZreTBVhhEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Order.DefaultOrderProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Order.DefaultOrderProvider.html",
+          "hash": "MasXS7Jnwao1WVtJC28eBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Order.IOrderProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Order.IOrderProvider.html",
+          "hash": "iFY65te3zlmpwKIcZLNDBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Order.MethodOrderPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Order.MethodOrderPolicy.html",
+          "hash": "Vf1Lmr5622iOwu5xJUaWDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Order.SummaryOrderPolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Order.SummaryOrderPolicy.html",
+          "hash": "VATuQTuX2Q/Z41OVBBFbcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Order.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Order.html",
+          "hash": "rEvPUFGpbF9MNCmeExaw4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Parameters.ParameterDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Parameters.ParameterDefinition.html",
+          "hash": "wQ4lBPlj1MIiGTTGgvbF2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Parameters.ParameterDefinitions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Parameters.ParameterDefinitions.html",
+          "hash": "XPHcI8Ep5RtgfWWI9YfFsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Parameters.ParameterInstance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Parameters.ParameterInstance.html",
+          "hash": "2mUSOLZlq7fOcHHmOgqQYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Parameters.ParameterInstances.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Parameters.ParameterInstances.html",
+          "hash": "slzPYKm2KZ6T0oJc457Grg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Parameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Parameters.html",
+          "hash": "HZwogyuZipbVSS6nUNTWfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Portability.Antivirus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Portability.Antivirus.html",
+          "hash": "YKCnVOO52QKG+ggqKq3lQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Portability.Cpu.CpuInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Portability.Cpu.CpuInfo.html",
+          "hash": "SRYk1t9orU5fZ/rWK1dzWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Portability.Cpu.CpuInfoFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Portability.Cpu.CpuInfoFormatter.html",
+          "hash": "YioW+fI6FJHuHr8cEjc8Xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Portability.Cpu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Portability.Cpu.html",
+          "hash": "kahAw5L6WsWHA5XEZYnTCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Portability.HyperV.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Portability.HyperV.html",
+          "hash": "orODvCHKLTpL06h5PxQdNg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Portability.VMware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Portability.VMware.html",
+          "hash": "iYIWLhJEVhZfjCB0HxI6pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Portability.VirtualBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Portability.VirtualBox.html",
+          "hash": "eW43+Pp30Im8pkC8jc7DEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Portability.VirtualMachineHypervisor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Portability.VirtualMachineHypervisor.html",
+          "hash": "D4foufNygcc7d2EnL/ai4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Portability.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Portability.html",
+          "hash": "Q29XR6RXfjArK/HFDQhVQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Properties.BenchmarkDotNetInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Properties.BenchmarkDotNetInfo.html",
+          "hash": "KbJZj1RiSD9EHeCK8h3beQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Properties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Properties.html",
+          "hash": "KOYF5CRhc9TwErOw7HxcjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.BenchmarkReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.BenchmarkReport.html",
+          "hash": "3+OAJ7ON39+WH61HAEPsnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.BenchmarkReportExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.BenchmarkReportExtensions.html",
+          "hash": "d3WTQOQxoYm4Q3L/u3so1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.ISummaryStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.ISummaryStyle.html",
+          "hash": "nhrR1o+oO93b2Bh+mcJ+lQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.Measurement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.Measurement.html",
+          "hash": "NWSiWLtqJBFlBsLzhblJkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.MeasurementExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.MeasurementExtensions.html",
+          "hash": "kSNG6kvI7AOfoBRhDdLxsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.Summary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.Summary.html",
+          "hash": "acAmntOBi4cPz44N1m09Tg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.SummaryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.SummaryExtensions.html",
+          "hash": "thcD637PCnPTNA5e2pr/Aw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.SummaryStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.SummaryStyle.html",
+          "hash": "RS5cnXzG+KS78fZnuI9qzw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.SummaryTable.SummaryTableColumn.TextJustification.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.SummaryTable.SummaryTableColumn.TextJustification.html",
+          "hash": "Zdcm+4sOOaXJXKC01gxbrQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.SummaryTable.SummaryTableColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.SummaryTable.SummaryTableColumn.html",
+          "hash": "6JgbxPKeJZF/P33tFoN47Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.SummaryTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.SummaryTable.html",
+          "hash": "5rFnLjkcplmg5hkzjd+YPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.SummaryTableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.SummaryTableExtensions.html",
+          "hash": "XwoY7LSSK6hwpPoioowmoA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Reports.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Reports.html",
+          "hash": "ou2YNYl4QJyDNpTm1Wzdbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Running.Benchmark.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Running.Benchmark.html",
+          "hash": "N4/n/Sse52Uoo8T3Lh2csA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Running.BenchmarkBuildInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Running.BenchmarkBuildInfo.html",
+          "hash": "mqt+3xHrdoHo/o9tlYleMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Running.BenchmarkConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Running.BenchmarkConverter.html",
+          "hash": "mFfaQtGyoQJDdQtf2waUMg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Running.BenchmarkId.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Running.BenchmarkId.html",
+          "hash": "HSFGqNff0Jw4I49zBoKWSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Running.BenchmarkPartitioner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Running.BenchmarkPartitioner.html",
+          "hash": "WRN+NB5zyqcFMeu/E0PR0g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Running.BenchmarkRunInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Running.BenchmarkRunInfo.html",
+          "hash": "PpAPG0FSanJP8ItO28JEKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Running.BenchmarkRunner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Running.BenchmarkRunner.html",
+          "hash": "b/tnC0mDA0lhLhnAydnUjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Running.BenchmarkSwitcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Running.BenchmarkSwitcher.html",
+          "hash": "OsA7HPuAhEhpsFjDdIkmgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Running.BuildPartition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Running.BuildPartition.html",
+          "hash": "kZviVu07iLHJtc8zum/uwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Running.Target.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Running.Target.html",
+          "hash": "TQOLDo1L5aXQQYK35w/ihg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Running.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Running.html",
+          "hash": "CVUh800N9Le7DTUudyyhCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.ArtifactsPaths.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.ArtifactsPaths.html",
+          "hash": "IR9S6eOZEaAfBaMIcxHa/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CoreRt.CoreRtToolchain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CoreRt.CoreRtToolchain.html",
+          "hash": "vYY6ptXdGLwLT55stJscEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CoreRt.CoreRtToolchainBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CoreRt.CoreRtToolchainBuilder.html",
+          "hash": "drhAyU58XiTtoS/rJjjCCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CoreRt.Generator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CoreRt.Generator.html",
+          "hash": "e56sRkshv/jYZi9z/J6tVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CoreRt.Publisher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CoreRt.Publisher.html",
+          "hash": "16ZOhxkgJPFHFmM+4+a4tA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CoreRt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CoreRt.html",
+          "hash": "BsayyIZBSlT5sKynvlvpOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CsProj.CsProjClassicNetToolchain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CsProj.CsProjClassicNetToolchain.html",
+          "hash": "uFPCe0KhEfw3WibzvgeMnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CsProj.CsProjCoreToolchain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CsProj.CsProjCoreToolchain.html",
+          "hash": "UQVhJgIC88BoxWBpqBQ31A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.html",
+          "hash": "X85SCSqp13IJgByVHiS1IA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CsProj.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CsProj.html",
+          "hash": "Mcqhh9NL3ifyKBkxgDkYCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CustomCoreClr.CustomCoreClrToolchain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CustomCoreClr.CustomCoreClrToolchain.html",
+          "hash": "Dmuc8HsWcYO4Vvqe7IZfVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CustomCoreClr.CustomCoreClrToolchainBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CustomCoreClr.CustomCoreClrToolchainBuilder.html",
+          "hash": "k2/J00+AZvSyB7puqRKIJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CustomCoreClr.Generator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CustomCoreClr.Generator.html",
+          "hash": "oGtssot64AW/nmYhiZ6ygA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.CustomCoreClr.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.CustomCoreClr.html",
+          "hash": "D0Qgn44lT0k7e9dTAp6AzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.CustomDotNetCliToolchainBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.CustomDotNetCliToolchainBuilder.html",
+          "hash": "+N6IE0YyTFMsEldjuT6Y1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliBuilder.html",
+          "hash": "NKhDlTHpr25ebOYyu5FKCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliExecutor.html",
+          "hash": "gbYxMzr9ZraeEILIFDmxyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html",
+          "hash": "iSKBJ+Bmp04ZMnRGyCs64Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliPublisher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliPublisher.html",
+          "hash": "K8gKxTIkrilOGH29lrg7Fg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.html",
+          "hash": "vt2I+Ey1XuCren/NrZOz/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.DotNetCli.html",
+          "hash": "Eau6/P65xpmE+0VT70FH1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Executor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Executor.html",
+          "hash": "SZIAAIaQsqgTi+qBbOUjFA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.GeneratorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.GeneratorBase.html",
+          "hash": "Eqi6IyHWxMKSRDbh25C8EA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.IBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.IBuilder.html",
+          "hash": "EdrmR7zsMUxq7GqWXoBG2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.IExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.IExecutor.html",
+          "hash": "0PiLDDulFgHPEN8fIFmuhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.IGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.IGenerator.html",
+          "hash": "p6eZ57JMMDZ9tBpFjW5Idg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.IToolchain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.IToolchain.html",
+          "hash": "q2jG+KAgxsJEcKIPy9y64w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.BenchmarkAction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.BenchmarkAction.html",
+          "hash": "tzOMbuIqU9vGxFWW9AWk3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionCodegen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionCodegen.html",
+          "hash": "dNJELkNcn2O4SPrk8hzMDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.html",
+          "hash": "u7qzxi39vtiMJlKFaU3AIA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessBuilder.html",
+          "hash": "TG+N+rUJ9aGOe84MF4uclA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessExecutor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessExecutor.html",
+          "hash": "ElLemnO2W/85CB/0AjVT/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessGenerator.html",
+          "hash": "219hTxQ10GQ3K1NSGpavDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessHost.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessHost.html",
+          "hash": "/I4cY8Dda9g5I0oKYrAQCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessToolchain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessToolchain.html",
+          "hash": "/K/UymzACFH7FMo5tcexFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.InProcessValidator.html",
+          "hash": "VUh3xJK7Q96XbGIaDB3AJg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.InProcess.html",
+          "hash": "dRT/7l6qOHuI6MOP38OT7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Parameters.ExecuteParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Parameters.ExecuteParameters.html",
+          "hash": "zNINILw38DT1U4aqzFEu6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Parameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Parameters.html",
+          "hash": "5ZjmSaAV2gk1CpyzqBzfUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Results.BuildResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Results.BuildResult.html",
+          "hash": "foKlokNZO96Gc4iQLuN1gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Results.ExecuteResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Results.ExecuteResult.html",
+          "hash": "Vpnfic2nDfKkpKokIpnrPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Results.GenerateResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Results.GenerateResult.html",
+          "hash": "GMJ9gwXRvVori9oZMAn+rQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Results.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Results.html",
+          "hash": "pasDvn2uZ6zl4e9Z2GBpyQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Roslyn.Builder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Roslyn.Builder.html",
+          "hash": "caAukpoS3AVp6se3YdkCYQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Roslyn.Generator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Roslyn.Generator.html",
+          "hash": "so5Wxao6zK3y+ViLHDF3VA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Roslyn.RoslynToolchain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Roslyn.RoslynToolchain.html",
+          "hash": "+9xLHVQOSGO/pbqqSggZBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Roslyn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Roslyn.html",
+          "hash": "hh7Usz7VG5nFLGXk0bzRIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.Toolchain.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.Toolchain.html",
+          "hash": "JjdmbQnDTiEMtSUVCsYUaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Toolchains.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Toolchains.html",
+          "hash": "EOSB28HEX+vZAA0YwtRZuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.BaselineValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.BaselineValidator.html",
+          "hash": "zuOhCjh1IvZDIeCBhZrZcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.CompilationValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.CompilationValidator.html",
+          "hash": "Yyjw/KPZhhrifG+2DX3oAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.ConfigValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.ConfigValidator.html",
+          "hash": "/BxzKi7pP9phttWEtTSzHQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.DiagnosersValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.DiagnosersValidator.html",
+          "hash": "35ZrpmXa2uiZNAIsn/0YGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.ExecutionValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.ExecutionValidator.html",
+          "hash": "V3LEheg4mcLl2Z7fgZsSpw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.ExecutionValidatorBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.ExecutionValidatorBase.html",
+          "hash": "5cAPcgSvAwm/67OFG6zbXw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.GenericBenchmarksValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.GenericBenchmarksValidator.html",
+          "hash": "jmf8Fkbqh/PieOQ6HCXEDg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.IValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.IValidator.html",
+          "hash": "5ZjKvj1mlb2x2UmY5vk/zA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.JitOptimizationsValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.JitOptimizationsValidator.html",
+          "hash": "AKPfgXOrGZKqxrN8GmyNRw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.ReturnValueValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.ReturnValueValidator.html",
+          "hash": "xBYlyJMar1WGng3TPTpsEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.RunModeValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.RunModeValidator.html",
+          "hash": "ygsETuuwJfU9zgn4IrXdzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.SetupCleanupValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.SetupCleanupValidator.html",
+          "hash": "aA03I89pk1brr903mJ3UJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.ShadowCopyValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.ShadowCopyValidator.html",
+          "hash": "2mPbOJugExtIwMAuTqddJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.ValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.ValidationError.html",
+          "hash": "YDiEkTmcsFBYCYfkjrQxAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.ValidationErrorReporter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.ValidationErrorReporter.html",
+          "hash": "Pvo07H8vpYDIkGWFGSga7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.ValidationParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.ValidationParameters.html",
+          "hash": "KuTFj6E5O8hUyqDiFL+6Qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BenchmarkDotNet.Validators.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BenchmarkDotNet.Validators.html",
+          "hash": "ySuL1ONQYO6boZwQTGdjCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "izFwjHl2kWFkTGaNbxep0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "RkicGez/vPCcR44xmDHeTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/analyzers.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/analyzers.html",
+          "hash": "0gVJT9Lj2hypbOxFlAqIeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/columns.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/columns.html",
+          "hash": "VuOMyWEuxeyl7GM3ZHZsTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/configs.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/configs.html",
+          "hash": "aizyqoCHhU1aZPInd5xaxw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/diagnosers.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/diagnosers.html",
+          "hash": "3QFQSERDTCzB/4qXAt0J8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/exporters.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/exporters.html",
+          "hash": "lUoEJmkc4NxTag52QiB6eA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/filters.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/filters.html",
+          "hash": "6hdP0433inxlnMuRFTO5mA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/jobs.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/jobs.html",
+          "hash": "Urida6OGElQ5lqqUysPACg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/loggers.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/loggers.html",
+          "hash": "bXW8WXyl8ZWBSgrtwSHt4A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/order-provider.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/order-provider.html",
+          "hash": "a3Y61d/UpTZ/cXEwdpczIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/toolchains.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/toolchains.html",
+          "hash": "Ob6iGdRtFaSUMoMvll88GA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/configs/validators.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/configs/validators.html",
+          "hash": "oPXXZXX7D3dpGmlz7+unRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/contributing/building.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/contributing/building.html",
+          "hash": "G2rDpA7RMHGbP0uKNDOgfw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/contributing/debugging.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/contributing/debugging.html",
+          "hash": "B9q1Z5olGz9MegvguAkyeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/contributing/development.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/contributing/development.html",
+          "hash": "pusXQekzvTOaoVnUdCMaWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/contributing/disassembler.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/contributing/disassembler.html",
+          "hash": "bxOUNsZmkKxFDqqbZkYBBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/contributing/documentation.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/contributing/documentation.html",
+          "hash": "lZp9lD7HO0ejKHQ4DIGL/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/contributing/miscellaneous.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/contributing/miscellaneous.html",
+          "hash": "AFukaMjUpzl5RwymTpu1DA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/contributing/running-tests.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/contributing/running-tests.html",
+          "hash": "2xP3jbcyE/gIMJ52j3PlsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/faq.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/faq.html",
+          "hash": "+nMP6wL3AOWgvs1nAALjZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/arguments.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/arguments.html",
+          "hash": "Sy6ETHCF/AxTu9SP5GmjOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/baseline.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/baseline.html",
+          "hash": "kMlDXzotTbzELOejs4cUjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/customizing-mono.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/customizing-mono.html",
+          "hash": "Kf0pftU91a1Xv1+xAYwoCQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/environment-variables.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/environment-variables.html",
+          "hash": "4h3SLtF/fDR6dM8fCJM6mA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/params.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/params.html",
+          "hash": "7NKm7Ul/dCRKbr7wKAs9yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/percentiles.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/percentiles.html",
+          "hash": "JTYiOJwcB9VoajAO0SnMCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/setup-and-cleanup.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/setup-and-cleanup.html",
+          "hash": "R++dPccSHJUlMizYK1Xehg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/features/sta-thread.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/features/sta-thread.html",
+          "hash": "UURqU7MdmHf75XWTx8BGlA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/guides/choosing-run-strategy.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/guides/choosing-run-strategy.html",
+          "hash": "6SSsoT+YbUOOZlSPwqZrsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/guides/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/guides/getting-started.html",
+          "hash": "pbCpsGYZ8KvfztP99bIIvA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/guides/good-practices.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/guides/good-practices.html",
+          "hash": "B6wgKO3mFnB08VhFe0h3Iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/guides/how-it-works.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/guides/how-it-works.html",
+          "hash": "/c71C7MTcTB8ULBwBfdi7w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/guides/how-to-run.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/guides/how-to-run.html",
+          "hash": "MkZUnuRZa/NMbDt8JKJ6lQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/guides/nuget.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/guides/nuget.html",
+          "hash": "cjVOoP5zqX7oiS3WAjpAdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/license.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/license.html",
+          "hash": "QwtpG5UL4LM3DlfjtJwhhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/overview.html",
+          "hash": "OSOjnSeXA1xiNF0JggQpJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/team.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/team.html",
+          "hash": "3oTjih6qTjoEqvHIk5S3XA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "URgk0jPCy4y1UouhZwCCXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/cygwin-binutils.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/cygwin-binutils.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/disasm-demo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/disasm-demo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/rplot.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/rplot.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "XPITYC6gDzGSTmR26qVaVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo/icon-128.png",
+      "output": {
+        "resource": {
+          "relative_path": "logo/icon-128.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo/icon-256.png",
+      "output": {
+        "resource": {
+          "relative_path": "logo/icon-256.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo/icon-32.png",
+      "output": {
+        "resource": {
+          "relative_path": "logo/icon-32.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo/icon-64.png",
+      "output": {
+        "resource": {
+          "relative_path": "logo/icon-64.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo/icon.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo/icon.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo/logo-cmyk.eps",
+      "output": {
+        "resource": {
+          "relative_path": "logo/logo-cmyk.eps"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo/logo-rgb.eps",
+      "output": {
+        "resource": {
+          "relative_path": "logo/logo-rgb.eps"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo/logo-wide.png",
+      "output": {
+        "resource": {
+          "relative_path": "logo/logo-wide.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo/logo-wide.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo/logo-wide.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo/logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "logo/logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo/logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "eqHyhIvMoWs9pWXbJWPC0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
