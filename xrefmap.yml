@@ -12272,6 +12272,19 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Environments.HostEnvironmentInfo.HardwareTimerKind
   nameWithType: HostEnvironmentInfo.HardwareTimerKind
+- uid: BenchmarkDotNet.Environments.HostEnvironmentInfo.IsDotNetCliInstalled
+  name: IsDotNetCliInstalled()
+  href: api/BenchmarkDotNet.Environments.HostEnvironmentInfo.html#BenchmarkDotNet_Environments_HostEnvironmentInfo_IsDotNetCliInstalled
+  commentId: M:BenchmarkDotNet.Environments.HostEnvironmentInfo.IsDotNetCliInstalled
+  fullName: BenchmarkDotNet.Environments.HostEnvironmentInfo.IsDotNetCliInstalled()
+  nameWithType: HostEnvironmentInfo.IsDotNetCliInstalled()
+- uid: BenchmarkDotNet.Environments.HostEnvironmentInfo.IsDotNetCliInstalled*
+  name: IsDotNetCliInstalled
+  href: api/BenchmarkDotNet.Environments.HostEnvironmentInfo.html#BenchmarkDotNet_Environments_HostEnvironmentInfo_IsDotNetCliInstalled_
+  commentId: Overload:BenchmarkDotNet.Environments.HostEnvironmentInfo.IsDotNetCliInstalled
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Environments.HostEnvironmentInfo.IsDotNetCliInstalled
+  nameWithType: HostEnvironmentInfo.IsDotNetCliInstalled
 - uid: BenchmarkDotNet.Environments.HostEnvironmentInfo.IsMonoInstalled
   name: IsMonoInstalled
   href: api/BenchmarkDotNet.Environments.HostEnvironmentInfo.html#BenchmarkDotNet_Environments_HostEnvironmentInfo_IsMonoInstalled
@@ -14182,6 +14195,31 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Extensions.CommonExtensions.ToTimeStr
   nameWithType: CommonExtensions.ToTimeStr
+- uid: BenchmarkDotNet.Extensions.ConfigurationExtensions
+  name: ConfigurationExtensions
+  href: api/BenchmarkDotNet.Extensions.ConfigurationExtensions.html
+  commentId: T:BenchmarkDotNet.Extensions.ConfigurationExtensions
+  fullName: BenchmarkDotNet.Extensions.ConfigurationExtensions
+  nameWithType: ConfigurationExtensions
+- uid: BenchmarkDotNet.Extensions.ConfigurationExtensions.ToConfig(BenchmarkDotNet.Environments.Jit)
+  name: ToConfig(Jit)
+  href: api/BenchmarkDotNet.Extensions.ConfigurationExtensions.html#BenchmarkDotNet_Extensions_ConfigurationExtensions_ToConfig_BenchmarkDotNet_Environments_Jit_
+  commentId: M:BenchmarkDotNet.Extensions.ConfigurationExtensions.ToConfig(BenchmarkDotNet.Environments.Jit)
+  fullName: BenchmarkDotNet.Extensions.ConfigurationExtensions.ToConfig(BenchmarkDotNet.Environments.Jit)
+  nameWithType: ConfigurationExtensions.ToConfig(Jit)
+- uid: BenchmarkDotNet.Extensions.ConfigurationExtensions.ToConfig(BenchmarkDotNet.Environments.Platform)
+  name: ToConfig(Platform)
+  href: api/BenchmarkDotNet.Extensions.ConfigurationExtensions.html#BenchmarkDotNet_Extensions_ConfigurationExtensions_ToConfig_BenchmarkDotNet_Environments_Platform_
+  commentId: M:BenchmarkDotNet.Extensions.ConfigurationExtensions.ToConfig(BenchmarkDotNet.Environments.Platform)
+  fullName: BenchmarkDotNet.Extensions.ConfigurationExtensions.ToConfig(BenchmarkDotNet.Environments.Platform)
+  nameWithType: ConfigurationExtensions.ToConfig(Platform)
+- uid: BenchmarkDotNet.Extensions.ConfigurationExtensions.ToConfig*
+  name: ToConfig
+  href: api/BenchmarkDotNet.Extensions.ConfigurationExtensions.html#BenchmarkDotNet_Extensions_ConfigurationExtensions_ToConfig_
+  commentId: Overload:BenchmarkDotNet.Extensions.ConfigurationExtensions.ToConfig
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Extensions.ConfigurationExtensions.ToConfig
+  nameWithType: ConfigurationExtensions.ToConfig
 - uid: BenchmarkDotNet.Extensions.ReportExtensions
   name: ReportExtensions
   href: api/BenchmarkDotNet.Extensions.ReportExtensions.html
@@ -23403,6 +23441,24 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Running.Target.Type
   nameWithType: Target.Type
+- uid: BenchmarkDotNet.Samples.IntroArguments
+  name: 'Sample: IntroArguments'
+  href: articles/samples/IntroArguments.html
+- uid: BenchmarkDotNet.Samples.IntroArgumentsSource
+  name: 'Sample: IntroArgumentsSource'
+  href: articles/samples/IntroArgumentsSource.html
+- uid: BenchmarkDotNet.Samples.IntroArrayParam
+  name: 'Sample: IntroArrayParam'
+  href: articles/samples/IntroArrayParam.html
+- uid: BenchmarkDotNet.Samples.IntroBasic
+  name: 'Sample: IntroBasic'
+  href: articles/samples/IntroBasic.html
+- uid: BenchmarkDotNet.Samples.IntroParams
+  name: 'Sample: IntroParams'
+  href: articles/samples/IntroParams.html
+- uid: BenchmarkDotNet.Samples.IntroParamsSource
+  name: 'Sample: IntroParamsSource'
+  href: articles/samples/IntroParamsSource.html
 - uid: BenchmarkDotNet.Toolchains
   name: BenchmarkDotNet.Toolchains
   href: api/BenchmarkDotNet.Toolchains.html
@@ -23964,6 +24020,12 @@ references:
   commentId: F:BenchmarkDotNet.Toolchains.CsProj.CsProjCoreToolchain.NetCoreApp21
   fullName: BenchmarkDotNet.Toolchains.CsProj.CsProjCoreToolchain.NetCoreApp21
   nameWithType: CsProjCoreToolchain.NetCoreApp21
+- uid: BenchmarkDotNet.Toolchains.CsProj.CsProjCoreToolchain.NetCoreApp22
+  name: NetCoreApp22
+  href: api/BenchmarkDotNet.Toolchains.CsProj.CsProjCoreToolchain.html#BenchmarkDotNet_Toolchains_CsProj_CsProjCoreToolchain_NetCoreApp22
+  commentId: F:BenchmarkDotNet.Toolchains.CsProj.CsProjCoreToolchain.NetCoreApp22
+  fullName: BenchmarkDotNet.Toolchains.CsProj.CsProjCoreToolchain.NetCoreApp22
+  nameWithType: CsProjCoreToolchain.NetCoreApp22
 - uid: BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator
   name: CsProjGenerator
   href: api/BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.html
@@ -27138,3 +27200,6 @@ references:
   fullName.vb: BenchmarkDotNet.Validators.ValidationParameters.Widening
   nameWithType: ValidationParameters.Implicit
   nameWithType.vb: ValidationParameters.Widening
+- uid: docs.parameterization
+  name: Parameterization
+  href: articles/features/parameterization.html

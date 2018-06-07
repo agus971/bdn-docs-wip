@@ -85,13 +85,51 @@
 <li>If you want to provide a link to API, you can use
 <a href="https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#different-syntax-of-cross-reference">cross references</a> by
 <a href="https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#define-uid">UID</a>.
-For example, <code>[OutlierMode](xref:BenchmarkDotNet.Mathematics.OutlierMode)</code> will be transformed to
+For example,
+<code>[OutlierMode](xref:BenchmarkDotNet.Mathematics.OutlierMode)</code> and
+<code>@BenchmarkDotNet.Mathematics.OutlierMode</code>
+will be transformed to
 <a class="xref" href="../../api/BenchmarkDotNet.Mathematics.OutlierMode.html">OutlierMode</a>.</li>
 </ul>
+<h2 id="notes">Notes</h2>
+<p>DocFX uses the following syntax for different types of notes:</p>
+<pre><code class="lang-markdown">&gt; [!NOTE]
+&gt; &lt;note content&gt;
+&gt; [!TIP]
+&gt; &lt;note content&gt;
+&gt; [!WARNING]
+&gt; &lt;warning content&gt;
+&gt; [!IMPORTANT]
+&gt; &lt;important content&gt;
+&gt; [!Caution]
+&gt; &lt;caution content&gt;
+</code></pre>
+<p>It will be transformed to:</p>
+<div class="NOTE">
+<h5>Note</h5>
+<note content="">
+</note></div>
+<div class="TIP">
+<h5>Tip</h5>
+<note content="">
+</note></div>
+<div class="WARNING">
+<h5>Warning</h5>
+<warning content="">
+</warning></div>
+<div class="IMPORTANT">
+<h5>Important</h5>
+<important content="">
+</important></div>
+<div class="CAUTION">
+<h5>Caution</h5>
+<caution content="">
+</caution></div>
 <h2 id="see-also">See also</h2>
 <ul>
 <li><a href="https://dotnet.github.io/docfx/tutorial/docfx.exe_user_manual.html">DocFX User Manual</a></li>
 <li><a href="https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html">DocFX Tutorials: Links and Cross References</a></li>
+<li><a href="https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html?tabs=tabid-1%2Ctabid-a#file-inclusion">DocFX Flavored Markdown</a></li>
 </ul>
 </article>
           </div>
