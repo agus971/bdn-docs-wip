@@ -76,7 +76,7 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+            <article class="content wrap" id="_content" data-uid="docs.jobs">
 <h1 id="jobs">Jobs</h1>
 
 <p>Basically, a <em>job</em> describes how to run your benchmark. Practically, it's a set of characteristics which can be specified. You can specify one or several jobs for your benchmarks.</p>
@@ -148,6 +148,7 @@
 <li><code>Toolchain</code>: a toolchain which generate source code for target benchmark methods, build it, and execute it. BenchmarkDotNet has own toolchains for CoreCLR projects and classic projects (the last one is <code>RoslynToolchain</code>, you can find it in the <a href="https://www.nuget.org/packages/BenchmarkDotNet.Toolchains.Roslyn/">BenchmarkDotNet.Toolchains.Roslyn</a> NuGet package). If you want, you can define own toolchain.</li>
 <li><code>Clock</code>: a clock which will be used for measurements. BenchmarkDotNet automatically choose the best available clock source, but you can specify own clock source.</li>
 <li><code>EngineFactory</code>: a provider for measurement engine which performs all the measurement magic. If you don't trust BenchmarkDotNet, you can define own engine and implement all the measurement stages manually.</li>
+<li><code>EnvironmentVariables</code>: customized environment variables for target benchmark. See also: <a class="xref" href="../samples/IntroEnvVars.html">Sample: IntroEnvVars</a></li>
 </ul>
 <h2 id="usage">Usage</h2>
 <p>There are several ways to specify a job.</p>
