@@ -16,4 +16,9 @@ $(function () {
     }
     updateVersions();
     $('#navbar').bind("DOMSubtreeModified", updateVersions);
+    $('#breadcrumb').bind("DOMSubtreeModified", function () {
+        if ($('#breadcrumb ul a').length > 0 && $('#breadcrumb ul a').html().startsWith("Version")) {
+            $('#breadcrumb').html('');
+        }
+    });
 });
