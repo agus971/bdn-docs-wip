@@ -7,9 +7,9 @@ $(function () {
                 '        BenchmarkDotNet: master <span class="caret"></span>\n' +
                 '    </button>\n' +
                 '    <ul class="dropdown-menu">\n' +
-                '        <li><a href="/v0.10.14/">v0.10.14</a></li>\n' +
-                '        <li><a href="/v0.10.13/">v0.10.13</a></li>\n' +
-                '        <li><a href="/v0.10.12/">v0.10.12</a></li>\n' +
+                '        <li><a href="/bdn-docs-wip/v0.10.14/">v0.10.14</a></li>\n' +
+                '        <li><a href="/bdn-docs-wip/v0.10.13/">v0.10.13</a></li>\n' +
+                '        <li><a href="/bdn-docs-wip/v0.10.12/">v0.10.12</a></li>\n' +
                 '    </ul>\n' +
                 '</div></li>');
         }
