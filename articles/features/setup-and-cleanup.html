@@ -8,7 +8,7 @@
     <title>Setup And Cleanup | BenchmarkDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Setup And Cleanup | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.36.2.0">
     
     <link rel="shortcut icon" href="../../logo/icon-32.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -76,82 +76,120 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
+            <article class="content wrap" id="_content" data-uid="docs.setup-and-cleanup">
 <h1 id="setup-and-cleanup">Setup And Cleanup</h1>
 
 <p>Sometimes we want to write some logic which should be executed <em>before</em> or <em>after</em> a benchmark, but we don't want to measure it.
-For this purpose, BenchmarkDotNet provides a set of attributes: <code>[GlobalSetup]</code>, <code>[GlobalCleanup]</code>, <code>[IterationSetup]</code>, <code>[IterationCleanup]</code>.</p>
-<h2 id="globalsetup">GlobalSetup</h2>
-<p>A method which is marked by the <code>[GlobalSetup]</code> attribute will be executed only once per a benchmarked method
-after initialization of benchmark parameters and before all the benchmark method invocations.</p>
-<pre><code class="lang-cs">public class GlobalSetupExample
-{
-    [Params(10, 100, 1000)]
-    public int N;
-
-    private int[] data;
-
-    [GlobalSetup]
-    public void GlobalSetup()
-    {
-        data = new int[N]; // executed once per each N value
-    }
-
-    [Benchmark]
-    public int Logic()
-    {
-        int res = 0;
-        for (int i = 0; i &lt; N; i++)
-            res += data[i];
-        return res;
-    }
-}
-</code></pre>
-<h2 id="globalcleanup">GlobalCleanup</h2>
-<p>A method which is marked by the <code>[GlobalCleanup]</code> attribute will be executed only once per a benchmarked method
+For this purpose, BenchmarkDotNet provides a set of attributes:
+<a class="xref" href="../../api/BenchmarkDotNet.Attributes.GlobalSetupAttribute.html"><code>[GlobalSetup]</code></a>,
+<a class="xref" href="../../api/BenchmarkDotNet.Attributes.GlobalCleanupAttribute.html"><code>[GlobalCleanup]</code></a>,
+<a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationSetupAttribute.html"><code>[IterationSetup]</code></a>,
+<a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationCleanupAttribute.html"><code>[IterationCleanup]</code></a>.</p>
+<hr>
+<h2 id="sample-introsetupcleanupglobal">Sample: IntroSetupCleanupGlobal</h2>
+<p>A method which is marked by the <a class="xref" href="../../api/BenchmarkDotNet.Attributes.GlobalSetupAttribute.html"><code>[GlobalSetup]</code></a>
+attribute will be executed only once per a benchmarked method
+after initialization of benchmark parameters and before all the benchmark method invocations.
+A method which is marked by the <a class="xref" href="../../api/BenchmarkDotNet.Attributes.GlobalCleanupAttribute.html"><code>[GlobalCleanup]</code></a>
+attribute will be executed only once per a benchmarked method
 after all the benchmark method invocations.
-If you are using some unmanaged resources (e.g., which were created in the <code>GlobalSetup</code> method), they can be disposed in the <code>GlobalCleanup</code> method.</p>
-<pre><code class="lang-cs">public void GlobalCleanup()
+If you are using some unmanaged resources (e.g., which were created in the <code>GlobalSetup</code> method),
+they can be disposed in the <code>GlobalCleanup</code> method.</p>
+<h3 id="source-code">Source code</h3>
+<pre><code class="lang-csharp" name="IntroSetupCleanupGlobal.cs">using BenchmarkDotNet.Attributes;
+
+namespace BenchmarkDotNet.Samples
 {
-    // Disposing logic
+    public class IntroSetupCleanupGlobal
+    {
+        [Params(10, 100, 1000)]
+        public int N;
+
+        private int[] data;
+
+        [GlobalSetup]
+        public void GlobalSetup()
+        {
+            data = new int[N]; // executed once per each N value
+        }
+        
+        [Benchmark]
+        public int Logic()
+        {
+            int res = 0;
+            for (int i = 0; i &lt; N; i++)
+                res += data[i];
+            return res;
+        }
+        
+        [GlobalCleanup]
+        public void GlobalCleanup()
+        {
+            // Disposing logic
+        }
+    }
 }
-</code></pre>
-<h2 id="iterationsetup">IterationSetup</h2>
-<p>A method which is marked by the <code>[IterationSetup]</code> attribute will be executed only once <em>before each an iteration</em>.
+</code></pre><h3 id="see-also">See also</h3>
+<ul>
+<li><a class="xref" href="setup-and-cleanup.html">Setup And Cleanup</a></li>
+</ul>
+
+<p>The link to this sample: <a class="xref" href="../samples/IntroSetupCleanupGlobal.html">Sample: IntroSetupCleanupGlobal</a></p>
+<hr>
+<h2 id="sample-introsetupcleanupiteration">Sample: IntroSetupCleanupIteration</h2>
+<p>A method which is marked by the <a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationSetupAttribute.html"><code>[IterationSetup]</code></a>
+attribute will be executed only once <em>before each an iteration</em>.
 It's not recommended to use this attribute in microbenchmarks because it can spoil the results.
 However, if you are writing a macrobenchmark (e.g. a benchmark which takes at least 100ms) and
-you want to prepare some data before each iteration, <code>[IterationSetup]</code> can be useful.
-BenchmarkDotNet doesn't support setup/cleanup method for a single method invocation (<em>an operation</em>), but you can perform only one operation per iteration.
+you want to prepare some data before each iteration,
+<a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationSetupAttribute.html"><code>[IterationSetup]</code></a> can be useful.
+BenchmarkDotNet doesn't support setup/cleanup method for a single method invocation (<em>an operation</em>),
+but you can perform only one operation per iteration.
 It's recommended to use <code>RunStrategy.Monitoring</code> for such cases.
-Be careful: if you allocate any objects in the <code>[IterationSetup]</code> method, the MemoryDiagnoser results can also be spoiled.</p>
-<h2 id="iterationcleanup">IterationCleanup</h2>
-<p>A method which is marked by the <code>[IterationCleanup]</code> attribute will be executed only once <em>after each an iteration</em>.
-This attribute has the same set of constraint with <code>[IterationSetup]</code>: it's not recommended to use <code>[IterationCleanup]</code> in microbenchmarks or benchmark which also</p>
-<h2 id="an-example">An example</h2>
-<pre><code class="lang-cs">[SimpleJob(RunStrategy.Monitoring, launchCount: 1, warmupCount: 2, targetCount: 3)]
-public class SetupAndCleanupExample
+Be careful: if you allocate any objects in
+the <a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationSetupAttribute.html"><code>[IterationSetup]</code></a> method,
+the MemoryDiagnoser results can also be spoiled.</p>
+<p>A method which is marked by the <a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationCleanupAttribute.html"><code>[IterationCleanup]</code></a>
+attribute will be executed only once <em>after each an iteration</em>.
+This attribute has the same set of constraint with <code>[IterationSetup]</code>: it's not recommended to use
+<a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationCleanupAttribute.html"><code>[IterationCleanup]</code></a> in microbenchmarks.</p>
+<h3 id="source-code">Source code</h3>
+<pre><code class="lang-csharp" name="IntroSetupCleanupIteration.cs">using System;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Engines;
+
+namespace BenchmarkDotNet.Samples
 {
-  private int setupCounter;
-  private int cleanupCounter;
+    [SimpleJob(RunStrategy.Monitoring, launchCount: 1,
+        warmupCount: 2, targetCount: 3)]
+    public class IntroSetupCleanupIteration
+    {
+        private int setupCounter;
+        private int cleanupCounter;
 
-  [IterationSetup]
-  public void IterationSetup() =&gt; Console.WriteLine(&quot;// &quot; + &quot;IterationSetup&quot; + &quot; (&quot; + ++setupCounter + &quot;)&quot;);
+        [IterationSetup]
+        public void IterationSetup()
+            =&gt; Console.WriteLine($&quot;// IterationSetup ({++setupCounter})&quot;);
 
-  [IterationCleanup]
-  public void IterationCleanup() =&gt; Console.WriteLine(&quot;// &quot; + &quot;IterationCleanup&quot; + &quot; (&quot; + ++cleanupCounter + &quot;)&quot;);
+        [IterationCleanup]
+        public void IterationCleanup()
+            =&gt; Console.WriteLine($&quot;// IterationCleanup ({++cleanupCounter})&quot;);
 
-  [GlobalSetup]
-  public void GlobalSetup() =&gt; Console.WriteLine(&quot;// &quot; + &quot;GlobalSetup&quot;);
+        [GlobalSetup]
+        public void GlobalSetup()
+            =&gt; Console.WriteLine(&quot;// &quot; + &quot;GlobalSetup&quot;);
 
-  [GlobalCleanup]
-  public void GlobalCleanup() =&gt; Console.WriteLine(&quot;// &quot; + &quot;GlobalCleanup&quot;);
+        [GlobalCleanup]
+        public void GlobalCleanup()
+            =&gt; Console.WriteLine(&quot;// &quot; + &quot;GlobalCleanup&quot;);
 
-  [Benchmark]
-  public void Benchmark() =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark&quot;);
+        [Benchmark]
+        public void Benchmark()
+            =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark&quot;);
+    }
 }
-</code></pre>
-<p>The order of method calls:</p>
-<pre><code>// GlobalSetup
+</code></pre><h3 id="the-order-of-method-calls">THe order of method calls</h3>
+<pre><code class="lang-cs">// GlobalSetup
 
 // IterationSetup (1)    // IterationSetup Jitting
 // IterationCleanup (1)  // IterationCleanup Jitting
@@ -178,32 +216,55 @@ public class SetupAndCleanupExample
 
 // GlobalCleanup
 </code></pre>
-<h2 id="target">Target</h2>
-<p>Sometimes it's useful to run setup or cleanups for specific benchmarks. All four setup and cleanup attributes have a Target property that allow the setup/cleanup method to be run for one or more specific benchmark methods.</p>
-<pre><code class="lang-cs">[SimpleJob(RunStrategy.Monitoring, launchCount: 0, warmupCount: 0, targetCount: 1)]
-public class SetupAndCleanupExample
+<h3 id="see-also">See also</h3>
+<ul>
+<li><a class="xref" href="setup-and-cleanup.html">Setup And Cleanup</a></li>
+</ul>
+
+<p>The link to this sample: <a class="xref" href="../samples/IntroSetupCleanupIteration.html">Sample: IntroSetupCleanupIteration</a></p>
+<hr>
+<h2 id="sample-introsetupcleanuptarget">Sample: IntroSetupCleanupTarget</h2>
+<p>Sometimes it's useful to run setup or cleanups for specific benchmarks.
+All four setup and cleanup attributes have a Target property that allow
+the setup/cleanup method to be run for one or more specific benchmark methods.</p>
+<h3 id="source-code">Source code</h3>
+<pre><code class="lang-csharp" name="IntroSetupCleanupTarget.cs">using System;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Engines;
+
+namespace BenchmarkDotNet.Samples
 {
-  [GlobalSetup(Target = nameof(BenchmarkA))]
-  public void GlobalSetupA() =&gt; Console.WriteLine(&quot;// &quot; + &quot;GlobalSetup A&quot;);
-  
-  [Benchmark]
-  public void BenchmarkA() =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark A&quot;);
-  
-  [GlobalSetup(Target = nameof(BenchmarkB) + &quot;,&quot; + nameof(BenchmarkC))]
-  public void GlobalSetupB() =&gt; Console.WriteLine(&quot;// &quot; + &quot;GlobalSetup B&quot;);
-  
-  [Benchmark]
-  public void BenchmarkB() =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark B&quot;);
-  
-  [Benchmark]
-  public void BenchmarkC() =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark C&quot;);
-  
-  [Benchmark]
-  public void BenchmarkD() =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark D&quot;);
+    [SimpleJob(RunStrategy.Monitoring, launchCount: 0, 
+        warmupCount: 0, targetCount: 1)]
+    public class IntroSetupCleanupTarget
+    {
+        [GlobalSetup(Target = nameof(BenchmarkA))]
+        public void GlobalSetupA() 
+            =&gt; Console.WriteLine(&quot;// &quot; + &quot;GlobalSetup A&quot;);
+
+        [Benchmark]
+        public void BenchmarkA() 
+            =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark A&quot;);
+
+        [GlobalSetup(Target = nameof(BenchmarkB) + &quot;,&quot; + nameof(BenchmarkC))]
+        public void GlobalSetupB()
+            =&gt; Console.WriteLine(&quot;// &quot; + &quot;GlobalSetup B&quot;);
+
+        [Benchmark]
+        public void BenchmarkB() 
+            =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark B&quot;);
+
+        [Benchmark]
+        public void BenchmarkC() 
+            =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark C&quot;);
+
+        [Benchmark]
+        public void BenchmarkD() 
+            =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark D&quot;);
+    }
 }
-</code></pre>
-<p>The order of method calls:</p>
-<pre><code>// GlobalSetup A
+</code></pre><h3 id="the-order-of-method-calls">THe order of method calls</h3>
+<pre><code class="lang-cs">// GlobalSetup A
 
 // Benchmark A
 
@@ -217,6 +278,12 @@ public class SetupAndCleanupExample
 
 // Benchmark D
 </code></pre>
+<h3 id="see-also">See also</h3>
+<ul>
+<li><a class="xref" href="setup-and-cleanup.html">Setup And Cleanup</a></li>
+</ul>
+
+<p>The link to this sample: <a class="xref" href="../samples/IntroSetupCleanupTarget.html">Sample: IntroSetupCleanupTarget</a></p>
 </article>
           </div>
           

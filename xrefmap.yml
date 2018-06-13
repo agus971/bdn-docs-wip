@@ -936,31 +936,6 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Attributes.CategoriesColumnAttribute.CategoriesColumnAttribute
   nameWithType: CategoriesColumnAttribute.CategoriesColumnAttribute
-- uid: BenchmarkDotNet.Attributes.CategoryFilterAttribute
-  name: CategoryFilterAttribute
-  href: api/BenchmarkDotNet.Attributes.CategoryFilterAttribute.html
-  commentId: T:BenchmarkDotNet.Attributes.CategoryFilterAttribute
-  fullName: BenchmarkDotNet.Attributes.CategoryFilterAttribute
-  nameWithType: CategoryFilterAttribute
-- uid: BenchmarkDotNet.Attributes.CategoryFilterAttribute.#ctor
-  name: CategoryFilterAttribute()
-  href: api/BenchmarkDotNet.Attributes.CategoryFilterAttribute.html#BenchmarkDotNet_Attributes_CategoryFilterAttribute__ctor
-  commentId: M:BenchmarkDotNet.Attributes.CategoryFilterAttribute.#ctor
-  fullName: BenchmarkDotNet.Attributes.CategoryFilterAttribute.CategoryFilterAttribute()
-  nameWithType: CategoryFilterAttribute.CategoryFilterAttribute()
-- uid: BenchmarkDotNet.Attributes.CategoryFilterAttribute.#ctor(System.String)
-  name: CategoryFilterAttribute(String)
-  href: api/BenchmarkDotNet.Attributes.CategoryFilterAttribute.html#BenchmarkDotNet_Attributes_CategoryFilterAttribute__ctor_System_String_
-  commentId: M:BenchmarkDotNet.Attributes.CategoryFilterAttribute.#ctor(System.String)
-  fullName: BenchmarkDotNet.Attributes.CategoryFilterAttribute.CategoryFilterAttribute(System.String)
-  nameWithType: CategoryFilterAttribute.CategoryFilterAttribute(String)
-- uid: BenchmarkDotNet.Attributes.CategoryFilterAttribute.#ctor*
-  name: CategoryFilterAttribute
-  href: api/BenchmarkDotNet.Attributes.CategoryFilterAttribute.html#BenchmarkDotNet_Attributes_CategoryFilterAttribute__ctor_
-  commentId: Overload:BenchmarkDotNet.Attributes.CategoryFilterAttribute.#ctor
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Attributes.CategoryFilterAttribute.CategoryFilterAttribute
-  nameWithType: CategoryFilterAttribute.CategoryFilterAttribute
 - uid: BenchmarkDotNet.Attributes.CleanupAttribute
   name: CleanupAttribute
   href: api/BenchmarkDotNet.Attributes.CleanupAttribute.html
@@ -1305,6 +1280,63 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Attributes.DryMonoJobAttribute.DryMonoJobAttribute
   nameWithType: DryMonoJobAttribute.DryMonoJobAttribute
+- uid: BenchmarkDotNet.Attributes.EncodingAttribute
+  name: EncodingAttribute
+  href: api/BenchmarkDotNet.Attributes.EncodingAttribute.html
+  commentId: T:BenchmarkDotNet.Attributes.EncodingAttribute
+  fullName: BenchmarkDotNet.Attributes.EncodingAttribute
+  nameWithType: EncodingAttribute
+- uid: BenchmarkDotNet.Attributes.EncodingAttribute.ASCII
+  name: EncodingAttribute.ASCII
+  href: api/BenchmarkDotNet.Attributes.EncodingAttribute.ASCII.html
+  commentId: T:BenchmarkDotNet.Attributes.EncodingAttribute.ASCII
+  fullName: BenchmarkDotNet.Attributes.EncodingAttribute.ASCII
+  nameWithType: EncodingAttribute.ASCII
+- uid: BenchmarkDotNet.Attributes.EncodingAttribute.ASCII.#ctor
+  name: ASCII()
+  href: api/BenchmarkDotNet.Attributes.EncodingAttribute.ASCII.html#BenchmarkDotNet_Attributes_EncodingAttribute_ASCII__ctor
+  commentId: M:BenchmarkDotNet.Attributes.EncodingAttribute.ASCII.#ctor
+  fullName: BenchmarkDotNet.Attributes.EncodingAttribute.ASCII.ASCII()
+  nameWithType: EncodingAttribute.ASCII.ASCII()
+- uid: BenchmarkDotNet.Attributes.EncodingAttribute.ASCII.#ctor*
+  name: ASCII
+  href: api/BenchmarkDotNet.Attributes.EncodingAttribute.ASCII.html#BenchmarkDotNet_Attributes_EncodingAttribute_ASCII__ctor_
+  commentId: Overload:BenchmarkDotNet.Attributes.EncodingAttribute.ASCII.#ctor
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Attributes.EncodingAttribute.ASCII.ASCII
+  nameWithType: EncodingAttribute.ASCII.ASCII
+- uid: BenchmarkDotNet.Attributes.EncodingAttribute.Config
+  name: Config
+  href: api/BenchmarkDotNet.Attributes.EncodingAttribute.html#BenchmarkDotNet_Attributes_EncodingAttribute_Config
+  commentId: P:BenchmarkDotNet.Attributes.EncodingAttribute.Config
+  fullName: BenchmarkDotNet.Attributes.EncodingAttribute.Config
+  nameWithType: EncodingAttribute.Config
+- uid: BenchmarkDotNet.Attributes.EncodingAttribute.Config*
+  name: Config
+  href: api/BenchmarkDotNet.Attributes.EncodingAttribute.html#BenchmarkDotNet_Attributes_EncodingAttribute_Config_
+  commentId: Overload:BenchmarkDotNet.Attributes.EncodingAttribute.Config
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Attributes.EncodingAttribute.Config
+  nameWithType: EncodingAttribute.Config
+- uid: BenchmarkDotNet.Attributes.EncodingAttribute.Unicode
+  name: EncodingAttribute.Unicode
+  href: api/BenchmarkDotNet.Attributes.EncodingAttribute.Unicode.html
+  commentId: T:BenchmarkDotNet.Attributes.EncodingAttribute.Unicode
+  fullName: BenchmarkDotNet.Attributes.EncodingAttribute.Unicode
+  nameWithType: EncodingAttribute.Unicode
+- uid: BenchmarkDotNet.Attributes.EncodingAttribute.Unicode.#ctor
+  name: Unicode()
+  href: api/BenchmarkDotNet.Attributes.EncodingAttribute.Unicode.html#BenchmarkDotNet_Attributes_EncodingAttribute_Unicode__ctor
+  commentId: M:BenchmarkDotNet.Attributes.EncodingAttribute.Unicode.#ctor
+  fullName: BenchmarkDotNet.Attributes.EncodingAttribute.Unicode.Unicode()
+  nameWithType: EncodingAttribute.Unicode.Unicode()
+- uid: BenchmarkDotNet.Attributes.EncodingAttribute.Unicode.#ctor*
+  name: Unicode
+  href: api/BenchmarkDotNet.Attributes.EncodingAttribute.Unicode.html#BenchmarkDotNet_Attributes_EncodingAttribute_Unicode__ctor_
+  commentId: Overload:BenchmarkDotNet.Attributes.EncodingAttribute.Unicode.#ctor
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Attributes.EncodingAttribute.Unicode.Unicode
+  nameWithType: EncodingAttribute.Unicode.Unicode
 - uid: BenchmarkDotNet.Attributes.ExecutionValidatorAttribute
   name: ExecutionValidatorAttribute
   href: api/BenchmarkDotNet.Attributes.ExecutionValidatorAttribute.html
@@ -6877,6 +6909,12 @@ references:
   fullName.vb: BenchmarkDotNet.Configs.ConfigExtensions.With(BenchmarkDotNet.Configs.IConfig, BenchmarkDotNet.Validators.IValidator())
   nameWithType: ConfigExtensions.With(IConfig, IValidator[])
   nameWithType.vb: ConfigExtensions.With(IConfig, IValidator())
+- uid: BenchmarkDotNet.Configs.ConfigExtensions.With(BenchmarkDotNet.Configs.IConfig,System.Text.Encoding)
+  name: With(IConfig, Encoding)
+  href: api/BenchmarkDotNet.Configs.ConfigExtensions.html#BenchmarkDotNet_Configs_ConfigExtensions_With_BenchmarkDotNet_Configs_IConfig_System_Text_Encoding_
+  commentId: M:BenchmarkDotNet.Configs.ConfigExtensions.With(BenchmarkDotNet.Configs.IConfig,System.Text.Encoding)
+  fullName: BenchmarkDotNet.Configs.ConfigExtensions.With(BenchmarkDotNet.Configs.IConfig, System.Text.Encoding)
+  nameWithType: ConfigExtensions.With(IConfig, Encoding)
 - uid: BenchmarkDotNet.Configs.ConfigExtensions.With*
   name: With
   href: api/BenchmarkDotNet.Configs.ConfigExtensions.html#BenchmarkDotNet_Configs_ConfigExtensions_With_
@@ -6975,6 +7013,19 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Configs.DefaultConfig.ArtifactsPath
   nameWithType: DefaultConfig.ArtifactsPath
+- uid: BenchmarkDotNet.Configs.DefaultConfig.Encoding
+  name: Encoding
+  href: api/BenchmarkDotNet.Configs.DefaultConfig.html#BenchmarkDotNet_Configs_DefaultConfig_Encoding
+  commentId: P:BenchmarkDotNet.Configs.DefaultConfig.Encoding
+  fullName: BenchmarkDotNet.Configs.DefaultConfig.Encoding
+  nameWithType: DefaultConfig.Encoding
+- uid: BenchmarkDotNet.Configs.DefaultConfig.Encoding*
+  name: Encoding
+  href: api/BenchmarkDotNet.Configs.DefaultConfig.html#BenchmarkDotNet_Configs_DefaultConfig_Encoding_
+  commentId: Overload:BenchmarkDotNet.Configs.DefaultConfig.Encoding
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Configs.DefaultConfig.Encoding
+  nameWithType: DefaultConfig.Encoding
 - uid: BenchmarkDotNet.Configs.DefaultConfig.GetAnalysers
   name: GetAnalysers()
   href: api/BenchmarkDotNet.Configs.DefaultConfig.html#BenchmarkDotNet_Configs_DefaultConfig_GetAnalysers
@@ -7182,6 +7233,19 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Configs.IConfig.ArtifactsPath
   nameWithType: IConfig.ArtifactsPath
+- uid: BenchmarkDotNet.Configs.IConfig.Encoding
+  name: Encoding
+  href: api/BenchmarkDotNet.Configs.IConfig.html#BenchmarkDotNet_Configs_IConfig_Encoding
+  commentId: P:BenchmarkDotNet.Configs.IConfig.Encoding
+  fullName: BenchmarkDotNet.Configs.IConfig.Encoding
+  nameWithType: IConfig.Encoding
+- uid: BenchmarkDotNet.Configs.IConfig.Encoding*
+  name: Encoding
+  href: api/BenchmarkDotNet.Configs.IConfig.html#BenchmarkDotNet_Configs_IConfig_Encoding_
+  commentId: Overload:BenchmarkDotNet.Configs.IConfig.Encoding
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Configs.IConfig.Encoding
+  nameWithType: IConfig.Encoding
 - uid: BenchmarkDotNet.Configs.IConfig.GetAnalysers
   name: GetAnalysers()
   href: api/BenchmarkDotNet.Configs.IConfig.html#BenchmarkDotNet_Configs_IConfig_GetAnalysers
@@ -7540,6 +7604,19 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Configs.ManualConfig.CreateEmpty
   nameWithType: ManualConfig.CreateEmpty
+- uid: BenchmarkDotNet.Configs.ManualConfig.Encoding
+  name: Encoding
+  href: api/BenchmarkDotNet.Configs.ManualConfig.html#BenchmarkDotNet_Configs_ManualConfig_Encoding
+  commentId: P:BenchmarkDotNet.Configs.ManualConfig.Encoding
+  fullName: BenchmarkDotNet.Configs.ManualConfig.Encoding
+  nameWithType: ManualConfig.Encoding
+- uid: BenchmarkDotNet.Configs.ManualConfig.Encoding*
+  name: Encoding
+  href: api/BenchmarkDotNet.Configs.ManualConfig.html#BenchmarkDotNet_Configs_ManualConfig_Encoding_
+  commentId: Overload:BenchmarkDotNet.Configs.ManualConfig.Encoding
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Configs.ManualConfig.Encoding
+  nameWithType: ManualConfig.Encoding
 - uid: BenchmarkDotNet.Configs.ManualConfig.GetAnalysers
   name: GetAnalysers()
   href: api/BenchmarkDotNet.Configs.ManualConfig.html#BenchmarkDotNet_Configs_ManualConfig_GetAnalysers
@@ -7750,6 +7827,12 @@ references:
   commentId: M:BenchmarkDotNet.Configs.ManualConfig.Set(BenchmarkDotNet.Reports.ISummaryStyle)
   fullName: BenchmarkDotNet.Configs.ManualConfig.Set(BenchmarkDotNet.Reports.ISummaryStyle)
   nameWithType: ManualConfig.Set(ISummaryStyle)
+- uid: BenchmarkDotNet.Configs.ManualConfig.Set(System.Text.Encoding)
+  name: Set(Encoding)
+  href: api/BenchmarkDotNet.Configs.ManualConfig.html#BenchmarkDotNet_Configs_ManualConfig_Set_System_Text_Encoding_
+  commentId: M:BenchmarkDotNet.Configs.ManualConfig.Set(System.Text.Encoding)
+  fullName: BenchmarkDotNet.Configs.ManualConfig.Set(System.Text.Encoding)
+  nameWithType: ManualConfig.Set(Encoding)
 - uid: BenchmarkDotNet.Configs.ManualConfig.Set*
   name: Set
   href: api/BenchmarkDotNet.Configs.ManualConfig.html#BenchmarkDotNet_Configs_ManualConfig_Set_
@@ -7815,6 +7898,19 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Configs.ReadOnlyConfig.ArtifactsPath
   nameWithType: ReadOnlyConfig.ArtifactsPath
+- uid: BenchmarkDotNet.Configs.ReadOnlyConfig.Encoding
+  name: Encoding
+  href: api/BenchmarkDotNet.Configs.ReadOnlyConfig.html#BenchmarkDotNet_Configs_ReadOnlyConfig_Encoding
+  commentId: P:BenchmarkDotNet.Configs.ReadOnlyConfig.Encoding
+  fullName: BenchmarkDotNet.Configs.ReadOnlyConfig.Encoding
+  nameWithType: ReadOnlyConfig.Encoding
+- uid: BenchmarkDotNet.Configs.ReadOnlyConfig.Encoding*
+  name: Encoding
+  href: api/BenchmarkDotNet.Configs.ReadOnlyConfig.html#BenchmarkDotNet_Configs_ReadOnlyConfig_Encoding_
+  commentId: Overload:BenchmarkDotNet.Configs.ReadOnlyConfig.Encoding
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Configs.ReadOnlyConfig.Encoding
+  nameWithType: ReadOnlyConfig.Encoding
 - uid: BenchmarkDotNet.Configs.ReadOnlyConfig.GetAnalysers
   name: GetAnalysers()
   href: api/BenchmarkDotNet.Configs.ReadOnlyConfig.html#BenchmarkDotNet_Configs_ReadOnlyConfig_GetAnalysers
@@ -10206,6 +10302,19 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Engines.Engine.Dummy3Action
   nameWithType: Engine.Dummy3Action
+- uid: BenchmarkDotNet.Engines.Engine.Encoding
+  name: Encoding
+  href: api/BenchmarkDotNet.Engines.Engine.html#BenchmarkDotNet_Engines_Engine_Encoding
+  commentId: P:BenchmarkDotNet.Engines.Engine.Encoding
+  fullName: BenchmarkDotNet.Engines.Engine.Encoding
+  nameWithType: Engine.Encoding
+- uid: BenchmarkDotNet.Engines.Engine.Encoding*
+  name: Encoding
+  href: api/BenchmarkDotNet.Engines.Engine.html#BenchmarkDotNet_Engines_Engine_Encoding_
+  commentId: Overload:BenchmarkDotNet.Engines.Engine.Encoding
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Engines.Engine.Encoding
+  nameWithType: Engine.Encoding
 - uid: BenchmarkDotNet.Engines.Engine.GlobalCleanupAction
   name: GlobalCleanupAction
   href: api/BenchmarkDotNet.Engines.Engine.html#BenchmarkDotNet_Engines_Engine_GlobalCleanupAction
@@ -10504,6 +10613,19 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Engines.EngineParameters.Dummy3Action
   nameWithType: EngineParameters.Dummy3Action
+- uid: BenchmarkDotNet.Engines.EngineParameters.Encoding
+  name: Encoding
+  href: api/BenchmarkDotNet.Engines.EngineParameters.html#BenchmarkDotNet_Engines_EngineParameters_Encoding
+  commentId: P:BenchmarkDotNet.Engines.EngineParameters.Encoding
+  fullName: BenchmarkDotNet.Engines.EngineParameters.Encoding
+  nameWithType: EngineParameters.Encoding
+- uid: BenchmarkDotNet.Engines.EngineParameters.Encoding*
+  name: Encoding
+  href: api/BenchmarkDotNet.Engines.EngineParameters.html#BenchmarkDotNet_Engines_EngineParameters_Encoding_
+  commentId: Overload:BenchmarkDotNet.Engines.EngineParameters.Encoding
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Engines.EngineParameters.Encoding
+  nameWithType: EngineParameters.Encoding
 - uid: BenchmarkDotNet.Engines.EngineParameters.GlobalCleanupAction
   name: GlobalCleanupAction
   href: api/BenchmarkDotNet.Engines.EngineParameters.html#BenchmarkDotNet_Engines_EngineParameters_GlobalCleanupAction
@@ -11605,15 +11727,15 @@ references:
   commentId: T:BenchmarkDotNet.Engines.RunResults
   fullName: BenchmarkDotNet.Engines.RunResults
   nameWithType: RunResults
-- uid: BenchmarkDotNet.Engines.RunResults.#ctor(System.Collections.Generic.IReadOnlyList{BenchmarkDotNet.Reports.Measurement},System.Collections.Generic.IReadOnlyList{BenchmarkDotNet.Reports.Measurement},BenchmarkDotNet.Mathematics.OutlierMode,BenchmarkDotNet.Engines.GcStats)
-  name: RunResults(IReadOnlyList<Measurement>, IReadOnlyList<Measurement>, OutlierMode, GcStats)
-  href: api/BenchmarkDotNet.Engines.RunResults.html#BenchmarkDotNet_Engines_RunResults__ctor_System_Collections_Generic_IReadOnlyList_BenchmarkDotNet_Reports_Measurement__System_Collections_Generic_IReadOnlyList_BenchmarkDotNet_Reports_Measurement__BenchmarkDotNet_Mathematics_OutlierMode_BenchmarkDotNet_Engines_GcStats_
-  commentId: M:BenchmarkDotNet.Engines.RunResults.#ctor(System.Collections.Generic.IReadOnlyList{BenchmarkDotNet.Reports.Measurement},System.Collections.Generic.IReadOnlyList{BenchmarkDotNet.Reports.Measurement},BenchmarkDotNet.Mathematics.OutlierMode,BenchmarkDotNet.Engines.GcStats)
-  name.vb: RunResults(IReadOnlyList(Of Measurement), IReadOnlyList(Of Measurement), OutlierMode, GcStats)
-  fullName: BenchmarkDotNet.Engines.RunResults.RunResults(System.Collections.Generic.IReadOnlyList<BenchmarkDotNet.Reports.Measurement>, System.Collections.Generic.IReadOnlyList<BenchmarkDotNet.Reports.Measurement>, BenchmarkDotNet.Mathematics.OutlierMode, BenchmarkDotNet.Engines.GcStats)
-  fullName.vb: BenchmarkDotNet.Engines.RunResults.RunResults(System.Collections.Generic.IReadOnlyList(Of BenchmarkDotNet.Reports.Measurement), System.Collections.Generic.IReadOnlyList(Of BenchmarkDotNet.Reports.Measurement), BenchmarkDotNet.Mathematics.OutlierMode, BenchmarkDotNet.Engines.GcStats)
-  nameWithType: RunResults.RunResults(IReadOnlyList<Measurement>, IReadOnlyList<Measurement>, OutlierMode, GcStats)
-  nameWithType.vb: RunResults.RunResults(IReadOnlyList(Of Measurement), IReadOnlyList(Of Measurement), OutlierMode, GcStats)
+- uid: BenchmarkDotNet.Engines.RunResults.#ctor(System.Collections.Generic.IReadOnlyList{BenchmarkDotNet.Reports.Measurement},System.Collections.Generic.IReadOnlyList{BenchmarkDotNet.Reports.Measurement},BenchmarkDotNet.Mathematics.OutlierMode,BenchmarkDotNet.Engines.GcStats,System.Text.Encoding)
+  name: RunResults(IReadOnlyList<Measurement>, IReadOnlyList<Measurement>, OutlierMode, GcStats, Encoding)
+  href: api/BenchmarkDotNet.Engines.RunResults.html#BenchmarkDotNet_Engines_RunResults__ctor_System_Collections_Generic_IReadOnlyList_BenchmarkDotNet_Reports_Measurement__System_Collections_Generic_IReadOnlyList_BenchmarkDotNet_Reports_Measurement__BenchmarkDotNet_Mathematics_OutlierMode_BenchmarkDotNet_Engines_GcStats_System_Text_Encoding_
+  commentId: M:BenchmarkDotNet.Engines.RunResults.#ctor(System.Collections.Generic.IReadOnlyList{BenchmarkDotNet.Reports.Measurement},System.Collections.Generic.IReadOnlyList{BenchmarkDotNet.Reports.Measurement},BenchmarkDotNet.Mathematics.OutlierMode,BenchmarkDotNet.Engines.GcStats,System.Text.Encoding)
+  name.vb: RunResults(IReadOnlyList(Of Measurement), IReadOnlyList(Of Measurement), OutlierMode, GcStats, Encoding)
+  fullName: BenchmarkDotNet.Engines.RunResults.RunResults(System.Collections.Generic.IReadOnlyList<BenchmarkDotNet.Reports.Measurement>, System.Collections.Generic.IReadOnlyList<BenchmarkDotNet.Reports.Measurement>, BenchmarkDotNet.Mathematics.OutlierMode, BenchmarkDotNet.Engines.GcStats, System.Text.Encoding)
+  fullName.vb: BenchmarkDotNet.Engines.RunResults.RunResults(System.Collections.Generic.IReadOnlyList(Of BenchmarkDotNet.Reports.Measurement), System.Collections.Generic.IReadOnlyList(Of BenchmarkDotNet.Reports.Measurement), BenchmarkDotNet.Mathematics.OutlierMode, BenchmarkDotNet.Engines.GcStats, System.Text.Encoding)
+  nameWithType: RunResults.RunResults(IReadOnlyList<Measurement>, IReadOnlyList<Measurement>, OutlierMode, GcStats, Encoding)
+  nameWithType.vb: RunResults.RunResults(IReadOnlyList(Of Measurement), IReadOnlyList(Of Measurement), OutlierMode, GcStats, Encoding)
 - uid: BenchmarkDotNet.Engines.RunResults.#ctor*
   name: RunResults
   href: api/BenchmarkDotNet.Engines.RunResults.html#BenchmarkDotNet_Engines_RunResults__ctor_
@@ -13163,6 +13285,19 @@ references:
   commentId: T:BenchmarkDotNet.Exporters.ExporterBase
   fullName: BenchmarkDotNet.Exporters.ExporterBase
   nameWithType: ExporterBase
+- uid: BenchmarkDotNet.Exporters.ExporterBase.Encoding
+  name: Encoding
+  href: api/BenchmarkDotNet.Exporters.ExporterBase.html#BenchmarkDotNet_Exporters_ExporterBase_Encoding
+  commentId: P:BenchmarkDotNet.Exporters.ExporterBase.Encoding
+  fullName: BenchmarkDotNet.Exporters.ExporterBase.Encoding
+  nameWithType: ExporterBase.Encoding
+- uid: BenchmarkDotNet.Exporters.ExporterBase.Encoding*
+  name: Encoding
+  href: api/BenchmarkDotNet.Exporters.ExporterBase.html#BenchmarkDotNet_Exporters_ExporterBase_Encoding_
+  commentId: Overload:BenchmarkDotNet.Exporters.ExporterBase.Encoding
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Exporters.ExporterBase.Encoding
+  nameWithType: ExporterBase.Encoding
 - uid: BenchmarkDotNet.Exporters.ExporterBase.ExportToFiles(BenchmarkDotNet.Reports.Summary,BenchmarkDotNet.Loggers.ILogger)
   name: ExportToFiles(Summary, ILogger)
   href: api/BenchmarkDotNet.Exporters.ExporterBase.html#BenchmarkDotNet_Exporters_ExporterBase_ExportToFiles_BenchmarkDotNet_Reports_Summary_BenchmarkDotNet_Loggers_ILogger_
@@ -13950,221 +14085,6 @@ references:
   commentId: N:BenchmarkDotNet.Extensions
   fullName: BenchmarkDotNet.Extensions
   nameWithType: BenchmarkDotNet.Extensions
-- uid: BenchmarkDotNet.Extensions.CommonExtensions
-  name: CommonExtensions
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html
-  commentId: T:BenchmarkDotNet.Extensions.CommonExtensions
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions
-  nameWithType: CommonExtensions
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.GetColumnTitle(BenchmarkDotNet.Columns.IColumn,BenchmarkDotNet.Reports.ISummaryStyle)
-  name: GetColumnTitle(IColumn, ISummaryStyle)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_GetColumnTitle_BenchmarkDotNet_Columns_IColumn_BenchmarkDotNet_Reports_ISummaryStyle_
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.GetColumnTitle(BenchmarkDotNet.Columns.IColumn,BenchmarkDotNet.Reports.ISummaryStyle)
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.GetColumnTitle(BenchmarkDotNet.Columns.IColumn, BenchmarkDotNet.Reports.ISummaryStyle)
-  nameWithType: CommonExtensions.GetColumnTitle(IColumn, ISummaryStyle)
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.GetColumnTitle*
-  name: GetColumnTitle
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_GetColumnTitle_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.GetColumnTitle
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.GetColumnTitle
-  nameWithType: CommonExtensions.GetColumnTitle
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.GetValueOrDefault*
-  name: GetValueOrDefault
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_GetValueOrDefault_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.GetValueOrDefault
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.GetValueOrDefault
-  nameWithType: CommonExtensions.GetValueOrDefault
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0)
-  name: GetValueOrDefault<TKey, TValue>(IDictionary<TKey, TValue>, TKey)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_GetValueOrDefault__2_System_Collections_Generic_IDictionary___0___1____0_
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0)
-  name.vb: GetValueOrDefault(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey)
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.GetValueOrDefault<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>, TKey)
-  fullName.vb: BenchmarkDotNet.Extensions.CommonExtensions.GetValueOrDefault(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), TKey)
-  nameWithType: CommonExtensions.GetValueOrDefault<TKey, TValue>(IDictionary<TKey, TValue>, TKey)
-  nameWithType.vb: CommonExtensions.GetValueOrDefault(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey)
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.IsEmpty*
-  name: IsEmpty
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_IsEmpty_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.IsEmpty
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.IsEmpty
-  nameWithType: CommonExtensions.IsEmpty
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
-  name: IsEmpty<T>(IEnumerable<T>)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_IsEmpty__1_System_Collections_Generic_IEnumerable___0__
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
-  name.vb: IsEmpty(Of T)(IEnumerable(Of T))
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.IsEmpty<T>(System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: BenchmarkDotNet.Extensions.CommonExtensions.IsEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: CommonExtensions.IsEmpty<T>(IEnumerable<T>)
-  nameWithType.vb: CommonExtensions.IsEmpty(Of T)(IEnumerable(Of T))
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.IsEmpty``1(System.Collections.Generic.IReadOnlyCollection{``0})
-  name: IsEmpty<T>(IReadOnlyCollection<T>)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_IsEmpty__1_System_Collections_Generic_IReadOnlyCollection___0__
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.IsEmpty``1(System.Collections.Generic.IReadOnlyCollection{``0})
-  name.vb: IsEmpty(Of T)(IReadOnlyCollection(Of T))
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.IsEmpty<T>(System.Collections.Generic.IReadOnlyCollection<T>)
-  fullName.vb: BenchmarkDotNet.Extensions.CommonExtensions.IsEmpty(Of T)(System.Collections.Generic.IReadOnlyCollection(Of T))
-  nameWithType: CommonExtensions.IsEmpty<T>(IReadOnlyCollection<T>)
-  nameWithType.vb: CommonExtensions.IsEmpty(Of T)(IReadOnlyCollection(Of T))
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.IsNullOrEmpty*
-  name: IsNullOrEmpty
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_IsNullOrEmpty_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.IsNullOrEmpty
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.IsNullOrEmpty
-  nameWithType: CommonExtensions.IsNullOrEmpty
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.IsNullOrEmpty``1(System.Collections.Generic.IReadOnlyCollection{``0})
-  name: IsNullOrEmpty<T>(IReadOnlyCollection<T>)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_IsNullOrEmpty__1_System_Collections_Generic_IReadOnlyCollection___0__
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.IsNullOrEmpty``1(System.Collections.Generic.IReadOnlyCollection{``0})
-  name.vb: IsNullOrEmpty(Of T)(IReadOnlyCollection(Of T))
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.IsNullOrEmpty<T>(System.Collections.Generic.IReadOnlyCollection<T>)
-  fullName.vb: BenchmarkDotNet.Extensions.CommonExtensions.IsNullOrEmpty(Of T)(System.Collections.Generic.IReadOnlyCollection(Of T))
-  nameWithType: CommonExtensions.IsNullOrEmpty<T>(IReadOnlyCollection<T>)
-  nameWithType.vb: CommonExtensions.IsNullOrEmpty(Of T)(IReadOnlyCollection(Of T))
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.IsOneOf*
-  name: IsOneOf
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_IsOneOf_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.IsOneOf
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.IsOneOf
-  nameWithType: CommonExtensions.IsOneOf
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.IsOneOf``1(``0,``0[])
-  name: IsOneOf<T>(T, T[])
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_IsOneOf__1___0___0___
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.IsOneOf``1(``0,``0[])
-  name.vb: IsOneOf(Of T)(T, T())
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.IsOneOf<T>(T, T[])
-  fullName.vb: BenchmarkDotNet.Extensions.CommonExtensions.IsOneOf(Of T)(T, T())
-  nameWithType: CommonExtensions.IsOneOf<T>(T, T[])
-  nameWithType.vb: CommonExtensions.IsOneOf(Of T)(T, T())
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.Penult*
-  name: Penult
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_Penult_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.Penult
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.Penult
-  nameWithType: CommonExtensions.Penult
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.Penult``1(System.Collections.Generic.IList{``0})
-  name: Penult<T>(IList<T>)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_Penult__1_System_Collections_Generic_IList___0__
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.Penult``1(System.Collections.Generic.IList{``0})
-  name.vb: Penult(Of T)(IList(Of T))
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.Penult<T>(System.Collections.Generic.IList<T>)
-  fullName.vb: BenchmarkDotNet.Extensions.CommonExtensions.Penult(Of T)(System.Collections.Generic.IList(Of T))
-  nameWithType: CommonExtensions.Penult<T>(IList<T>)
-  nameWithType.vb: CommonExtensions.Penult(Of T)(IList(Of T))
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.Pow(System.Double,System.Double)
-  name: Pow(Double, Double)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_Pow_System_Double_System_Double_
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.Pow(System.Double,System.Double)
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.Pow(System.Double, System.Double)
-  nameWithType: CommonExtensions.Pow(Double, Double)
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.Pow*
-  name: Pow
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_Pow_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.Pow
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.Pow
-  nameWithType: CommonExtensions.Pow
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.RoundToInt(System.Double)
-  name: RoundToInt(Double)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_RoundToInt_System_Double_
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.RoundToInt(System.Double)
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.RoundToInt(System.Double)
-  nameWithType: CommonExtensions.RoundToInt(Double)
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.RoundToInt*
-  name: RoundToInt
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_RoundToInt_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.RoundToInt
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.RoundToInt
-  nameWithType: CommonExtensions.RoundToInt
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.RoundToLong(System.Double)
-  name: RoundToLong(Double)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_RoundToLong_System_Double_
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.RoundToLong(System.Double)
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.RoundToLong(System.Double)
-  nameWithType: CommonExtensions.RoundToLong(Double)
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.RoundToLong*
-  name: RoundToLong
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_RoundToLong_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.RoundToLong
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.RoundToLong
-  nameWithType: CommonExtensions.RoundToLong
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.Sqr(System.Double)
-  name: Sqr(Double)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_Sqr_System_Double_
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.Sqr(System.Double)
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.Sqr(System.Double)
-  nameWithType: CommonExtensions.Sqr(Double)
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.Sqr*
-  name: Sqr
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_Sqr_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.Sqr
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.Sqr
-  nameWithType: CommonExtensions.Sqr
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.ToSizeStr(System.Int64,BenchmarkDotNet.Columns.SizeUnit,System.Int32,System.Boolean)
-  name: ToSizeStr(Int64, SizeUnit, Int32, Boolean)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_ToSizeStr_System_Int64_BenchmarkDotNet_Columns_SizeUnit_System_Int32_System_Boolean_
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.ToSizeStr(System.Int64,BenchmarkDotNet.Columns.SizeUnit,System.Int32,System.Boolean)
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.ToSizeStr(System.Int64, BenchmarkDotNet.Columns.SizeUnit, System.Int32, System.Boolean)
-  nameWithType: CommonExtensions.ToSizeStr(Int64, SizeUnit, Int32, Boolean)
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.ToSizeStr*
-  name: ToSizeStr
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_ToSizeStr_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.ToSizeStr
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.ToSizeStr
-  nameWithType: CommonExtensions.ToSizeStr
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.ToSortedList*
-  name: ToSortedList
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_ToSortedList_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.ToSortedList
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.ToSortedList
-  nameWithType: CommonExtensions.ToSortedList
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.ToSortedList``1(System.Collections.Generic.IEnumerable{``0})
-  name: ToSortedList<T>(IEnumerable<T>)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_ToSortedList__1_System_Collections_Generic_IEnumerable___0__
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.ToSortedList``1(System.Collections.Generic.IEnumerable{``0})
-  name.vb: ToSortedList(Of T)(IEnumerable(Of T))
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.ToSortedList<T>(System.Collections.Generic.IEnumerable<T>)
-  fullName.vb: BenchmarkDotNet.Extensions.CommonExtensions.ToSortedList(Of T)(System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: CommonExtensions.ToSortedList<T>(IEnumerable<T>)
-  nameWithType.vb: CommonExtensions.ToSortedList(Of T)(IEnumerable(Of T))
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.ToStr(System.Double,System.String)
-  name: ToStr(Double, String)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_ToStr_System_Double_System_String_
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.ToStr(System.Double,System.String)
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.ToStr(System.Double, System.String)
-  nameWithType: CommonExtensions.ToStr(Double, String)
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.ToStr*
-  name: ToStr
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_ToStr_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.ToStr
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.ToStr
-  nameWithType: CommonExtensions.ToStr
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.ToTimeStr(System.Double,BenchmarkDotNet.Horology.TimeUnit,System.Int32,System.Boolean,System.String)
-  name: ToTimeStr(Double, TimeUnit, Int32, Boolean, String)
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_ToTimeStr_System_Double_BenchmarkDotNet_Horology_TimeUnit_System_Int32_System_Boolean_System_String_
-  commentId: M:BenchmarkDotNet.Extensions.CommonExtensions.ToTimeStr(System.Double,BenchmarkDotNet.Horology.TimeUnit,System.Int32,System.Boolean,System.String)
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.ToTimeStr(System.Double, BenchmarkDotNet.Horology.TimeUnit, System.Int32, System.Boolean, System.String)
-  nameWithType: CommonExtensions.ToTimeStr(Double, TimeUnit, Int32, Boolean, String)
-- uid: BenchmarkDotNet.Extensions.CommonExtensions.ToTimeStr*
-  name: ToTimeStr
-  href: api/BenchmarkDotNet.Extensions.CommonExtensions.html#BenchmarkDotNet_Extensions_CommonExtensions_ToTimeStr_
-  commentId: Overload:BenchmarkDotNet.Extensions.CommonExtensions.ToTimeStr
-  isSpec: "True"
-  fullName: BenchmarkDotNet.Extensions.CommonExtensions.ToTimeStr
-  nameWithType: CommonExtensions.ToTimeStr
 - uid: BenchmarkDotNet.Extensions.ConfigurationExtensions
   name: ConfigurationExtensions
   href: api/BenchmarkDotNet.Extensions.ConfigurationExtensions.html
@@ -14272,12 +14192,12 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Extensions.StatisticsExtensions.ToStr
   nameWithType: StatisticsExtensions.ToStr
-- uid: BenchmarkDotNet.Extensions.StatisticsExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Statistics,BenchmarkDotNet.Horology.TimeUnit,System.Boolean)
-  name: ToTimeStr(Statistics, TimeUnit, Boolean)
-  href: api/BenchmarkDotNet.Extensions.StatisticsExtensions.html#BenchmarkDotNet_Extensions_StatisticsExtensions_ToTimeStr_BenchmarkDotNet_Mathematics_Statistics_BenchmarkDotNet_Horology_TimeUnit_System_Boolean_
-  commentId: M:BenchmarkDotNet.Extensions.StatisticsExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Statistics,BenchmarkDotNet.Horology.TimeUnit,System.Boolean)
-  fullName: BenchmarkDotNet.Extensions.StatisticsExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Statistics, BenchmarkDotNet.Horology.TimeUnit, System.Boolean)
-  nameWithType: StatisticsExtensions.ToTimeStr(Statistics, TimeUnit, Boolean)
+- uid: BenchmarkDotNet.Extensions.StatisticsExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Statistics,System.Text.Encoding,BenchmarkDotNet.Horology.TimeUnit,System.Boolean)
+  name: ToTimeStr(Statistics, Encoding, TimeUnit, Boolean)
+  href: api/BenchmarkDotNet.Extensions.StatisticsExtensions.html#BenchmarkDotNet_Extensions_StatisticsExtensions_ToTimeStr_BenchmarkDotNet_Mathematics_Statistics_System_Text_Encoding_BenchmarkDotNet_Horology_TimeUnit_System_Boolean_
+  commentId: M:BenchmarkDotNet.Extensions.StatisticsExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Statistics,System.Text.Encoding,BenchmarkDotNet.Horology.TimeUnit,System.Boolean)
+  fullName: BenchmarkDotNet.Extensions.StatisticsExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Statistics, System.Text.Encoding, BenchmarkDotNet.Horology.TimeUnit, System.Boolean)
+  nameWithType: StatisticsExtensions.ToTimeStr(Statistics, Encoding, TimeUnit, Boolean)
 - uid: BenchmarkDotNet.Extensions.StatisticsExtensions.ToTimeStr*
   name: ToTimeStr
   href: api/BenchmarkDotNet.Extensions.StatisticsExtensions.html#BenchmarkDotNet_Extensions_StatisticsExtensions_ToTimeStr_
@@ -14367,38 +14287,41 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Filters.AnyCategoriesFilter.Predicate
   nameWithType: AnyCategoriesFilter.Predicate
-- uid: BenchmarkDotNet.Filters.CategoryFilter
-  name: CategoryFilter
-  href: api/BenchmarkDotNet.Filters.CategoryFilter.html
-  commentId: T:BenchmarkDotNet.Filters.CategoryFilter
-  fullName: BenchmarkDotNet.Filters.CategoryFilter
-  nameWithType: CategoryFilter
-- uid: BenchmarkDotNet.Filters.CategoryFilter.#ctor(System.String)
-  name: CategoryFilter(String)
-  href: api/BenchmarkDotNet.Filters.CategoryFilter.html#BenchmarkDotNet_Filters_CategoryFilter__ctor_System_String_
-  commentId: M:BenchmarkDotNet.Filters.CategoryFilter.#ctor(System.String)
-  fullName: BenchmarkDotNet.Filters.CategoryFilter.CategoryFilter(System.String)
-  nameWithType: CategoryFilter.CategoryFilter(String)
-- uid: BenchmarkDotNet.Filters.CategoryFilter.#ctor*
-  name: CategoryFilter
-  href: api/BenchmarkDotNet.Filters.CategoryFilter.html#BenchmarkDotNet_Filters_CategoryFilter__ctor_
-  commentId: Overload:BenchmarkDotNet.Filters.CategoryFilter.#ctor
+- uid: BenchmarkDotNet.Filters.AttributesFilter
+  name: AttributesFilter
+  href: api/BenchmarkDotNet.Filters.AttributesFilter.html
+  commentId: T:BenchmarkDotNet.Filters.AttributesFilter
+  fullName: BenchmarkDotNet.Filters.AttributesFilter
+  nameWithType: AttributesFilter
+- uid: BenchmarkDotNet.Filters.AttributesFilter.#ctor(System.String[])
+  name: AttributesFilter(String[])
+  href: api/BenchmarkDotNet.Filters.AttributesFilter.html#BenchmarkDotNet_Filters_AttributesFilter__ctor_System_String___
+  commentId: M:BenchmarkDotNet.Filters.AttributesFilter.#ctor(System.String[])
+  name.vb: AttributesFilter(String())
+  fullName: BenchmarkDotNet.Filters.AttributesFilter.AttributesFilter(System.String[])
+  fullName.vb: BenchmarkDotNet.Filters.AttributesFilter.AttributesFilter(System.String())
+  nameWithType: AttributesFilter.AttributesFilter(String[])
+  nameWithType.vb: AttributesFilter.AttributesFilter(String())
+- uid: BenchmarkDotNet.Filters.AttributesFilter.#ctor*
+  name: AttributesFilter
+  href: api/BenchmarkDotNet.Filters.AttributesFilter.html#BenchmarkDotNet_Filters_AttributesFilter__ctor_
+  commentId: Overload:BenchmarkDotNet.Filters.AttributesFilter.#ctor
   isSpec: "True"
-  fullName: BenchmarkDotNet.Filters.CategoryFilter.CategoryFilter
-  nameWithType: CategoryFilter.CategoryFilter
-- uid: BenchmarkDotNet.Filters.CategoryFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  fullName: BenchmarkDotNet.Filters.AttributesFilter.AttributesFilter
+  nameWithType: AttributesFilter.AttributesFilter
+- uid: BenchmarkDotNet.Filters.AttributesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
   name: Predicate(Benchmark)
-  href: api/BenchmarkDotNet.Filters.CategoryFilter.html#BenchmarkDotNet_Filters_CategoryFilter_Predicate_BenchmarkDotNet_Running_Benchmark_
-  commentId: M:BenchmarkDotNet.Filters.CategoryFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
-  fullName: BenchmarkDotNet.Filters.CategoryFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
-  nameWithType: CategoryFilter.Predicate(Benchmark)
-- uid: BenchmarkDotNet.Filters.CategoryFilter.Predicate*
+  href: api/BenchmarkDotNet.Filters.AttributesFilter.html#BenchmarkDotNet_Filters_AttributesFilter_Predicate_BenchmarkDotNet_Running_Benchmark_
+  commentId: M:BenchmarkDotNet.Filters.AttributesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  fullName: BenchmarkDotNet.Filters.AttributesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  nameWithType: AttributesFilter.Predicate(Benchmark)
+- uid: BenchmarkDotNet.Filters.AttributesFilter.Predicate*
   name: Predicate
-  href: api/BenchmarkDotNet.Filters.CategoryFilter.html#BenchmarkDotNet_Filters_CategoryFilter_Predicate_
-  commentId: Overload:BenchmarkDotNet.Filters.CategoryFilter.Predicate
+  href: api/BenchmarkDotNet.Filters.AttributesFilter.html#BenchmarkDotNet_Filters_AttributesFilter_Predicate_
+  commentId: Overload:BenchmarkDotNet.Filters.AttributesFilter.Predicate
   isSpec: "True"
-  fullName: BenchmarkDotNet.Filters.CategoryFilter.Predicate
-  nameWithType: CategoryFilter.Predicate
+  fullName: BenchmarkDotNet.Filters.AttributesFilter.Predicate
+  nameWithType: AttributesFilter.Predicate
 - uid: BenchmarkDotNet.Filters.DisjunctionFilter
   name: DisjunctionFilter
   href: api/BenchmarkDotNet.Filters.DisjunctionFilter.html
@@ -14453,6 +14376,41 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Filters.IFilter.Predicate
   nameWithType: IFilter.Predicate
+- uid: BenchmarkDotNet.Filters.MethodNamesFilter
+  name: MethodNamesFilter
+  href: api/BenchmarkDotNet.Filters.MethodNamesFilter.html
+  commentId: T:BenchmarkDotNet.Filters.MethodNamesFilter
+  fullName: BenchmarkDotNet.Filters.MethodNamesFilter
+  nameWithType: MethodNamesFilter
+- uid: BenchmarkDotNet.Filters.MethodNamesFilter.#ctor(System.String[])
+  name: MethodNamesFilter(String[])
+  href: api/BenchmarkDotNet.Filters.MethodNamesFilter.html#BenchmarkDotNet_Filters_MethodNamesFilter__ctor_System_String___
+  commentId: M:BenchmarkDotNet.Filters.MethodNamesFilter.#ctor(System.String[])
+  name.vb: MethodNamesFilter(String())
+  fullName: BenchmarkDotNet.Filters.MethodNamesFilter.MethodNamesFilter(System.String[])
+  fullName.vb: BenchmarkDotNet.Filters.MethodNamesFilter.MethodNamesFilter(System.String())
+  nameWithType: MethodNamesFilter.MethodNamesFilter(String[])
+  nameWithType.vb: MethodNamesFilter.MethodNamesFilter(String())
+- uid: BenchmarkDotNet.Filters.MethodNamesFilter.#ctor*
+  name: MethodNamesFilter
+  href: api/BenchmarkDotNet.Filters.MethodNamesFilter.html#BenchmarkDotNet_Filters_MethodNamesFilter__ctor_
+  commentId: Overload:BenchmarkDotNet.Filters.MethodNamesFilter.#ctor
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Filters.MethodNamesFilter.MethodNamesFilter
+  nameWithType: MethodNamesFilter.MethodNamesFilter
+- uid: BenchmarkDotNet.Filters.MethodNamesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  name: Predicate(Benchmark)
+  href: api/BenchmarkDotNet.Filters.MethodNamesFilter.html#BenchmarkDotNet_Filters_MethodNamesFilter_Predicate_BenchmarkDotNet_Running_Benchmark_
+  commentId: M:BenchmarkDotNet.Filters.MethodNamesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  fullName: BenchmarkDotNet.Filters.MethodNamesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  nameWithType: MethodNamesFilter.Predicate(Benchmark)
+- uid: BenchmarkDotNet.Filters.MethodNamesFilter.Predicate*
+  name: Predicate
+  href: api/BenchmarkDotNet.Filters.MethodNamesFilter.html#BenchmarkDotNet_Filters_MethodNamesFilter_Predicate_
+  commentId: Overload:BenchmarkDotNet.Filters.MethodNamesFilter.Predicate
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Filters.MethodNamesFilter.Predicate
+  nameWithType: MethodNamesFilter.Predicate
 - uid: BenchmarkDotNet.Filters.NameFilter
   name: NameFilter
   href: api/BenchmarkDotNet.Filters.NameFilter.html
@@ -14475,6 +14433,41 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Filters.NameFilter.NameFilter
   nameWithType: NameFilter.NameFilter
+- uid: BenchmarkDotNet.Filters.NamespacesFilter
+  name: NamespacesFilter
+  href: api/BenchmarkDotNet.Filters.NamespacesFilter.html
+  commentId: T:BenchmarkDotNet.Filters.NamespacesFilter
+  fullName: BenchmarkDotNet.Filters.NamespacesFilter
+  nameWithType: NamespacesFilter
+- uid: BenchmarkDotNet.Filters.NamespacesFilter.#ctor(System.String[])
+  name: NamespacesFilter(String[])
+  href: api/BenchmarkDotNet.Filters.NamespacesFilter.html#BenchmarkDotNet_Filters_NamespacesFilter__ctor_System_String___
+  commentId: M:BenchmarkDotNet.Filters.NamespacesFilter.#ctor(System.String[])
+  name.vb: NamespacesFilter(String())
+  fullName: BenchmarkDotNet.Filters.NamespacesFilter.NamespacesFilter(System.String[])
+  fullName.vb: BenchmarkDotNet.Filters.NamespacesFilter.NamespacesFilter(System.String())
+  nameWithType: NamespacesFilter.NamespacesFilter(String[])
+  nameWithType.vb: NamespacesFilter.NamespacesFilter(String())
+- uid: BenchmarkDotNet.Filters.NamespacesFilter.#ctor*
+  name: NamespacesFilter
+  href: api/BenchmarkDotNet.Filters.NamespacesFilter.html#BenchmarkDotNet_Filters_NamespacesFilter__ctor_
+  commentId: Overload:BenchmarkDotNet.Filters.NamespacesFilter.#ctor
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Filters.NamespacesFilter.NamespacesFilter
+  nameWithType: NamespacesFilter.NamespacesFilter
+- uid: BenchmarkDotNet.Filters.NamespacesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  name: Predicate(Benchmark)
+  href: api/BenchmarkDotNet.Filters.NamespacesFilter.html#BenchmarkDotNet_Filters_NamespacesFilter_Predicate_BenchmarkDotNet_Running_Benchmark_
+  commentId: M:BenchmarkDotNet.Filters.NamespacesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  fullName: BenchmarkDotNet.Filters.NamespacesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  nameWithType: NamespacesFilter.Predicate(Benchmark)
+- uid: BenchmarkDotNet.Filters.NamespacesFilter.Predicate*
+  name: Predicate
+  href: api/BenchmarkDotNet.Filters.NamespacesFilter.html#BenchmarkDotNet_Filters_NamespacesFilter_Predicate_
+  commentId: Overload:BenchmarkDotNet.Filters.NamespacesFilter.Predicate
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Filters.NamespacesFilter.Predicate
+  nameWithType: NamespacesFilter.Predicate
 - uid: BenchmarkDotNet.Filters.SimpleFilter
   name: SimpleFilter
   href: api/BenchmarkDotNet.Filters.SimpleFilter.html
@@ -14510,6 +14503,76 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Filters.SimpleFilter.Predicate
   nameWithType: SimpleFilter.Predicate
+- uid: BenchmarkDotNet.Filters.TypeNamesFilter
+  name: TypeNamesFilter
+  href: api/BenchmarkDotNet.Filters.TypeNamesFilter.html
+  commentId: T:BenchmarkDotNet.Filters.TypeNamesFilter
+  fullName: BenchmarkDotNet.Filters.TypeNamesFilter
+  nameWithType: TypeNamesFilter
+- uid: BenchmarkDotNet.Filters.TypeNamesFilter.#ctor(System.String[])
+  name: TypeNamesFilter(String[])
+  href: api/BenchmarkDotNet.Filters.TypeNamesFilter.html#BenchmarkDotNet_Filters_TypeNamesFilter__ctor_System_String___
+  commentId: M:BenchmarkDotNet.Filters.TypeNamesFilter.#ctor(System.String[])
+  name.vb: TypeNamesFilter(String())
+  fullName: BenchmarkDotNet.Filters.TypeNamesFilter.TypeNamesFilter(System.String[])
+  fullName.vb: BenchmarkDotNet.Filters.TypeNamesFilter.TypeNamesFilter(System.String())
+  nameWithType: TypeNamesFilter.TypeNamesFilter(String[])
+  nameWithType.vb: TypeNamesFilter.TypeNamesFilter(String())
+- uid: BenchmarkDotNet.Filters.TypeNamesFilter.#ctor*
+  name: TypeNamesFilter
+  href: api/BenchmarkDotNet.Filters.TypeNamesFilter.html#BenchmarkDotNet_Filters_TypeNamesFilter__ctor_
+  commentId: Overload:BenchmarkDotNet.Filters.TypeNamesFilter.#ctor
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Filters.TypeNamesFilter.TypeNamesFilter
+  nameWithType: TypeNamesFilter.TypeNamesFilter
+- uid: BenchmarkDotNet.Filters.TypeNamesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  name: Predicate(Benchmark)
+  href: api/BenchmarkDotNet.Filters.TypeNamesFilter.html#BenchmarkDotNet_Filters_TypeNamesFilter_Predicate_BenchmarkDotNet_Running_Benchmark_
+  commentId: M:BenchmarkDotNet.Filters.TypeNamesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  fullName: BenchmarkDotNet.Filters.TypeNamesFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  nameWithType: TypeNamesFilter.Predicate(Benchmark)
+- uid: BenchmarkDotNet.Filters.TypeNamesFilter.Predicate*
+  name: Predicate
+  href: api/BenchmarkDotNet.Filters.TypeNamesFilter.html#BenchmarkDotNet_Filters_TypeNamesFilter_Predicate_
+  commentId: Overload:BenchmarkDotNet.Filters.TypeNamesFilter.Predicate
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Filters.TypeNamesFilter.Predicate
+  nameWithType: TypeNamesFilter.Predicate
+- uid: BenchmarkDotNet.Filters.UnionFilter
+  name: UnionFilter
+  href: api/BenchmarkDotNet.Filters.UnionFilter.html
+  commentId: T:BenchmarkDotNet.Filters.UnionFilter
+  fullName: BenchmarkDotNet.Filters.UnionFilter
+  nameWithType: UnionFilter
+- uid: BenchmarkDotNet.Filters.UnionFilter.#ctor(BenchmarkDotNet.Filters.IFilter[])
+  name: UnionFilter(IFilter[])
+  href: api/BenchmarkDotNet.Filters.UnionFilter.html#BenchmarkDotNet_Filters_UnionFilter__ctor_BenchmarkDotNet_Filters_IFilter___
+  commentId: M:BenchmarkDotNet.Filters.UnionFilter.#ctor(BenchmarkDotNet.Filters.IFilter[])
+  name.vb: UnionFilter(IFilter())
+  fullName: BenchmarkDotNet.Filters.UnionFilter.UnionFilter(BenchmarkDotNet.Filters.IFilter[])
+  fullName.vb: BenchmarkDotNet.Filters.UnionFilter.UnionFilter(BenchmarkDotNet.Filters.IFilter())
+  nameWithType: UnionFilter.UnionFilter(IFilter[])
+  nameWithType.vb: UnionFilter.UnionFilter(IFilter())
+- uid: BenchmarkDotNet.Filters.UnionFilter.#ctor*
+  name: UnionFilter
+  href: api/BenchmarkDotNet.Filters.UnionFilter.html#BenchmarkDotNet_Filters_UnionFilter__ctor_
+  commentId: Overload:BenchmarkDotNet.Filters.UnionFilter.#ctor
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Filters.UnionFilter.UnionFilter
+  nameWithType: UnionFilter.UnionFilter
+- uid: BenchmarkDotNet.Filters.UnionFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  name: Predicate(Benchmark)
+  href: api/BenchmarkDotNet.Filters.UnionFilter.html#BenchmarkDotNet_Filters_UnionFilter_Predicate_BenchmarkDotNet_Running_Benchmark_
+  commentId: M:BenchmarkDotNet.Filters.UnionFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  fullName: BenchmarkDotNet.Filters.UnionFilter.Predicate(BenchmarkDotNet.Running.Benchmark)
+  nameWithType: UnionFilter.Predicate(Benchmark)
+- uid: BenchmarkDotNet.Filters.UnionFilter.Predicate*
+  name: Predicate
+  href: api/BenchmarkDotNet.Filters.UnionFilter.html#BenchmarkDotNet_Filters_UnionFilter_Predicate_
+  commentId: Overload:BenchmarkDotNet.Filters.UnionFilter.Predicate
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Filters.UnionFilter.Predicate
+  nameWithType: UnionFilter.Predicate
 - uid: BenchmarkDotNet.Helpers
   name: BenchmarkDotNet.Helpers
   href: api/BenchmarkDotNet.Helpers.html
@@ -14559,6 +14622,126 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Helpers.FolderNameHelper.ToFolderName
   nameWithType: FolderNameHelper.ToFolderName
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString
+  name: MultiEncodingString
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html
+  commentId: T:BenchmarkDotNet.Helpers.MultiEncodingString
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString
+  nameWithType: MultiEncodingString
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Text.Encoding,System.String}})
+  name: MultiEncodingString(IEnumerable<KeyValuePair<Encoding, String>>)
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString__ctor_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_Text_Encoding_System_String___
+  commentId: M:BenchmarkDotNet.Helpers.MultiEncodingString.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.Text.Encoding,System.String}})
+  name.vb: MultiEncodingString(IEnumerable(Of KeyValuePair(Of Encoding, String)))
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.MultiEncodingString(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<System.Text.Encoding, System.String>>)
+  fullName.vb: BenchmarkDotNet.Helpers.MultiEncodingString.MultiEncodingString(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of System.Text.Encoding, System.String)))
+  nameWithType: MultiEncodingString.MultiEncodingString(IEnumerable<KeyValuePair<Encoding, String>>)
+  nameWithType.vb: MultiEncodingString.MultiEncodingString(IEnumerable(Of KeyValuePair(Of Encoding, String)))
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.#ctor(System.String)
+  name: MultiEncodingString(String)
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString__ctor_System_String_
+  commentId: M:BenchmarkDotNet.Helpers.MultiEncodingString.#ctor(System.String)
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.MultiEncodingString(System.String)
+  nameWithType: MultiEncodingString.MultiEncodingString(String)
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.#ctor(System.String,System.String)
+  name: MultiEncodingString(String, String)
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString__ctor_System_String_System_String_
+  commentId: M:BenchmarkDotNet.Helpers.MultiEncodingString.#ctor(System.String,System.String)
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.MultiEncodingString(System.String, System.String)
+  nameWithType: MultiEncodingString.MultiEncodingString(String, String)
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.#ctor*
+  name: MultiEncodingString
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString__ctor_
+  commentId: Overload:BenchmarkDotNet.Helpers.MultiEncodingString.#ctor
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.MultiEncodingString
+  nameWithType: MultiEncodingString.MultiEncodingString
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.Equals(System.Object)
+  name: Equals(Object)
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_Equals_System_Object_
+  commentId: M:BenchmarkDotNet.Helpers.MultiEncodingString.Equals(System.Object)
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.Equals(System.Object)
+  nameWithType: MultiEncodingString.Equals(Object)
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.Equals*
+  name: Equals
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_Equals_
+  commentId: Overload:BenchmarkDotNet.Helpers.MultiEncodingString.Equals
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.Equals
+  nameWithType: MultiEncodingString.Equals
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.GetHashCode
+  name: GetHashCode()
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_GetHashCode
+  commentId: M:BenchmarkDotNet.Helpers.MultiEncodingString.GetHashCode
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.GetHashCode()
+  nameWithType: MultiEncodingString.GetHashCode()
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.GetHashCode*
+  name: GetHashCode
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_GetHashCode_
+  commentId: Overload:BenchmarkDotNet.Helpers.MultiEncodingString.GetHashCode
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.GetHashCode
+  nameWithType: MultiEncodingString.GetHashCode
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.GetString(System.Text.Encoding)
+  name: GetString(Encoding)
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_GetString_System_Text_Encoding_
+  commentId: M:BenchmarkDotNet.Helpers.MultiEncodingString.GetString(System.Text.Encoding)
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.GetString(System.Text.Encoding)
+  nameWithType: MultiEncodingString.GetString(Encoding)
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.GetString*
+  name: GetString
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_GetString_
+  commentId: Overload:BenchmarkDotNet.Helpers.MultiEncodingString.GetString
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.GetString
+  nameWithType: MultiEncodingString.GetString
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.op_Implicit(System.String)~BenchmarkDotNet.Helpers.MultiEncodingString
+  name: Implicit(String to MultiEncodingString)
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_op_Implicit_System_String__BenchmarkDotNet_Helpers_MultiEncodingString
+  commentId: M:BenchmarkDotNet.Helpers.MultiEncodingString.op_Implicit(System.String)~BenchmarkDotNet.Helpers.MultiEncodingString
+  name.vb: Widening(String to MultiEncodingString)
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.Implicit(System.String to BenchmarkDotNet.Helpers.MultiEncodingString)
+  fullName.vb: BenchmarkDotNet.Helpers.MultiEncodingString.Widening(System.String to BenchmarkDotNet.Helpers.MultiEncodingString)
+  nameWithType: MultiEncodingString.Implicit(String to MultiEncodingString)
+  nameWithType.vb: MultiEncodingString.Widening(String to MultiEncodingString)
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.op_Implicit(System.ValueTuple{System.String,System.String})~BenchmarkDotNet.Helpers.MultiEncodingString
+  name: Implicit( to MultiEncodingString)
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_op_Implicit_System_ValueTuple_System_String_System_String___BenchmarkDotNet_Helpers_MultiEncodingString
+  commentId: M:BenchmarkDotNet.Helpers.MultiEncodingString.op_Implicit(System.ValueTuple{System.String,System.String})~BenchmarkDotNet.Helpers.MultiEncodingString
+  name.vb: Widening( to MultiEncodingString)
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.Implicit(System. to BenchmarkDotNet.Helpers.MultiEncodingString)
+  fullName.vb: BenchmarkDotNet.Helpers.MultiEncodingString.Widening(System. to BenchmarkDotNet.Helpers.MultiEncodingString)
+  nameWithType: MultiEncodingString.Implicit( to MultiEncodingString)
+  nameWithType.vb: MultiEncodingString.Widening( to MultiEncodingString)
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.op_Implicit*
+  name: Implicit
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_op_Implicit_
+  commentId: Overload:BenchmarkDotNet.Helpers.MultiEncodingString.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.Implicit
+  fullName.vb: BenchmarkDotNet.Helpers.MultiEncodingString.Widening
+  nameWithType: MultiEncodingString.Implicit
+  nameWithType.vb: MultiEncodingString.Widening
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.ToString
+  name: ToString()
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_ToString
+  commentId: M:BenchmarkDotNet.Helpers.MultiEncodingString.ToString
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.ToString()
+  nameWithType: MultiEncodingString.ToString()
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.ToString(System.Text.Encoding)
+  name: ToString(Encoding)
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_ToString_System_Text_Encoding_
+  commentId: M:BenchmarkDotNet.Helpers.MultiEncodingString.ToString(System.Text.Encoding)
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.ToString(System.Text.Encoding)
+  nameWithType: MultiEncodingString.ToString(Encoding)
+- uid: BenchmarkDotNet.Helpers.MultiEncodingString.ToString*
+  name: ToString
+  href: api/BenchmarkDotNet.Helpers.MultiEncodingString.html#BenchmarkDotNet_Helpers_MultiEncodingString_ToString_
+  commentId: Overload:BenchmarkDotNet.Helpers.MultiEncodingString.ToString
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Helpers.MultiEncodingString.ToString
+  nameWithType: MultiEncodingString.ToString
 - uid: BenchmarkDotNet.Helpers.SourceCodeHelper
   name: SourceCodeHelper
   href: api/BenchmarkDotNet.Helpers.SourceCodeHelper.html
@@ -18689,12 +18872,12 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Mathematics.ConfidenceInterval.ToStr
   nameWithType: ConfidenceInterval.ToStr
-- uid: BenchmarkDotNet.Mathematics.ConfidenceInterval.ToTimeStr(BenchmarkDotNet.Horology.TimeUnit,System.Boolean)
-  name: ToTimeStr(TimeUnit, Boolean)
-  href: api/BenchmarkDotNet.Mathematics.ConfidenceInterval.html#BenchmarkDotNet_Mathematics_ConfidenceInterval_ToTimeStr_BenchmarkDotNet_Horology_TimeUnit_System_Boolean_
-  commentId: M:BenchmarkDotNet.Mathematics.ConfidenceInterval.ToTimeStr(BenchmarkDotNet.Horology.TimeUnit,System.Boolean)
-  fullName: BenchmarkDotNet.Mathematics.ConfidenceInterval.ToTimeStr(BenchmarkDotNet.Horology.TimeUnit, System.Boolean)
-  nameWithType: ConfidenceInterval.ToTimeStr(TimeUnit, Boolean)
+- uid: BenchmarkDotNet.Mathematics.ConfidenceInterval.ToTimeStr(System.Text.Encoding,BenchmarkDotNet.Horology.TimeUnit,System.Boolean)
+  name: ToTimeStr(Encoding, TimeUnit, Boolean)
+  href: api/BenchmarkDotNet.Mathematics.ConfidenceInterval.html#BenchmarkDotNet_Mathematics_ConfidenceInterval_ToTimeStr_System_Text_Encoding_BenchmarkDotNet_Horology_TimeUnit_System_Boolean_
+  commentId: M:BenchmarkDotNet.Mathematics.ConfidenceInterval.ToTimeStr(System.Text.Encoding,BenchmarkDotNet.Horology.TimeUnit,System.Boolean)
+  fullName: BenchmarkDotNet.Mathematics.ConfidenceInterval.ToTimeStr(System.Text.Encoding, BenchmarkDotNet.Horology.TimeUnit, System.Boolean)
+  nameWithType: ConfidenceInterval.ToTimeStr(Encoding, TimeUnit, Boolean)
 - uid: BenchmarkDotNet.Mathematics.ConfidenceInterval.ToTimeStr*
   name: ToTimeStr
   href: api/BenchmarkDotNet.Mathematics.ConfidenceInterval.html#BenchmarkDotNet_Mathematics_ConfidenceInterval_ToTimeStr_
@@ -19055,6 +19238,12 @@ references:
   commentId: M:BenchmarkDotNet.Mathematics.Histograms.HistogramBin.ToString
   fullName: BenchmarkDotNet.Mathematics.Histograms.HistogramBin.ToString()
   nameWithType: HistogramBin.ToString()
+- uid: BenchmarkDotNet.Mathematics.Histograms.HistogramBin.ToString(System.Text.Encoding)
+  name: ToString(Encoding)
+  href: api/BenchmarkDotNet.Mathematics.Histograms.HistogramBin.html#BenchmarkDotNet_Mathematics_Histograms_HistogramBin_ToString_System_Text_Encoding_
+  commentId: M:BenchmarkDotNet.Mathematics.Histograms.HistogramBin.ToString(System.Text.Encoding)
+  fullName: BenchmarkDotNet.Mathematics.Histograms.HistogramBin.ToString(System.Text.Encoding)
+  nameWithType: HistogramBin.ToString(Encoding)
 - uid: BenchmarkDotNet.Mathematics.Histograms.HistogramBin.ToString*
   name: ToString
   href: api/BenchmarkDotNet.Mathematics.Histograms.HistogramBin.html#BenchmarkDotNet_Mathematics_Histograms_HistogramBin_ToString_
@@ -19173,12 +19362,12 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.GetOptimalBinSize
   nameWithType: HistogramExtensions.GetOptimalBinSize
-- uid: BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Histograms.Histogram,BenchmarkDotNet.Horology.TimeUnit,System.Char,System.Boolean)
-  name: ToTimeStr(Histogram, TimeUnit, Char, Boolean)
-  href: api/BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.html#BenchmarkDotNet_Mathematics_Histograms_HistogramExtensions_ToTimeStr_BenchmarkDotNet_Mathematics_Histograms_Histogram_BenchmarkDotNet_Horology_TimeUnit_System_Char_System_Boolean_
-  commentId: M:BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Histograms.Histogram,BenchmarkDotNet.Horology.TimeUnit,System.Char,System.Boolean)
-  fullName: BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Histograms.Histogram, BenchmarkDotNet.Horology.TimeUnit, System.Char, System.Boolean)
-  nameWithType: HistogramExtensions.ToTimeStr(Histogram, TimeUnit, Char, Boolean)
+- uid: BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Histograms.Histogram,BenchmarkDotNet.Horology.TimeUnit,System.Char,System.Boolean,System.Text.Encoding)
+  name: ToTimeStr(Histogram, TimeUnit, Char, Boolean, Encoding)
+  href: api/BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.html#BenchmarkDotNet_Mathematics_Histograms_HistogramExtensions_ToTimeStr_BenchmarkDotNet_Mathematics_Histograms_Histogram_BenchmarkDotNet_Horology_TimeUnit_System_Char_System_Boolean_System_Text_Encoding_
+  commentId: M:BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Histograms.Histogram,BenchmarkDotNet.Horology.TimeUnit,System.Char,System.Boolean,System.Text.Encoding)
+  fullName: BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.ToTimeStr(BenchmarkDotNet.Mathematics.Histograms.Histogram, BenchmarkDotNet.Horology.TimeUnit, System.Char, System.Boolean, System.Text.Encoding)
+  nameWithType: HistogramExtensions.ToTimeStr(Histogram, TimeUnit, Char, Boolean, Encoding)
 - uid: BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.ToTimeStr*
   name: ToTimeStr
   href: api/BenchmarkDotNet.Mathematics.Histograms.HistogramExtensions.html#BenchmarkDotNet_Mathematics_Histograms_HistogramExtensions_ToTimeStr_
@@ -19517,12 +19706,12 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Mathematics.PercentileValues.ToStr
   nameWithType: PercentileValues.ToStr
-- uid: BenchmarkDotNet.Mathematics.PercentileValues.ToTimeStr(BenchmarkDotNet.Horology.TimeUnit,System.Boolean)
-  name: ToTimeStr(TimeUnit, Boolean)
-  href: api/BenchmarkDotNet.Mathematics.PercentileValues.html#BenchmarkDotNet_Mathematics_PercentileValues_ToTimeStr_BenchmarkDotNet_Horology_TimeUnit_System_Boolean_
-  commentId: M:BenchmarkDotNet.Mathematics.PercentileValues.ToTimeStr(BenchmarkDotNet.Horology.TimeUnit,System.Boolean)
-  fullName: BenchmarkDotNet.Mathematics.PercentileValues.ToTimeStr(BenchmarkDotNet.Horology.TimeUnit, System.Boolean)
-  nameWithType: PercentileValues.ToTimeStr(TimeUnit, Boolean)
+- uid: BenchmarkDotNet.Mathematics.PercentileValues.ToTimeStr(BenchmarkDotNet.Horology.TimeUnit,System.Boolean,System.Text.Encoding)
+  name: ToTimeStr(TimeUnit, Boolean, Encoding)
+  href: api/BenchmarkDotNet.Mathematics.PercentileValues.html#BenchmarkDotNet_Mathematics_PercentileValues_ToTimeStr_BenchmarkDotNet_Horology_TimeUnit_System_Boolean_System_Text_Encoding_
+  commentId: M:BenchmarkDotNet.Mathematics.PercentileValues.ToTimeStr(BenchmarkDotNet.Horology.TimeUnit,System.Boolean,System.Text.Encoding)
+  fullName: BenchmarkDotNet.Mathematics.PercentileValues.ToTimeStr(BenchmarkDotNet.Horology.TimeUnit, System.Boolean, System.Text.Encoding)
+  nameWithType: PercentileValues.ToTimeStr(TimeUnit, Boolean, Encoding)
 - uid: BenchmarkDotNet.Mathematics.PercentileValues.ToTimeStr*
   name: ToTimeStr
   href: api/BenchmarkDotNet.Mathematics.PercentileValues.html#BenchmarkDotNet_Mathematics_PercentileValues_ToTimeStr_
@@ -21471,12 +21660,12 @@ references:
   commentId: T:BenchmarkDotNet.Reports.Measurement
   fullName: BenchmarkDotNet.Reports.Measurement
   nameWithType: Measurement
-- uid: BenchmarkDotNet.Reports.Measurement.#ctor(System.Int32,BenchmarkDotNet.Engines.IterationMode,System.Int32,System.Int64,System.Double)
-  name: Measurement(Int32, IterationMode, Int32, Int64, Double)
-  href: api/BenchmarkDotNet.Reports.Measurement.html#BenchmarkDotNet_Reports_Measurement__ctor_System_Int32_BenchmarkDotNet_Engines_IterationMode_System_Int32_System_Int64_System_Double_
-  commentId: M:BenchmarkDotNet.Reports.Measurement.#ctor(System.Int32,BenchmarkDotNet.Engines.IterationMode,System.Int32,System.Int64,System.Double)
-  fullName: BenchmarkDotNet.Reports.Measurement.Measurement(System.Int32, BenchmarkDotNet.Engines.IterationMode, System.Int32, System.Int64, System.Double)
-  nameWithType: Measurement.Measurement(Int32, IterationMode, Int32, Int64, Double)
+- uid: BenchmarkDotNet.Reports.Measurement.#ctor(System.Int32,BenchmarkDotNet.Engines.IterationMode,System.Int32,System.Int64,System.Double,System.Text.Encoding)
+  name: Measurement(Int32, IterationMode, Int32, Int64, Double, Encoding)
+  href: api/BenchmarkDotNet.Reports.Measurement.html#BenchmarkDotNet_Reports_Measurement__ctor_System_Int32_BenchmarkDotNet_Engines_IterationMode_System_Int32_System_Int64_System_Double_System_Text_Encoding_
+  commentId: M:BenchmarkDotNet.Reports.Measurement.#ctor(System.Int32,BenchmarkDotNet.Engines.IterationMode,System.Int32,System.Int64,System.Double,System.Text.Encoding)
+  fullName: BenchmarkDotNet.Reports.Measurement.Measurement(System.Int32, BenchmarkDotNet.Engines.IterationMode, System.Int32, System.Int64, System.Double, System.Text.Encoding)
+  nameWithType: Measurement.Measurement(Int32, IterationMode, Int32, Int64, Double, Encoding)
 - uid: BenchmarkDotNet.Reports.Measurement.#ctor*
   name: Measurement
   href: api/BenchmarkDotNet.Reports.Measurement.html#BenchmarkDotNet_Reports_Measurement__ctor_
@@ -21497,6 +21686,19 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Reports.Measurement.CompareTo
   nameWithType: Measurement.CompareTo
+- uid: BenchmarkDotNet.Reports.Measurement.Encoding
+  name: Encoding
+  href: api/BenchmarkDotNet.Reports.Measurement.html#BenchmarkDotNet_Reports_Measurement_Encoding
+  commentId: P:BenchmarkDotNet.Reports.Measurement.Encoding
+  fullName: BenchmarkDotNet.Reports.Measurement.Encoding
+  nameWithType: Measurement.Encoding
+- uid: BenchmarkDotNet.Reports.Measurement.Encoding*
+  name: Encoding
+  href: api/BenchmarkDotNet.Reports.Measurement.html#BenchmarkDotNet_Reports_Measurement_Encoding_
+  commentId: Overload:BenchmarkDotNet.Reports.Measurement.Encoding
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Reports.Measurement.Encoding
+  nameWithType: Measurement.Encoding
 - uid: BenchmarkDotNet.Reports.Measurement.IterationIndex
   name: IterationIndex
   href: api/BenchmarkDotNet.Reports.Measurement.html#BenchmarkDotNet_Reports_Measurement_IterationIndex
@@ -21562,12 +21764,12 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Reports.Measurement.Operations
   nameWithType: Measurement.Operations
-- uid: BenchmarkDotNet.Reports.Measurement.Parse(BenchmarkDotNet.Loggers.ILogger,System.String,System.Int32)
-  name: Parse(ILogger, String, Int32)
-  href: api/BenchmarkDotNet.Reports.Measurement.html#BenchmarkDotNet_Reports_Measurement_Parse_BenchmarkDotNet_Loggers_ILogger_System_String_System_Int32_
-  commentId: M:BenchmarkDotNet.Reports.Measurement.Parse(BenchmarkDotNet.Loggers.ILogger,System.String,System.Int32)
-  fullName: BenchmarkDotNet.Reports.Measurement.Parse(BenchmarkDotNet.Loggers.ILogger, System.String, System.Int32)
-  nameWithType: Measurement.Parse(ILogger, String, Int32)
+- uid: BenchmarkDotNet.Reports.Measurement.Parse(BenchmarkDotNet.Loggers.ILogger,System.String,System.Int32,System.Text.Encoding)
+  name: Parse(ILogger, String, Int32, Encoding)
+  href: api/BenchmarkDotNet.Reports.Measurement.html#BenchmarkDotNet_Reports_Measurement_Parse_BenchmarkDotNet_Loggers_ILogger_System_String_System_Int32_System_Text_Encoding_
+  commentId: M:BenchmarkDotNet.Reports.Measurement.Parse(BenchmarkDotNet.Loggers.ILogger,System.String,System.Int32,System.Text.Encoding)
+  fullName: BenchmarkDotNet.Reports.Measurement.Parse(BenchmarkDotNet.Loggers.ILogger, System.String, System.Int32, System.Text.Encoding)
+  nameWithType: Measurement.Parse(ILogger, String, Int32, Encoding)
 - uid: BenchmarkDotNet.Reports.Measurement.Parse*
   name: Parse
   href: api/BenchmarkDotNet.Reports.Measurement.html#BenchmarkDotNet_Reports_Measurement_Parse_
@@ -21633,12 +21835,12 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Reports.MeasurementExtensions.GetOpsPerSecond
   nameWithType: MeasurementExtensions.GetOpsPerSecond
-- uid: BenchmarkDotNet.Reports.MeasurementExtensions.ToStr(BenchmarkDotNet.Reports.Measurement)
-  name: ToStr(Measurement)
-  href: api/BenchmarkDotNet.Reports.MeasurementExtensions.html#BenchmarkDotNet_Reports_MeasurementExtensions_ToStr_BenchmarkDotNet_Reports_Measurement_
-  commentId: M:BenchmarkDotNet.Reports.MeasurementExtensions.ToStr(BenchmarkDotNet.Reports.Measurement)
-  fullName: BenchmarkDotNet.Reports.MeasurementExtensions.ToStr(BenchmarkDotNet.Reports.Measurement)
-  nameWithType: MeasurementExtensions.ToStr(Measurement)
+- uid: BenchmarkDotNet.Reports.MeasurementExtensions.ToStr(BenchmarkDotNet.Reports.Measurement,System.Text.Encoding)
+  name: ToStr(Measurement, Encoding)
+  href: api/BenchmarkDotNet.Reports.MeasurementExtensions.html#BenchmarkDotNet_Reports_MeasurementExtensions_ToStr_BenchmarkDotNet_Reports_Measurement_System_Text_Encoding_
+  commentId: M:BenchmarkDotNet.Reports.MeasurementExtensions.ToStr(BenchmarkDotNet.Reports.Measurement,System.Text.Encoding)
+  fullName: BenchmarkDotNet.Reports.MeasurementExtensions.ToStr(BenchmarkDotNet.Reports.Measurement, System.Text.Encoding)
+  nameWithType: MeasurementExtensions.ToStr(Measurement, Encoding)
 - uid: BenchmarkDotNet.Reports.MeasurementExtensions.ToStr*
   name: ToStr
   href: api/BenchmarkDotNet.Reports.MeasurementExtensions.html#BenchmarkDotNet_Reports_MeasurementExtensions_ToStr_
@@ -21720,6 +21922,19 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Reports.Summary.GetLogicalGroupKey
   nameWithType: Summary.GetLogicalGroupKey
+- uid: BenchmarkDotNet.Reports.Summary.GetNumberOfExecutedBenchmarks
+  name: GetNumberOfExecutedBenchmarks()
+  href: api/BenchmarkDotNet.Reports.Summary.html#BenchmarkDotNet_Reports_Summary_GetNumberOfExecutedBenchmarks
+  commentId: M:BenchmarkDotNet.Reports.Summary.GetNumberOfExecutedBenchmarks
+  fullName: BenchmarkDotNet.Reports.Summary.GetNumberOfExecutedBenchmarks()
+  nameWithType: Summary.GetNumberOfExecutedBenchmarks()
+- uid: BenchmarkDotNet.Reports.Summary.GetNumberOfExecutedBenchmarks*
+  name: GetNumberOfExecutedBenchmarks
+  href: api/BenchmarkDotNet.Reports.Summary.html#BenchmarkDotNet_Reports_Summary_GetNumberOfExecutedBenchmarks_
+  commentId: Overload:BenchmarkDotNet.Reports.Summary.GetNumberOfExecutedBenchmarks
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Reports.Summary.GetNumberOfExecutedBenchmarks
+  nameWithType: Summary.GetNumberOfExecutedBenchmarks
 - uid: BenchmarkDotNet.Reports.Summary.HasCriticalValidationErrors
   name: HasCriticalValidationErrors
   href: api/BenchmarkDotNet.Reports.Summary.html#BenchmarkDotNet_Reports_Summary_HasCriticalValidationErrors
@@ -23426,21 +23641,66 @@ references:
 - uid: BenchmarkDotNet.Samples.IntroBenchmarkBaseline
   name: 'Sample: IntroBenchmarkBaseline'
   href: articles/samples/IntroBenchmarkBaseline.html
+- uid: BenchmarkDotNet.Samples.IntroCategories
+  name: 'Sample: IntroCategories'
+  href: articles/samples/IntroCategories.html
 - uid: BenchmarkDotNet.Samples.IntroCategoryBaseline
   name: 'Sample: IntroCategoryBaseline'
   href: articles/samples/IntroCategoryBaseline.html
+- uid: BenchmarkDotNet.Samples.IntroCustomMono
+  name: 'Sample: IntroCustomMono'
+  href: articles/samples/IntroCustomMono.html
+- uid: BenchmarkDotNet.Samples.IntroCustomMonoArguments
+  name: 'Sample: IntroCustomMonoArguments'
+  href: articles/samples/IntroCustomMonoArguments.html
+- uid: BenchmarkDotNet.Samples.IntroEncoding
+  name: 'Sample: IntroEncoding'
+  href: articles/samples/IntroEncoding.html
 - uid: BenchmarkDotNet.Samples.IntroEnvVars
   name: 'Sample: IntroEnvVars'
   href: articles/samples/IntroEnvVars.html
+- uid: BenchmarkDotNet.Samples.IntroFilters
+  name: 'Sample: IntroFilters'
+  href: articles/samples/IntroFilters.html
 - uid: BenchmarkDotNet.Samples.IntroJobBaseline
   name: 'Sample: IntroJobBaseline'
   href: articles/samples/IntroJobBaseline.html
+- uid: BenchmarkDotNet.Samples.IntroJoin
+  name: 'Sample: IntroJoin'
+  href: articles/samples/IntroJoin.html
+- uid: BenchmarkDotNet.Samples.IntroMultimodal
+  name: 'Sample: IntroMultimodal'
+  href: articles/samples/IntroMultimodal.html
+- uid: BenchmarkDotNet.Samples.IntroOutliers
+  name: 'Sample: IntroOutliers'
+  href: articles/samples/IntroOutliers.html
 - uid: BenchmarkDotNet.Samples.IntroParams
   name: 'Sample: IntroParams'
   href: articles/samples/IntroParams.html
 - uid: BenchmarkDotNet.Samples.IntroParamsSource
   name: 'Sample: IntroParamsSource'
   href: articles/samples/IntroParamsSource.html
+- uid: BenchmarkDotNet.Samples.IntroPercentiles
+  name: 'Sample: IntroPercentiles'
+  href: articles/samples/IntroPercentiles.html
+- uid: BenchmarkDotNet.Samples.IntroRankColumn
+  name: 'Sample: IntroRankColumn'
+  href: articles/samples/IntroRankColumn.html
+- uid: BenchmarkDotNet.Samples.IntroSetupCleanupGlobal
+  name: 'Sample: IntroSetupCleanupGlobal'
+  href: articles/samples/IntroSetupCleanupGlobal.html
+- uid: BenchmarkDotNet.Samples.IntroSetupCleanupIteration
+  name: 'Sample: IntroSetupCleanupIteration'
+  href: articles/samples/IntroSetupCleanupIteration.html
+- uid: BenchmarkDotNet.Samples.IntroSetupCleanupTarget
+  name: 'Sample: IntroSetupCleanupTarget'
+  href: articles/samples/IntroSetupCleanupTarget.html
+- uid: BenchmarkDotNet.Samples.IntroStaThread
+  name: 'Sample: IntroStaThread'
+  href: articles/samples/IntroStaThread.html
+- uid: BenchmarkDotNet.Samples.IntroStatisticsColumns
+  name: 'Sample: IntroStatisticsColumns'
+  href: articles/samples/IntroStatisticsColumns.html
 - uid: BenchmarkDotNet.Toolchains
   name: BenchmarkDotNet.Toolchains
   href: api/BenchmarkDotNet.Toolchains.html
@@ -25508,6 +25768,19 @@ references:
   isSpec: "True"
   fullName: BenchmarkDotNet.Toolchains.InProcess.InProcessHost.InProcessHost
   nameWithType: InProcessHost.InProcessHost
+- uid: BenchmarkDotNet.Toolchains.InProcess.InProcessHost.Config
+  name: Config
+  href: api/BenchmarkDotNet.Toolchains.InProcess.InProcessHost.html#BenchmarkDotNet_Toolchains_InProcess_InProcessHost_Config
+  commentId: P:BenchmarkDotNet.Toolchains.InProcess.InProcessHost.Config
+  fullName: BenchmarkDotNet.Toolchains.InProcess.InProcessHost.Config
+  nameWithType: InProcessHost.Config
+- uid: BenchmarkDotNet.Toolchains.InProcess.InProcessHost.Config*
+  name: Config
+  href: api/BenchmarkDotNet.Toolchains.InProcess.InProcessHost.html#BenchmarkDotNet_Toolchains_InProcess_InProcessHost_Config_
+  commentId: Overload:BenchmarkDotNet.Toolchains.InProcess.InProcessHost.Config
+  isSpec: "True"
+  fullName: BenchmarkDotNet.Toolchains.InProcess.InProcessHost.Config
+  nameWithType: InProcessHost.Config
 - uid: BenchmarkDotNet.Toolchains.InProcess.InProcessHost.IsDiagnoserAttached
   name: IsDiagnoserAttached
   href: api/BenchmarkDotNet.Toolchains.InProcess.InProcessHost.html#BenchmarkDotNet_Toolchains_InProcess_InProcessHost_IsDiagnoserAttached
@@ -27314,12 +27587,21 @@ references:
 - uid: docs.configs
   name: Configs
   href: articles/configs/configs.html
+- uid: docs.customizing-runtime
+  name: Customizing Runtime
+  href: articles/guides/customizing-runtime.html
 - uid: docs.diagnosers
   name: Diagnosers
   href: articles/configs/diagnosers.html
+- uid: docs.encoding
+  name: Encoding
+  href: articles/configs/encoding.html
 - uid: docs.exporters
   name: Exporters
   href: articles/configs/exporters.html
+- uid: docs.faq
+  name: FAQ (Frequently asked questions)
+  href: articles/faq.html
 - uid: docs.filters
   name: Filters
   href: articles/configs/filters.html
@@ -27329,12 +27611,21 @@ references:
 - uid: docs.loggers
   name: Loggers
   href: articles/configs/loggers.html
+- uid: docs.nuget
+  name: Installing NuGet packages
+  href: articles/guides/nuget.html
 - uid: docs.orderproviders
   name: OrderProvider
   href: articles/configs/order-providers.html
 - uid: docs.parameterization
   name: Parameterization
   href: articles/features/parameterization.html
+- uid: docs.setup-and-cleanup
+  name: Setup And Cleanup
+  href: articles/features/setup-and-cleanup.html
+- uid: docs.statistics
+  name: Statistics
+  href: articles/features/statistics.html
 - uid: docs.toolchains
   name: Toolchains
   href: articles/configs/toolchains.html

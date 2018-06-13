@@ -8,7 +8,7 @@
     <title>Filters | BenchmarkDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Filters | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.36.2.0">
     
     <link rel="shortcut icon" href="../../logo/icon-32.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -82,74 +82,221 @@
 <p>Sometimes you don't want to run all of your benchmarks.
 In this case, you can <em>filter</em> some of them with the help of <em>filters</em>.</p>
 <p>Predefined filters:</p>
-<ul>
-<li><code>SimpleFilter</code></li>
-<li><code>NameFilter</code></li>
-<li><code>DisjunctionFilter</code></li>
-<li><code>CategoryFilter</code></li>
-<li><code>AnyCategoriesFilter</code></li>
-<li><code>AllCategoriesFilter</code></li>
-</ul>
-<p>Usage examples:</p>
-<pre><code class="lang-cs">[Config(typeof(Config))]
-public class IntroFilters
+<table>
+<thead>
+<tr>
+<th>Filter Type</th>
+<th>Filters benchmarks by</th>
+<th>Console argument</th>
+<th>Console example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MethodNamesFilter</td>
+<td>Provided method names</td>
+<td>method(s)</td>
+<td>--methods=ToStream,ToString</td>
+</tr>
+<tr>
+<td>TypeNamesFilter</td>
+<td>Provided type names</td>
+<td>class(s)</td>
+<td>--class=XmlSerializerBenchmarks</td>
+</tr>
+<tr>
+<td>NamespacesFilter</td>
+<td>Provided namespaces</td>
+<td>namespace(s)</td>
+<td>--namespace=System.Memory</td>
+</tr>
+<tr>
+<td>AttributesFilter</td>
+<td>Provided attribute names</td>
+<td>attribute(s)</td>
+<td>--attribute=STAThread</td>
+</tr>
+<tr>
+<td>AllCategoriesFilter</td>
+<td>All Provided category names</td>
+<td>category(s)</td>
+<td>--category=Priority1</td>
+</tr>
+<tr>
+<td>AnyCategoriesFilter</td>
+<td>Any provided category names</td>
+<td>anycategories</td>
+<td>--anycategories=Json,Xml</td>
+</tr>
+<tr>
+<td>SimpleFilter</td>
+<td>Provided lambda predicate</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>NameFilter</td>
+<td>Provided lambda predicate</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>UnionFilter</td>
+<td>Logical AND</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>DisjunctionFilter</td>
+<td>Logical OR</td>
+<td>-</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="sample-introfilters">Sample: IntroFilters</h2>
+<p>You can either use one of the predefined <code>Filter</code> types or create a custom type which implements <code>IFilter</code> interface.</p>
+<h3 id="source-code">Source code</h3>
+<pre><code class="lang-csharp" name="IntroFilters.cs">using System.Threading;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Filters;
+
+namespace BenchmarkDotNet.Samples
 {
-    private class Config : ManualConfig
+    [DryJob]
+    [Config(typeof(Config))]
+    public class IntroFilters
     {
-        // We will benchmark ONLY method with names (which contains &quot;A&quot; OR &quot;1&quot;) AND (have length &lt; 3)
-        public Config()
+        private class Config : ManualConfig
         {
-            Add(new DisjunctionFilter(
-                new NameFilter(name =&gt; name.Contains(&quot;A&quot;)),
-                new NameFilter(name =&gt; name.Contains(&quot;1&quot;))
-            )); // benchmark with names which contains &quot;A&quot; OR &quot;1&quot;
-            Add(new NameFilter(name =&gt; name.Length &lt; 3)); // benchmark with names with length &lt; 3
+            // We will benchmark ONLY method with
+            // names (which contains &quot;A&quot; OR &quot;1&quot;) AND (have length &lt; 3)
+            public Config()
+            {
+                // benchmark with names which contains &quot;A&quot; OR &quot;1&quot;
+                Add(new DisjunctionFilter(
+                    new NameFilter(name =&gt; name.Contains(&quot;A&quot;)),
+                    new NameFilter(name =&gt; name.Contains(&quot;1&quot;))
+                ));
+                
+                // benchmark with names with length &lt; 3
+                Add(new NameFilter(name =&gt; name.Length &lt; 3));
+            }
         }
+    
+        [Benchmark] public void A1() =&gt; Thread.Sleep(10); // Will be benchmarked
+        [Benchmark] public void A2() =&gt; Thread.Sleep(10); // Will be benchmarked
+        [Benchmark] public void A3() =&gt; Thread.Sleep(10); // Will be benchmarked
+        [Benchmark] public void B1() =&gt; Thread.Sleep(10); // Will be benchmarked
+        [Benchmark] public void B2() =&gt; Thread.Sleep(10);
+        [Benchmark] public void B3() =&gt; Thread.Sleep(10);
+        [Benchmark] public void C1() =&gt; Thread.Sleep(10); // Will be benchmarked
+        [Benchmark] public void C2() =&gt; Thread.Sleep(10);
+        [Benchmark] public void C3() =&gt; Thread.Sleep(10);
+        [Benchmark] public void Aaa() =&gt; Thread.Sleep(10);
     }
-
-    [Benchmark] public void A1() =&gt; Thread.Sleep(10); // Will be benchmarked
-    [Benchmark] public void A2() =&gt; Thread.Sleep(10); // Will be benchmarked
-    [Benchmark] public void A3() =&gt; Thread.Sleep(10); // Will be benchmarked
-    [Benchmark] public void B1() =&gt; Thread.Sleep(10); // Will be benchmarked
-    [Benchmark] public void B2() =&gt; Thread.Sleep(10);
-    [Benchmark] public void B3() =&gt; Thread.Sleep(10);
-    [Benchmark] public void C1() =&gt; Thread.Sleep(10); // Will be benchmarked
-    [Benchmark] public void C2() =&gt; Thread.Sleep(10);
-    [Benchmark] public void C3() =&gt; Thread.Sleep(10);
-    [Benchmark] public void Aaa() =&gt; Thread.Sleep(10);
 }
-</code></pre>
-<pre><code class="lang-cs">[DryJob]
-[CategoriesColumn]
-[BenchmarkCategory(&quot;Awesome&quot;)]
-[AnyCategoriesFilter(&quot;A&quot;, &quot;1&quot;)]
-public class IntroCategories
+</code></pre><h3 id="see-also">See also</h3>
+<ul>
+<li><a class="xref" href="filters.html">Filters</a></li>
+</ul>
+
+<p>The link to this sample: <a class="xref" href="../samples/IntroFilters.html">Sample: IntroFilters</a></p>
+<hr>
+<h2 id="sample-introcategories">Sample: IntroCategories</h2>
+<p>Combined together with <code>[BenchmarkCategory]</code> attribute, you can group the benchmarks into categories and filter them by categories.</p>
+<h3 id="source-code">Source code</h3>
+<pre><code class="lang-csharp" name="IntroCategories.cs">using System.Threading;
+using BenchmarkDotNet.Attributes;
+
+namespace BenchmarkDotNet.Samples
 {
-    [Benchmark]
-    [BenchmarkCategory(&quot;A&quot;, &quot;1&quot;)]
-    public void A1() =&gt; Thread.Sleep(10); // Will be benchmarked
-    
-    [Benchmark]
-    [BenchmarkCategory(&quot;A&quot;, &quot;2&quot;)]
-    public void A2() =&gt; Thread.Sleep(10); // Will be benchmarked
+    [DryJob]
+    [CategoriesColumn]
+    [BenchmarkCategory(&quot;Awesome&quot;)]
+    [AnyCategoriesFilter(&quot;A&quot;, &quot;1&quot;)]
+    public class IntroCategories
+    {
+        [Benchmark]
+        [BenchmarkCategory(&quot;A&quot;, &quot;1&quot;)]
+        public void A1() =&gt; Thread.Sleep(10); // Will be benchmarked
+        
+        [Benchmark]
+        [BenchmarkCategory(&quot;A&quot;, &quot;2&quot;)]
+        public void A2() =&gt; Thread.Sleep(10); // Will be benchmarked
 
-    [Benchmark]
-    [BenchmarkCategory(&quot;B&quot;, &quot;1&quot;)]
-    public void B1() =&gt; Thread.Sleep(10); // Will be benchmarked
-    
-    [Benchmark]
-    [BenchmarkCategory(&quot;B&quot;, &quot;2&quot;)]
-    public void B2() =&gt; Thread.Sleep(10);
+        [Benchmark]
+        [BenchmarkCategory(&quot;B&quot;, &quot;1&quot;)]
+        public void B1() =&gt; Thread.Sleep(10); // Will be benchmarked
+        
+        [Benchmark]
+        [BenchmarkCategory(&quot;B&quot;, &quot;2&quot;)]
+        public void B2() =&gt; Thread.Sleep(10);
+    }
 }
-</code></pre>
-<p>Command line examples:</p>
+</code></pre><h3 id="command-line-examples">Command line examples:</h3>
 <pre><code>--category=A
 --allCategories=A,B
 --anyCategories=A,B
 </code></pre>
+<h3 id="see-also">See also</h3>
+<ul>
+<li><a class="xref" href="filters.html">Filters</a></li>
+</ul>
+
+<p>The link to this sample: <a class="xref" href="../samples/IntroCategories.html">Sample: IntroCategories</a></p>
+<hr>
+<h2 id="sample-introjoin">Sample: IntroJoin</h2>
 <p>If you are using <code>BenchmarkSwitcher</code> and want to run all the benchmarks with a category from all types and join them into one summary table, use the <code>--join</code> option (or <code>BenchmarkSwitcher.RunAllJoined</code>):</p>
-<pre><code>* --join --category=MyAwesomeCategory
+<h3 id="source-code">Source code</h3>
+<pre><code class="lang-csharp" name="IntroJoin.cs">using System.Threading;
+using BenchmarkDotNet.Attributes;
+
+namespace BenchmarkDotNet.Samples
+{
+    // Run BenchmarkSwither with arguments: &quot;--join --category=IntroJoinA&quot;
+    
+    [DryJob]
+    public class IntroJoin1
+    {
+        [Benchmark]
+        [BenchmarkCategory(&quot;IntroJoinA&quot;)]
+        public void A() =&gt; Thread.Sleep(10);
+        
+        [Benchmark]
+        [BenchmarkCategory(&quot;IntroJoinB&quot;)]
+        public void B() =&gt; Thread.Sleep(10);
+    }
+
+    [DryJob]
+    public class IntroJoin2
+    {
+        [Benchmark]
+        [BenchmarkCategory(&quot;IntroJoinA&quot;)]
+        public void A() =&gt; Thread.Sleep(10);
+        
+        [Benchmark]
+        [BenchmarkCategory(&quot;IntroJoinB&quot;)]
+        public void B() =&gt; Thread.Sleep(10);
+    }
+}
+</code></pre><h3 id="command-line">Command line</h3>
+<pre><code>--join --category=IntroJoinA
 </code></pre>
+<h3 id="output">Output</h3>
+<pre><code class="lang-markdown">|       Type | Method |     Mean | Error |
+|----------- |------- |---------:|------:|
+| IntroJoin1 |      A | 10.99 ms |    NA |
+| IntroJoin2 |      A | 12.50 ms |    NA |
+</code></pre>
+<h3 id="see-also">See also</h3>
+<ul>
+<li><a class="xref" href="filters.html">Filters</a></li>
+</ul>
+
+<p>The link to this sample: <a class="xref" href="../samples/IntroJoin.html">Sample: IntroJoin</a></p>
 </article>
           </div>
           

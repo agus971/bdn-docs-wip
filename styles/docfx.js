@@ -532,6 +532,9 @@ $(function () {
 
     var html = util.formList(breadcrumb, 'breadcrumb');
     $('#breadcrumb').html(html);
+    
+    $('#breadcrumb ul').prepend('<li id="breadcrumb-versions"></li>');
+    $("#breadcrumb-versions").load("/version-combobox.html");
   }
 
   //Setup Affix

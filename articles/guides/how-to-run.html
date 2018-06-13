@@ -8,7 +8,7 @@
     <title>How to run your benchmarks | BenchmarkDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="How to run your benchmarks | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.1.0">
+    <meta name="generator" content="docfx 2.36.2.0">
     
     <link rel="shortcut icon" href="../../logo/icon-32.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -80,20 +80,20 @@
 <h1 id="how-to-run-your-benchmarks">How to run your benchmarks</h1>
 
 <p>There are several ways to run your benchmarks:</p>
-<p>##Types</p>
+<h2 id="types">Types</h2>
 <pre><code class="lang-cs">var summary = BenchmarkRunner.Run&lt;MyBenchmarkClass&gt;();
 var summary = BenchmarkRunner.Run(typeof(MyBenchmarkClass));
 </code></pre>
-<p>##Url</p>
+<h2 id="url">Url</h2>
 <p>You can also run a benchmark directly from the internet:</p>
 <pre><code class="lang-cs">string url = &quot;&lt;E.g. direct link to raw content of a gist&gt;&quot;;
 var summary = BenchmarkRunner.RunUrl(url);
 </code></pre>
-<p>##Source</p>
+<h2 id="source">Source</h2>
 <pre><code class="lang-cs">string benchmarkSource = &quot;public class MyBenchmarkClass { ...&quot;;
 var summary = BenchmarkRunner.RunSource(benchmarkSource);
 </code></pre>
-<p>##BenchmarkSwitcher</p>
+<h2 id="benchmarkswitcher">BenchmarkSwitcher</h2>
 <p>Or you can create a set of benchmarks and choose one from command line:</p>
 <pre><code class="lang-cs">static void Main(string[] args)
 {
