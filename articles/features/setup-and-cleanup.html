@@ -8,7 +8,7 @@
     <title>Setup And Cleanup | BenchmarkDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Setup And Cleanup | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../../logo/icon-32.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -19,6 +19,47 @@
     
     <meta property="docfx:rel" content="../../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -129,28 +170,21 @@ namespace BenchmarkDotNet.Samples
         }
     }
 }
-</code></pre><h3 id="see-also">See also</h3>
+</code></pre><h3 id="links">Links</h3>
 <ul>
 <li><a class="xref" href="setup-and-cleanup.html">Setup And Cleanup</a></li>
+<li>The permanent link to this sample: <a class="xref" href="../samples/IntroSetupCleanupGlobal.html">Sample: IntroSetupCleanupGlobal</a></li>
 </ul>
-
-<p>The link to this sample: <a class="xref" href="../samples/IntroSetupCleanupGlobal.html">Sample: IntroSetupCleanupGlobal</a></p>
 <hr>
 <h2 id="sample-introsetupcleanupiteration">Sample: IntroSetupCleanupIteration</h2>
 <p>A method which is marked by the <a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationSetupAttribute.html"><code>[IterationSetup]</code></a>
-attribute will be executed only once <em>before each an iteration</em>.
+attribute will be executed exactly once <em>before each benchmark invocation</em> (we have changed that in 0.11.0).
 It's not recommended to use this attribute in microbenchmarks because it can spoil the results.
 However, if you are writing a macrobenchmark (e.g. a benchmark which takes at least 100ms) and
-you want to prepare some data before each iteration,
-<a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationSetupAttribute.html"><code>[IterationSetup]</code></a> can be useful.
-BenchmarkDotNet doesn't support setup/cleanup method for a single method invocation (<em>an operation</em>),
-but you can perform only one operation per iteration.
-It's recommended to use <code>RunStrategy.Monitoring</code> for such cases.
-Be careful: if you allocate any objects in
-the <a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationSetupAttribute.html"><code>[IterationSetup]</code></a> method,
-the MemoryDiagnoser results can also be spoiled.</p>
+you want to prepare some data before each invocation,
+<a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationSetupAttribute.html"><code>[IterationSetup]</code></a> can be useful.</p>
 <p>A method which is marked by the <a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationCleanupAttribute.html"><code>[IterationCleanup]</code></a>
-attribute will be executed only once <em>after each an iteration</em>.
+attribute will be executed exactly once <em>after each invocation</em>.
 This attribute has the same set of constraint with <code>[IterationSetup]</code>: it's not recommended to use
 <a class="xref" href="../../api/BenchmarkDotNet.Attributes.IterationCleanupAttribute.html"><code>[IterationCleanup]</code></a> in microbenchmarks.</p>
 <h3 id="source-code">Source code</h3>
@@ -216,12 +250,11 @@ namespace BenchmarkDotNet.Samples
 
 // GlobalCleanup
 </code></pre>
-<h3 id="see-also">See also</h3>
+<h3 id="links">Links</h3>
 <ul>
 <li><a class="xref" href="setup-and-cleanup.html">Setup And Cleanup</a></li>
+<li>The permanent link to this sample: <a class="xref" href="../samples/IntroSetupCleanupIteration.html">Sample: IntroSetupCleanupIteration</a></li>
 </ul>
-
-<p>The link to this sample: <a class="xref" href="../samples/IntroSetupCleanupIteration.html">Sample: IntroSetupCleanupIteration</a></p>
 <hr>
 <h2 id="sample-introsetupcleanuptarget">Sample: IntroSetupCleanupTarget</h2>
 <p>Sometimes it's useful to run setup or cleanups for specific benchmarks.
@@ -246,7 +279,7 @@ namespace BenchmarkDotNet.Samples
         public void BenchmarkA() 
             =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark A&quot;);
 
-        [GlobalSetup(Target = nameof(BenchmarkB) + &quot;,&quot; + nameof(BenchmarkC))]
+        [GlobalSetup(Targets = new[] { nameof(BenchmarkB), nameof(BenchmarkC) })]
         public void GlobalSetupB()
             =&gt; Console.WriteLine(&quot;// &quot; + &quot;GlobalSetup B&quot;);
 
@@ -263,7 +296,7 @@ namespace BenchmarkDotNet.Samples
             =&gt; Console.WriteLine(&quot;// &quot; + &quot;Benchmark D&quot;);
     }
 }
-</code></pre><h3 id="the-order-of-method-calls">THe order of method calls</h3>
+</code></pre><h3 id="the-order-of-method-calls">The order of method calls</h3>
 <pre><code class="lang-cs">// GlobalSetup A
 
 // Benchmark A
@@ -278,12 +311,12 @@ namespace BenchmarkDotNet.Samples
 
 // Benchmark D
 </code></pre>
-<h3 id="see-also">See also</h3>
+<h3 id="links">Links</h3>
 <ul>
 <li><a class="xref" href="setup-and-cleanup.html">Setup And Cleanup</a></li>
+<li>The permanent link to this sample: <a class="xref" href="../samples/IntroSetupCleanupTarget.html">Sample: IntroSetupCleanupTarget</a></li>
 </ul>
-
-<p>The link to this sample: <a class="xref" href="../samples/IntroSetupCleanupTarget.html">Sample: IntroSetupCleanupTarget</a></p>
+<hr>
 </article>
           </div>
           

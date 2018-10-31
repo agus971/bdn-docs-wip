@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class AccuracyMode
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -123,25 +164,16 @@
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateCharacteristic__1_System_String_">CharacteristicObject&lt;AccuracyMode&gt;.CreateCharacteristic&lt;TC&gt;(String)</a>
     </div>
     <div>
+      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateHiddenCharacteristic__1_System_String_">CharacteristicObject&lt;AccuracyMode&gt;.CreateHiddenCharacteristic&lt;TC&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateIgnoreOnApplyCharacteristic__1_System_String_">CharacteristicObject&lt;AccuracyMode&gt;.CreateIgnoreOnApplyCharacteristic&lt;TC&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_ResolveId_BenchmarkDotNet_Characteristics_CharacteristicObject_System_String_">CharacteristicObject.ResolveId(CharacteristicObject, String)</a>
     </div>
     <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_IdCharacteristic">CharacteristicObject.IdCharacteristic</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertNotFrozen">CharacteristicObject.AssertNotFrozen()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsRoot">CharacteristicObject.AssertIsRoot()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsNonFrozenRoot">CharacteristicObject.AssertIsNonFrozenRoot()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsAssignable_BenchmarkDotNet_Characteristics_Characteristic_System_Object_">CharacteristicObject.AssertIsAssignable(Characteristic, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_Owner">CharacteristicObject.Owner</a>
     </div>
     <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_OwnerOrSelf">CharacteristicObject.OwnerOrSelf</a>
@@ -417,7 +449,9 @@
   
   <a id="BenchmarkDotNet_Jobs_AccuracyMode_EvaluateOverhead_" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.EvaluateOverhead*"></a>
   <h4 id="BenchmarkDotNet_Jobs_AccuracyMode_EvaluateOverhead" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.EvaluateOverhead">EvaluateOverhead</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies if the overhead should be evaluated (Idle runs) and it's average value subtracted from every result.
+True by default, very important for nano-benchmarks.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -442,7 +476,10 @@
   
   <a id="BenchmarkDotNet_Jobs_AccuracyMode_MaxAbsoluteError_" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.MaxAbsoluteError*"></a>
   <h4 id="BenchmarkDotNet_Jobs_AccuracyMode_MaxAbsoluteError" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.MaxAbsoluteError">MaxAbsoluteError</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Maximum acceptable error for a benchmark (by default, BenchmarkDotNet continue iterations until the actual error is less than the specified error).
+Doesn't have a default value.
+<remarks>If <a class="xref" href="BenchmarkDotNet.Jobs.AccuracyMode.html#BenchmarkDotNet_Jobs_AccuracyMode_MaxRelativeError">MaxRelativeError</a> is also provided, the smallest value is used as stop criteria.</remarks></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -467,7 +504,10 @@
   
   <a id="BenchmarkDotNet_Jobs_AccuracyMode_MaxRelativeError_" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.MaxRelativeError*"></a>
   <h4 id="BenchmarkDotNet_Jobs_AccuracyMode_MaxRelativeError" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.MaxRelativeError">MaxRelativeError</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Maximum acceptable error for a benchmark (by default, BenchmarkDotNet continue iterations until the actual error is less than the specified error).
+The default value is 0.02.
+<remarks>If <a class="xref" href="BenchmarkDotNet.Jobs.AccuracyMode.html#BenchmarkDotNet_Jobs_AccuracyMode_MaxAbsoluteError">MaxAbsoluteError</a> is also provided, the smallest value is used as stop criteria.</remarks></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -492,7 +532,9 @@
   
   <a id="BenchmarkDotNet_Jobs_AccuracyMode_MinInvokeCount_" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.MinInvokeCount*"></a>
   <h4 id="BenchmarkDotNet_Jobs_AccuracyMode_MinInvokeCount" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.MinInvokeCount">MinInvokeCount</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Minimum count of benchmark invocations per iteration.
+The default value is 4.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -517,7 +559,9 @@
   
   <a id="BenchmarkDotNet_Jobs_AccuracyMode_MinIterationTime_" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.MinIterationTime*"></a>
   <h4 id="BenchmarkDotNet_Jobs_AccuracyMode_MinIterationTime" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.MinIterationTime">MinIterationTime</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Minimum time of a single iteration. Unlike Run.IterationTime, this characteristic specifies only the lower limit. In case of need, BenchmarkDotNet can increase this value.
+The default value is 500 milliseconds.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -542,7 +586,8 @@
   
   <a id="BenchmarkDotNet_Jobs_AccuracyMode_OutlierMode_" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.OutlierMode*"></a>
   <h4 id="BenchmarkDotNet_Jobs_AccuracyMode_OutlierMode" data-uid="BenchmarkDotNet.Jobs.AccuracyMode.OutlierMode">OutlierMode</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies which outliers should be removed from the distribution.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

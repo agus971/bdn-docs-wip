@@ -8,7 +8,7 @@
     <title>Columns | BenchmarkDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Columns | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../../logo/icon-32.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -19,6 +19,47 @@
     
     <meta property="docfx:rel" content="../../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -81,127 +122,119 @@
 
 <p>A <em>column</em> is a column in the summary table.</p>
 <h2 id="default-columns">Default columns</h2>
-<p>In this section, default columns (which be added to the Summary table by default) are presented. Some of columns are optional, i.e. they can be omitted (it depends on the measurements from the summary).</p>
+<p>In this section, default columns (which be added to the Summary table by default) are presented.
+Some of columns are optional, i.e. they can be omitted (it depends on the measurements from the summary).</p>
 <h3 id="target">Target</h3>
-<p>There are 3 default columns which describes the target benchmark: <code>Namespace</code>, <code>Type</code>, <code>Method</code>. <code>Namespace</code> and <code>Type</code> will be omitted when all the benchmarks have the same namespace or type name. <code>Method</code> column always be a part of the summary table.</p>
+<p>There are 3 default columns which describes the target benchmark:
+<code>Namespace</code>, <code>Type</code>, <code>Method</code>. <code>Namespace</code> and <code>Type</code> will be omitted
+when all the benchmarks have the same namespace or type name.
+<code>Method</code> column always be a part of the summary table.</p>
 <h3 id="job">Job</h3>
-<p>There are many different job characteristics, but the summary includes only characteristics which has at least one non-default value.</p>
+<p>There are many different job characteristics,
+but the summary includes only characteristics which has at least one non-default value.</p>
 <h3 id="statistics">Statistics</h3>
-<p>There are also a lot of different statistics which can be considered. It will be really hard to analyse the summary table, if all of the available statistics will be shown. Fortunately, BenchmarkDotNet has some heuristics for statistics columns and shows only important columns. For example, if all of the standard deviations are zero (we run our benchmarks against Dry job), this column will be omitted. The standard error will be shown only for cases when we are failed to achieve required accuracy level.</p>
-<p>Only <code>Mean</code> will be always shown. If the distribution looks strange, BenchmarkDotNet could also print additional columns like <code>Median</code> or <code>P95</code> (95th percentile).</p>
+<p>There are also a lot of different statistics which can be considered.
+It will be really hard to analyse the summary table, if all of the available statistics will be shown.
+Fortunately, BenchmarkDotNet has some heuristics for statistics columns and shows only important columns.
+For example, if all of the standard deviations are zero (we run our benchmarks against Dry job),
+this column will be omitted.
+The standard error will be shown only for cases when we are failed to achieve required accuracy level.</p>
+<p>Only <code>Mean</code> will be always shown.
+If the distribution looks strange,
+BenchmarkDotNet could also print additional columns like <code>Median</code> or <code>P95</code> (95th percentile).</p>
 <p>If you need specific statistics, you always could add them manually.</p>
 <h3 id="params">Params</h3>
 <p>If you have <code>params</code>, the corresponded columns will be automatically added.</p>
 <h3 id="diagnosers">Diagnosers</h3>
 <p>If you turned on diagnosers which providers additional columns, they will be also included in the summary page.</p>
-<h2 id="optional-columns">Optional columns</h2>
-<h3 id="tagcolumns">TagColumns</h3>
-<p>In the following example, we introduce two new columns which contains a tag based on a benchmark method name:</p>
-<pre><code class="lang-cs">[Config(typeof(Config))]
-public class IntroTags
-{
-    private class Config : ManualConfig
-    {
-        public Config()
-        {
-            // You can add custom tags per each method using Columns
-            Add(new TagColumn(&quot;Kind&quot;, name =&gt; name.Substring(0, 3)));
-            Add(new TagColumn(&quot;Number&quot;, name =&gt; name.Substring(3)));
-        }
-    }
-
-    [Benchmark] public void Foo1() { /* ... */ }
-    [Benchmark] public void Foo12() { /* ... */ }
-    [Benchmark] public void Bar3() { /* ... */ }
-    [Benchmark] public void Bar34() { /* ... */ }
-}
-
-</code></pre>
-<p>Result:</p>
-<table>
-<thead>
-<tr>
-<th>Method</th>
-<th>Mean</th>
-<th>Kind</th>
-<th>Number</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bar34</td>
-<td>10.3636 ms</td>
-<td>Bar</td>
-<td>34</td>
-</tr>
-<tr>
-<td>Bar3</td>
-<td>10.4662 ms</td>
-<td>Bar</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Foo12</td>
-<td>10.1377 ms</td>
-<td>Foo</td>
-<td>12</td>
-</tr>
-<tr>
-<td>Foo1</td>
-<td>10.2814 ms</td>
-<td>Foo</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h3 id="rankcolumn">RankColumn</h3>
-<p><code>RankColumn</code> allows you to rank your benchmarks. If there is no significant difference between two benchmarks, they will have the same rank. It also makes sense to define a <code>SummaryOrderPolicy</code> (e.g. <code>FastestToSlowest</code> or <code>SlowestToFastest</code>) when you are using <code>RankColumn</code>. An example:</p>
-<pre><code class="lang-cs">[OrderProvider(SummaryOrderPolicy.FastestToSlowest)]
-[RankColumn]
-[RankColumn(NumeralSystem.Roman)]
-public class IntroRankColumn
-{
-    [Params(1, 2)]
-    public int Factor;
-
-    [Benchmark]
-    public void Foo() =&gt; Thread.Sleep(Factor * 100);
-
-    [Benchmark]
-    public void Bar() =&gt; Thread.Sleep(Factor * 200);
-}
-</code></pre>
-<p>Result:</p>
-<pre><code> Method | Factor |        Mean | Rank | Rank |
-------- |------- |------------ |----- |----- |
-    Foo |      1 | 100.2541 ms |    1 |    I |
-    Foo |      2 | 200.3021 ms |    2 |   II |
-    Bar |      1 | 200.3863 ms |    2 |   II |
-    Bar |      2 | 400.3847 ms |    3 |  III |
-</code></pre>
 <h2 id="custom-columns">Custom columns</h2>
 <p>Of course, you can define own custom columns and use it everywhere. Here is the definition of <code>TagColumn</code>:</p>
-<pre><code class="lang-cs">public class TagColumn : IColumn
+<pre><code class="lang-csharp" name="IntroTagColumn.cs">using System;
+using BenchmarkDotNet.Reports;
+using BenchmarkDotNet.Running;
+
+namespace BenchmarkDotNet.Columns
 {
-    private readonly Func&lt;string, string&gt; getTag;
-
-    public string ColumnName { get; }
-
-    public TagColumn(string columnName, Func&lt;string, string&gt; getTag)
+    public class TagColumn : IColumn
     {
-        this.getTag = getTag;
-        ColumnName = columnName;
+        private readonly Func&lt;string, string&gt; getTag;
+
+        public string Id =&gt; nameof(TagColumn);
+        public string ColumnName { get; }
+
+        public TagColumn(string columnName, Func&lt;string, string&gt; getTag)
+        {
+            this.getTag = getTag;
+            ColumnName = columnName;
+        }
+
+        public bool IsDefault(Summary summary, BenchmarkCase benchmarkCase) =&gt; false;
+        public string GetValue(Summary summary, BenchmarkCase benchmarkCase) =&gt; getTag(benchmarkCase.Descriptor.WorkloadMethod.Name);
+
+        public bool IsAvailable(Summary summary) =&gt; true;
+        public bool AlwaysShow =&gt; true;
+        public ColumnCategory Category =&gt; ColumnCategory.Custom;
+        public int PriorityInCategory =&gt; 0;
+        public bool IsNumeric =&gt; false;
+        public UnitType UnitType =&gt; UnitType.Dimensionless;
+        public string Legend =&gt; $&quot;Custom '{ColumnName}' tag column&quot;;
+        public string GetValue(Summary summary, BenchmarkCase benchmarkCase, ISummaryStyle style) =&gt; GetValue(summary, benchmarkCase);
+        public override string ToString() =&gt; ColumnName;
     }
-
-    public bool IsDefault(Summary summary, Benchmark benchmark) =&gt; false;
-    public string GetValue(Summary summary, Benchmark benchmark) =&gt; getTag(benchmark.Target.Method.Name);
-
-    public bool IsAvailable(Summary summary) =&gt; true;
-    public bool AlwaysShow =&gt; true;
-    public ColumnCategory Category =&gt; ColumnCategory.Custom;
-    public override string ToString() =&gt; ColumnName;
 }
+</code></pre><hr>
+<h2 id="sample-introtagcolumn">Sample: IntroTagColumn</h2>
+<p>In the following example, we introduce two new columns which contains a tag based on a benchmark method name.</p>
+<h3 id="source-code">Source code</h3>
+<pre><code class="lang-csharp" name="IntroTagColumn.cs">using System.Threading;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Columns;
+using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Jobs;
+
+namespace BenchmarkDotNet.Samples
+{
+    // You can add custom tags per each method using Columns
+    [Config(typeof(Config))]
+    public class IntroTagColumn
+    {
+        private class Config : ManualConfig
+        {
+            public Config()
+            {
+                Add(Job.Dry);
+                Add(new TagColumn(&quot;Foo or Bar&quot;, name =&gt; name.Substring(0, 3)));
+                Add(new TagColumn(&quot;Number&quot;, name =&gt; name.Substring(3)));
+            }
+        }
+
+        [Benchmark]
+        public void Foo1() =&gt; Thread.Sleep(10);
+
+        [Benchmark]
+        public void Foo12() =&gt; Thread.Sleep(10);
+
+        [Benchmark]
+        public void Bar3() =&gt; Thread.Sleep(10);
+
+        [Benchmark]
+        public void Bar34() =&gt; Thread.Sleep(10);
+    }
+}
+</code></pre><h3 id="output">Output</h3>
+<pre><code class="lang-markdown">| Method | Mean       | Kind | Number |
+| ------ | ---------- | ---- | ------ |
+| Bar34  | 10.3636 ms | Bar  | 34     |
+| Bar3   | 10.4662 ms | Bar  | 3      |
+| Foo12  | 10.1377 ms | Foo  | 12     |
+| Foo1   | 10.2814 ms | Foo  | 1      |
 </code></pre>
+<h3 id="links">Links</h3>
+<ul>
+<li><a class="xref" href="columns.html">Columns</a></li>
+<li>The permanent link to this sample: <a class="xref" href="../samples/IntroTagColumn.html">Sample: IntroTagColumn</a></li>
+</ul>
+<hr>
 </article>
           </div>
           

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class MetaMode
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -123,25 +164,16 @@
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateCharacteristic__1_System_String_">CharacteristicObject&lt;MetaMode&gt;.CreateCharacteristic&lt;TC&gt;(String)</a>
     </div>
     <div>
+      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateHiddenCharacteristic__1_System_String_">CharacteristicObject&lt;MetaMode&gt;.CreateHiddenCharacteristic&lt;TC&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateIgnoreOnApplyCharacteristic__1_System_String_">CharacteristicObject&lt;MetaMode&gt;.CreateIgnoreOnApplyCharacteristic&lt;TC&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_ResolveId_BenchmarkDotNet_Characteristics_CharacteristicObject_System_String_">CharacteristicObject.ResolveId(CharacteristicObject, String)</a>
     </div>
     <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_IdCharacteristic">CharacteristicObject.IdCharacteristic</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertNotFrozen">CharacteristicObject.AssertNotFrozen()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsRoot">CharacteristicObject.AssertIsRoot()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsNonFrozenRoot">CharacteristicObject.AssertIsNonFrozenRoot()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsAssignable_BenchmarkDotNet_Characteristics_Characteristic_System_Object_">CharacteristicObject.AssertIsAssignable(Characteristic, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_Owner">CharacteristicObject.Owner</a>
     </div>
     <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_OwnerOrSelf">CharacteristicObject.OwnerOrSelf</a>
@@ -220,12 +252,60 @@
   </h3>
   
   
-  <h4 id="BenchmarkDotNet_Jobs_MetaMode_IsBaselineCharacteristic" data-uid="BenchmarkDotNet.Jobs.MetaMode.IsBaselineCharacteristic">IsBaselineCharacteristic</h4>
+  <h4 id="BenchmarkDotNet_Jobs_MetaMode_BaselineCharacteristic" data-uid="BenchmarkDotNet.Jobs.MetaMode.BaselineCharacteristic">BaselineCharacteristic</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;bool&gt; IsBaselineCharacteristic</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;bool&gt; BaselineCharacteristic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Characteristics.Characteristic-1.html">Characteristic</a>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BenchmarkDotNet_Jobs_MetaMode_IsDefaultCharacteristic" data-uid="BenchmarkDotNet.Jobs.MetaMode.IsDefaultCharacteristic">IsDefaultCharacteristic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;bool&gt; IsDefaultCharacteristic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Characteristics.Characteristic-1.html">Characteristic</a>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BenchmarkDotNet_Jobs_MetaMode_IsMutatorCharacteristic" data-uid="BenchmarkDotNet.Jobs.MetaMode.IsMutatorCharacteristic">IsMutatorCharacteristic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;bool&gt; IsMutatorCharacteristic</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -246,13 +326,65 @@
   </h3>
   
   
-  <a id="BenchmarkDotNet_Jobs_MetaMode_IsBaseline_" data-uid="BenchmarkDotNet.Jobs.MetaMode.IsBaseline*"></a>
-  <h4 id="BenchmarkDotNet_Jobs_MetaMode_IsBaseline" data-uid="BenchmarkDotNet.Jobs.MetaMode.IsBaseline">IsBaseline</h4>
+  <a id="BenchmarkDotNet_Jobs_MetaMode_Baseline_" data-uid="BenchmarkDotNet.Jobs.MetaMode.Baseline*"></a>
+  <h4 id="BenchmarkDotNet_Jobs_MetaMode_Baseline" data-uid="BenchmarkDotNet.Jobs.MetaMode.Baseline">Baseline</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsBaseline { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Baseline { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BenchmarkDotNet_Jobs_MetaMode_IsDefault_" data-uid="BenchmarkDotNet.Jobs.MetaMode.IsDefault*"></a>
+  <h4 id="BenchmarkDotNet_Jobs_MetaMode_IsDefault" data-uid="BenchmarkDotNet.Jobs.MetaMode.IsDefault">IsDefault</h4>
+  <div class="markdown level1 summary"><p>set to true if you want to specify custom default settings for default job used by console arguments parser</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDefault { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BenchmarkDotNet_Jobs_MetaMode_IsMutator_" data-uid="BenchmarkDotNet.Jobs.MetaMode.IsMutator*"></a>
+  <h4 id="BenchmarkDotNet_Jobs_MetaMode_IsMutator" data-uid="BenchmarkDotNet.Jobs.MetaMode.IsMutator">IsMutator</h4>
+  <div class="markdown level1 summary"><p>mutator job should not be added to the config, but instead applied to other jobs in given config</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMutator { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

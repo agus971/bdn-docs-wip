@@ -8,7 +8,7 @@
     <title>FAQ (Frequently asked questions) | BenchmarkDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="FAQ (Frequently asked questions) | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -19,6 +19,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -113,7 +154,7 @@ For example, you can use the <code>SimpleJob</code> or <code>ShortRunJob</code> 
 </code></pre>
 </li>
 <li><p><strong>Q</strong> My benchmark unexpectedly stopped and I saw the information about error code. What can I do?</p>
-<p><strong>A</strong> BenchmarkDotNet generates, builds and runs new process for every benchmark. This behavior is sometimes interpreted by anti-virus as dangerous, and the process is killed. Use <code>EnvironmentAnalyser</code> to detect antivirus software and configure your benchmark to use <a class="xref" href="configs/toolchains.html#inprocesstoolchain"><code>InProcessToolchain</code></a>.</p>
+<p><strong>A</strong> BenchmarkDotNet generates, builds and runs new process for every benchmark. This behavior is sometimes interpreted by anti-virus as dangerous, and the process is killed. Use <code>EnvironmentAnalyser</code> to detect antivirus software and configure your benchmark to use <a class="xref" href="samples/IntroInProcess.html"><code>InProcessToolchain</code></a>.</p>
 </li>
 <li><p><strong>Q</strong> Can I run benchmark on the virtual machine?</p>
 <p><strong>A</strong> Yes, of course. However, it can affect results because of the shared, physical machine, virtualization process and incorrect <code>Stopwatch.Frequency</code>. If you are unsure whether an application is running on virtual environment, use <code>EnvironmentAnalyser</code> to detect VM hypervisor.</p>

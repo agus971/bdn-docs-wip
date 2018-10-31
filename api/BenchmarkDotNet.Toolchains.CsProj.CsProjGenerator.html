@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CsProjGenerator
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -92,6 +133,7 @@
     <div class="level2"><a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html">DotNetCliGenerator</a></div>
     <div class="level3"><span class="xref">CsProjGenerator</span></div>
       <div class="level4"><a class="xref" href="BenchmarkDotNet.Toolchains.CoreRt.Generator.html">Generator</a></div>
+      <div class="level4"><a class="xref" href="BenchmarkDotNet.Toolchains.CoreRun.CoreRunGenerator.html">CoreRunGenerator</a></div>
       <div class="level4"><a class="xref" href="BenchmarkDotNet.Toolchains.CustomCoreClr.Generator.html">Generator</a></div>
   </div>
   <div classs="implements">
@@ -104,16 +146,10 @@
       <a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html#BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_TargetFrameworkMoniker">DotNetCliGenerator.TargetFrameworkMoniker</a>
     </div>
     <div>
-      <a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html#BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_PlatformProvider">DotNetCliGenerator.PlatformProvider</a>
+      <a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html#BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_CliPath">DotNetCliGenerator.CliPath</a>
     </div>
     <div>
-      <a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html#BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_Runtime">DotNetCliGenerator.Runtime</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html#BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_ExtraDependencies">DotNetCliGenerator.ExtraDependencies</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html#BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_Imports">DotNetCliGenerator.Imports</a>
+      <a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html#BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_PackagesPath">DotNetCliGenerator.PackagesPath</a>
     </div>
     <div>
       <a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html#BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_GetExecutableExtension">DotNetCliGenerator.GetExecutableExtension()</a>
@@ -123,6 +159,9 @@
     </div>
     <div>
       <a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html#BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_CopyAllRequiredFiles_BenchmarkDotNet_Toolchains_ArtifactsPaths_">DotNetCliGenerator.CopyAllRequiredFiles(ArtifactsPaths)</a>
+    </div>
+    <div>
+      <a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html#BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_GetPackagesDirectoryPath_System_String_">DotNetCliGenerator.GetPackagesDirectoryPath(String)</a>
     </div>
     <div>
       <a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.html#BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_GenerateBuildScript_BenchmarkDotNet_Running_BuildPartition_BenchmarkDotNet_Toolchains_ArtifactsPaths_">DotNetCliGenerator.GenerateBuildScript(BuildPartition, ArtifactsPaths)</a>
@@ -143,7 +182,10 @@
       <a class="xref" href="BenchmarkDotNet.Toolchains.GeneratorBase.html#BenchmarkDotNet_Toolchains_GeneratorBase_GenerateNuGetConfig_BenchmarkDotNet_Toolchains_ArtifactsPaths_">GeneratorBase.GenerateNuGetConfig(ArtifactsPaths)</a>
     </div>
     <div>
-      <a class="xref" href="BenchmarkDotNet.Toolchains.GeneratorBase.html#BenchmarkDotNet_Toolchains_GeneratorBase_GetPackagesDirectoryPath_System_String_">GeneratorBase.GetPackagesDirectoryPath(String)</a>
+      <a class="xref" href="BenchmarkDotNet.Toolchains.GeneratorBase.html#BenchmarkDotNet_Toolchains_GeneratorBase_GenerateAppConfig_BenchmarkDotNet_Running_BuildPartition_BenchmarkDotNet_Toolchains_ArtifactsPaths_">GeneratorBase.GenerateAppConfig(BuildPartition, ArtifactsPaths)</a>
+    </div>
+    <div>
+      <a class="xref" href="BenchmarkDotNet.Toolchains.GeneratorBase.html#BenchmarkDotNet_Toolchains_GeneratorBase_GenerateCode_BenchmarkDotNet_Running_BuildPartition_BenchmarkDotNet_Toolchains_ArtifactsPaths_">GeneratorBase.GenerateCode(BuildPartition, ArtifactsPaths)</a>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
@@ -178,12 +220,12 @@
   
   
   <a id="BenchmarkDotNet_Toolchains_CsProj_CsProjGenerator__ctor_" data-uid="BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.#ctor*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_CsProj_CsProjGenerator__ctor_System_String_System_Func_BenchmarkDotNet_Environments_Platform_System_String__System_String_" data-uid="BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.#ctor(System.String,System.Func{BenchmarkDotNet.Environments.Platform,System.String},System.String)">CsProjGenerator(String, Func&lt;Platform, String&gt;, String)</h4>
+  <h4 id="BenchmarkDotNet_Toolchains_CsProj_CsProjGenerator__ctor_System_String_System_String_System_String_System_String_" data-uid="BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.#ctor(System.String,System.String,System.String,System.String)">CsProjGenerator(String, String, String, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CsProjGenerator(string targetFrameworkMoniker, Func&lt;Platform, string&gt; platformProvider, string runtimeFrameworkVersion = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public CsProjGenerator(string targetFrameworkMoniker, string cliPath, string packagesPath, string runtimeFrameworkVersion)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -201,8 +243,13 @@
         <td></td>
       </tr>
       <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="BenchmarkDotNet.Environments.Platform.html">Platform</a>, <span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">platformProvider</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">cliPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packagesPath</span></td>
         <td></td>
       </tr>
       <tr>
@@ -386,7 +433,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override string GetProjectFilePath(string binariesDirectoryPath)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override string GetProjectFilePath(string buildArtifactsDirectoryPath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -400,7 +447,7 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">binariesDirectoryPath</span></td>
+        <td><span class="parametername">buildArtifactsDirectoryPath</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -426,11 +473,12 @@
   
   <a id="BenchmarkDotNet_Toolchains_CsProj_CsProjGenerator_GetProjectFilePath_" data-uid="BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.GetProjectFilePath*"></a>
   <h4 id="BenchmarkDotNet_Toolchains_CsProj_CsProjGenerator_GetProjectFilePath_System_Type_BenchmarkDotNet_Loggers_ILogger_" data-uid="BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.GetProjectFilePath(System.Type,BenchmarkDotNet.Loggers.ILogger)">GetProjectFilePath(Type, ILogger)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>returns a path to the project file which defines the benchmarks</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected static FileInfo GetProjectFilePath(Type benchmarkTarget, ILogger logger)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual FileInfo GetProjectFilePath(Type benchmarkTarget, ILogger logger)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -473,11 +521,12 @@
   
   <a id="BenchmarkDotNet_Toolchains_CsProj_CsProjGenerator_GetRuntimeSettings_" data-uid="BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.GetRuntimeSettings*"></a>
   <h4 id="BenchmarkDotNet_Toolchains_CsProj_CsProjGenerator_GetRuntimeSettings_BenchmarkDotNet_Jobs_GcMode_BenchmarkDotNet_Characteristics_IResolver_" data-uid="BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.GetRuntimeSettings(BenchmarkDotNet.Jobs.GcMode,BenchmarkDotNet.Characteristics.IResolver)">GetRuntimeSettings(GcMode, IResolver)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>returns an MSBuild string that defines Runtime settings</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string GetRuntimeSettings(GcMode gcMode, IResolver resolver)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual string GetRuntimeSettings(GcMode gcMode, IResolver resolver)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">

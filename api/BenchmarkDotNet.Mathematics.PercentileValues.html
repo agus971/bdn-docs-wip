@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class PercentileValues
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -394,30 +435,13 @@
   
   
   <a id="BenchmarkDotNet_Mathematics_PercentileValues_ToStr_" data-uid="BenchmarkDotNet.Mathematics.PercentileValues.ToStr*"></a>
-  <h4 id="BenchmarkDotNet_Mathematics_PercentileValues_ToStr_System_Boolean_" data-uid="BenchmarkDotNet.Mathematics.PercentileValues.ToStr(System.Boolean)">ToStr(Boolean)</h4>
+  <h4 id="BenchmarkDotNet_Mathematics_PercentileValues_ToStr" data-uid="BenchmarkDotNet.Mathematics.PercentileValues.ToStr">ToStr()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToStr(bool showLevel = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public string ToStr()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">showLevel</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -436,12 +460,12 @@
   
   
   <a id="BenchmarkDotNet_Mathematics_PercentileValues_ToTimeStr_" data-uid="BenchmarkDotNet.Mathematics.PercentileValues.ToTimeStr*"></a>
-  <h4 id="BenchmarkDotNet_Mathematics_PercentileValues_ToTimeStr_BenchmarkDotNet_Horology_TimeUnit_System_Boolean_System_Text_Encoding_" data-uid="BenchmarkDotNet.Mathematics.PercentileValues.ToTimeStr(BenchmarkDotNet.Horology.TimeUnit,System.Boolean,System.Text.Encoding)">ToTimeStr(TimeUnit, Boolean, Encoding)</h4>
+  <h4 id="BenchmarkDotNet_Mathematics_PercentileValues_ToTimeStr_BenchmarkDotNet_Horology_TimeUnit_System_Text_Encoding_" data-uid="BenchmarkDotNet.Mathematics.PercentileValues.ToTimeStr(BenchmarkDotNet.Horology.TimeUnit,System.Text.Encoding)">ToTimeStr(TimeUnit, Encoding)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string ToTimeStr(TimeUnit unit = null, bool showLevel = true, Encoding encoding = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public string ToTimeStr(TimeUnit unit = null, Encoding encoding = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -456,11 +480,6 @@
       <tr>
         <td><a class="xref" href="BenchmarkDotNet.Horology.TimeUnit.html">TimeUnit</a></td>
         <td><span class="parametername">unit</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">showLevel</span></td>
         <td></td>
       </tr>
       <tr>

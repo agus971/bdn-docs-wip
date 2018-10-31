@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Job
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -123,25 +164,16 @@
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateCharacteristic__1_System_String_">CharacteristicObject&lt;Job&gt;.CreateCharacteristic&lt;TC&gt;(String)</a>
     </div>
     <div>
+      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateHiddenCharacteristic__1_System_String_">CharacteristicObject&lt;Job&gt;.CreateHiddenCharacteristic&lt;TC&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateIgnoreOnApplyCharacteristic__1_System_String_">CharacteristicObject&lt;Job&gt;.CreateIgnoreOnApplyCharacteristic&lt;TC&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_ResolveId_BenchmarkDotNet_Characteristics_CharacteristicObject_System_String_">CharacteristicObject.ResolveId(CharacteristicObject, String)</a>
     </div>
     <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_IdCharacteristic">CharacteristicObject.IdCharacteristic</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertNotFrozen">CharacteristicObject.AssertNotFrozen()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsRoot">CharacteristicObject.AssertIsRoot()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsNonFrozenRoot">CharacteristicObject.AssertIsNonFrozenRoot()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsAssignable_BenchmarkDotNet_Characteristics_Characteristic_System_Object_">CharacteristicObject.AssertIsAssignable(Characteristic, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_Owner">CharacteristicObject.Owner</a>
     </div>
     <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_OwnerOrSelf">CharacteristicObject.OwnerOrSelf</a>
@@ -593,12 +625,12 @@
   </table>
   
   
-  <h4 id="BenchmarkDotNet_Jobs_Job_EnvCharacteristic" data-uid="BenchmarkDotNet.Jobs.Job.EnvCharacteristic">EnvCharacteristic</h4>
+  <h4 id="BenchmarkDotNet_Jobs_Job_EnvironmentCharacteristic" data-uid="BenchmarkDotNet.Jobs.Job.EnvironmentCharacteristic">EnvironmentCharacteristic</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;EnvMode&gt; EnvCharacteristic</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;EnvironmentMode&gt; EnvironmentCharacteristic</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -610,7 +642,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Characteristics.Characteristic-1.html">Characteristic</a>&lt;<a class="xref" href="BenchmarkDotNet.Jobs.EnvMode.html">EnvMode</a>&gt;</td>
+        <td><a class="xref" href="BenchmarkDotNet.Characteristics.Characteristic-1.html">Characteristic</a>&lt;<a class="xref" href="BenchmarkDotNet.Jobs.EnvironmentMode.html">EnvironmentMode</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1005,13 +1037,13 @@
   </table>
   
   
-  <a id="BenchmarkDotNet_Jobs_Job_Env_" data-uid="BenchmarkDotNet.Jobs.Job.Env*"></a>
-  <h4 id="BenchmarkDotNet_Jobs_Job_Env" data-uid="BenchmarkDotNet.Jobs.Job.Env">Env</h4>
+  <a id="BenchmarkDotNet_Jobs_Job_Environment_" data-uid="BenchmarkDotNet.Jobs.Job.Environment*"></a>
+  <h4 id="BenchmarkDotNet_Jobs_Job_Environment" data-uid="BenchmarkDotNet.Jobs.Job.Environment">Environment</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EnvMode Env { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public EnvironmentMode Environment { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1023,7 +1055,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Jobs.EnvMode.html">EnvMode</a></td>
+        <td><a class="xref" href="BenchmarkDotNet.Jobs.EnvironmentMode.html">EnvironmentMode</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -1194,6 +1226,15 @@
       <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithGcRetainVm_BenchmarkDotNet_Jobs_Job_System_Boolean_">JobExtensions.WithGcRetainVm(Job, Boolean)</a>
   </div>
   <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithHeapCount_BenchmarkDotNet_Jobs_Job_System_Int32_">JobExtensions.WithHeapCount(Job, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithNoAffinitize_BenchmarkDotNet_Jobs_Job_System_Boolean_">JobExtensions.WithNoAffinitize(Job, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithHeapAffinitizeMask_BenchmarkDotNet_Jobs_Job_System_Int32_">JobExtensions.WithHeapAffinitizeMask(Job, Int32)</a>
+  </div>
+  <div>
       <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_With_BenchmarkDotNet_Jobs_Job_BenchmarkDotNet_Jobs_GcMode_">JobExtensions.With(Job, GcMode)</a>
   </div>
   <div>
@@ -1206,7 +1247,16 @@
       <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithWarmupCount_BenchmarkDotNet_Jobs_Job_System_Int32_">JobExtensions.WithWarmupCount(Job, Int32)</a>
   </div>
   <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithMinWarmupCount_BenchmarkDotNet_Jobs_Job_System_Int32_">JobExtensions.WithMinWarmupCount(Job, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithMaxWarmupCount_BenchmarkDotNet_Jobs_Job_System_Int32_">JobExtensions.WithMaxWarmupCount(Job, Int32)</a>
+  </div>
+  <div>
       <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithTargetCount_BenchmarkDotNet_Jobs_Job_System_Int32_">JobExtensions.WithTargetCount(Job, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithIterationCount_BenchmarkDotNet_Jobs_Job_System_Int32_">JobExtensions.WithIterationCount(Job, Int32)</a>
   </div>
   <div>
       <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithIterationTime_BenchmarkDotNet_Jobs_Job_BenchmarkDotNet_Horology_TimeInterval_">JobExtensions.WithIterationTime(Job, TimeInterval)</a>
@@ -1221,10 +1271,10 @@
       <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_RunOncePerIteration_BenchmarkDotNet_Jobs_Job_">JobExtensions.RunOncePerIteration(Job)</a>
   </div>
   <div>
-      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithMinTargetIterationCount_BenchmarkDotNet_Jobs_Job_System_Int32_">JobExtensions.WithMinTargetIterationCount(Job, Int32)</a>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithMinIterationCount_BenchmarkDotNet_Jobs_Job_System_Int32_">JobExtensions.WithMinIterationCount(Job, Int32)</a>
   </div>
   <div>
-      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithMaxTargetIterationCount_BenchmarkDotNet_Jobs_Job_System_Int32_">JobExtensions.WithMaxTargetIterationCount(Job, Int32)</a>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithMaxIterationCount_BenchmarkDotNet_Jobs_Job_System_Int32_">JobExtensions.WithMaxIterationCount(Job, Int32)</a>
   </div>
   <div>
       <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_With_BenchmarkDotNet_Jobs_Job_BenchmarkDotNet_Toolchains_IToolchain_">JobExtensions.With(Job, IToolchain)</a>
@@ -1243,6 +1293,15 @@
   </div>
   <div>
       <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_With_BenchmarkDotNet_Jobs_Job_System_Collections_Generic_IReadOnlyList_BenchmarkDotNet_Jobs_Argument__">JobExtensions.With(Job, IReadOnlyList&lt;Argument&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithNuGet_BenchmarkDotNet_Jobs_Job_System_String_System_String_">JobExtensions.WithNuGet(Job, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithNuGet_BenchmarkDotNet_Jobs_Job_System_String_">JobExtensions.WithNuGet(Job, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithNuGet_BenchmarkDotNet_Jobs_Job_System_Collections_Generic_IReadOnlyCollection_BenchmarkDotNet_Jobs_NuGetReference__">JobExtensions.WithNuGet(Job, IReadOnlyCollection&lt;NuGetReference&gt;)</a>
   </div>
   <div>
       <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithMaxRelativeError_BenchmarkDotNet_Jobs_Job_System_Double_">JobExtensions.WithMaxRelativeError(Job, Double)</a>
@@ -1272,7 +1331,16 @@
       <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_AsBaseline_BenchmarkDotNet_Jobs_Job_">JobExtensions.AsBaseline(Job)</a>
   </div>
   <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithBaseline_BenchmarkDotNet_Jobs_Job_System_Boolean_">JobExtensions.WithBaseline(Job, Boolean)</a>
+  </div>
+  <div>
       <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_WithIsBaseline_BenchmarkDotNet_Jobs_Job_System_Boolean_">JobExtensions.WithIsBaseline(Job, Boolean)</a>
+  </div>
+  <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_AsMutator_BenchmarkDotNet_Jobs_Job_">JobExtensions.AsMutator(Job)</a>
+  </div>
+  <div>
+      <a class="xref" href="BenchmarkDotNet.Jobs.JobExtensions.html#BenchmarkDotNet_Jobs_JobExtensions_AsDefault_BenchmarkDotNet_Jobs_Job_System_Boolean_">JobExtensions.AsDefault(Job, Boolean)</a>
   </div>
 </article>
           </div>

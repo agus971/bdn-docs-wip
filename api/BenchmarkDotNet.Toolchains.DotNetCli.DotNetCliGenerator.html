@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DotNetCliGenerator
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -114,7 +155,10 @@
       <a class="xref" href="BenchmarkDotNet.Toolchains.GeneratorBase.html#BenchmarkDotNet_Toolchains_GeneratorBase_GenerateProject_BenchmarkDotNet_Running_BuildPartition_BenchmarkDotNet_Toolchains_ArtifactsPaths_BenchmarkDotNet_Loggers_ILogger_">GeneratorBase.GenerateProject(BuildPartition, ArtifactsPaths, ILogger)</a>
     </div>
     <div>
-      <a class="xref" href="BenchmarkDotNet.Toolchains.GeneratorBase.html#BenchmarkDotNet_Toolchains_GeneratorBase_GetPackagesDirectoryPath_System_String_">GeneratorBase.GetPackagesDirectoryPath(String)</a>
+      <a class="xref" href="BenchmarkDotNet.Toolchains.GeneratorBase.html#BenchmarkDotNet_Toolchains_GeneratorBase_GenerateAppConfig_BenchmarkDotNet_Running_BuildPartition_BenchmarkDotNet_Toolchains_ArtifactsPaths_">GeneratorBase.GenerateAppConfig(BuildPartition, ArtifactsPaths)</a>
+    </div>
+    <div>
+      <a class="xref" href="BenchmarkDotNet.Toolchains.GeneratorBase.html#BenchmarkDotNet_Toolchains_GeneratorBase_GenerateCode_BenchmarkDotNet_Running_BuildPartition_BenchmarkDotNet_Toolchains_ArtifactsPaths_">GeneratorBase.GenerateCode(BuildPartition, ArtifactsPaths)</a>
     </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
@@ -149,12 +193,12 @@
   
   
   <a id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator__ctor_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.#ctor*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator__ctor_BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliBuilder_System_String_System_String_System_Func_BenchmarkDotNet_Environments_Platform_System_String__System_String_System_String_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.#ctor(BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliBuilder,System.String,System.String,System.Func{BenchmarkDotNet.Environments.Platform,System.String},System.String,System.String)">DotNetCliGenerator(DotNetCliBuilder, String, String, Func&lt;Platform, String&gt;, String, String)</h4>
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator__ctor_System_String_System_String_System_String_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.#ctor(System.String,System.String,System.String)">DotNetCliGenerator(String, String, String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected DotNetCliGenerator(DotNetCliBuilder builder, string targetFrameworkMoniker, string extraDependencies, Func&lt;Platform, string&gt; platformProvider, string imports, string runtime = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected DotNetCliGenerator(string targetFrameworkMoniker, string cliPath, string packagesPath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -167,33 +211,18 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliBuilder.html">DotNetCliBuilder</a></td>
-        <td><span class="parametername">builder</span></td>
-        <td></td>
-      </tr>
-      <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">targetFrameworkMoniker</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">extraDependencies</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="BenchmarkDotNet.Environments.Platform.html">Platform</a>, <span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">platformProvider</span></td>
+        <td><span class="parametername">cliPath</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">imports</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">runtime</span></td>
+        <td><span class="parametername">packagesPath</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -202,13 +231,13 @@
   </h3>
   
   
-  <a id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_ExtraDependencies_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.ExtraDependencies*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_ExtraDependencies" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.ExtraDependencies">ExtraDependencies</h4>
+  <a id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_CliPath_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.CliPath*"></a>
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_CliPath" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.CliPath">CliPath</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string ExtraDependencies { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string CliPath { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -227,63 +256,13 @@
   </table>
   
   
-  <a id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_Imports_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.Imports*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_Imports" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.Imports">Imports</h4>
+  <a id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_PackagesPath_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.PackagesPath*"></a>
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_PackagesPath" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.PackagesPath">PackagesPath</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string Imports { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_PlatformProvider_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.PlatformProvider*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_PlatformProvider" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.PlatformProvider">PlatformProvider</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected Func&lt;Platform, string&gt; PlatformProvider { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="BenchmarkDotNet.Environments.Platform.html">Platform</a>, <span class="xref">System.String</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_Runtime_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.Runtime*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_Runtime" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.Runtime">Runtime</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string Runtime { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string PackagesPath { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -308,7 +287,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string TargetFrameworkMoniker { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string TargetFrameworkMoniker { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -440,7 +419,7 @@
   <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_GetBuildArtifactsDirectoryPath_BenchmarkDotNet_Running_BuildPartition_System_String_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.GetBuildArtifactsDirectoryPath(BenchmarkDotNet.Running.BuildPartition,System.String)">GetBuildArtifactsDirectoryPath(BuildPartition, String)</h4>
   <div class="markdown level1 summary"><p>we need our folder to be on the same level as the project that we want to reference
 we are limited by xprojs (by default compiles all .cs files in all subfolders, Program.cs could be doubled and fail the build)
-and also by nuget internal implementation like looking for global.json file in parent folders</p>
+and also by NuGet internal implementation like looking for global.json file in parent folders</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -513,6 +492,50 @@ and also by nuget internal implementation like looking for global.json file in p
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="BenchmarkDotNet.Toolchains.GeneratorBase.html#BenchmarkDotNet_Toolchains_GeneratorBase_GetExecutableExtension">GeneratorBase.GetExecutableExtension()</a></div>
+  
+  
+  <a id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_GetPackagesDirectoryPath_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.GetPackagesDirectoryPath*"></a>
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_GetPackagesDirectoryPath_System_String_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.GetPackagesDirectoryPath(System.String)">GetPackagesDirectoryPath(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string GetPackagesDirectoryPath(string buildArtifactsDirectoryPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">buildArtifactsDirectoryPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="BenchmarkDotNet.Toolchains.GeneratorBase.html#BenchmarkDotNet_Toolchains_GeneratorBase_GetPackagesDirectoryPath_System_String_">GeneratorBase.GetPackagesDirectoryPath(String)</a></div>
   
   
   <a id="BenchmarkDotNet_Toolchains_DotNetCli_DotNetCliGenerator_SetCodeFileName_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.DotNetCliGenerator.SetCodeFileName*"></a>

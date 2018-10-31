@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class BenchmarkActionFactory
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -153,13 +194,13 @@
   
   
   <a id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateGlobalCleanup_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateGlobalCleanup*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateGlobalCleanup_BenchmarkDotNet_Running_Target_System_Object_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateGlobalCleanup(BenchmarkDotNet.Running.Target,System.Object)">CreateGlobalCleanup(Target, Object)</h4>
+  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateGlobalCleanup_BenchmarkDotNet_Running_Descriptor_System_Object_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateGlobalCleanup(BenchmarkDotNet.Running.Descriptor,System.Object)">CreateGlobalCleanup(Descriptor, Object)</h4>
   <div class="markdown level1 summary"><p>Creates global cleanup benchmark action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateGlobalCleanup(Target target, object instance)</code></pre>
+    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateGlobalCleanup(Descriptor descriptor, object instance)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -172,9 +213,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Running.Target.html">Target</a></td>
-        <td><span class="parametername">target</span></td>
-        <td><p>Target info.</p>
+        <td><a class="xref" href="BenchmarkDotNet.Running.Descriptor.html">Descriptor</a></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td><p>Descriptor info.</p>
 </td>
       </tr>
       <tr>
@@ -204,13 +245,13 @@
   
   
   <a id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateGlobalSetup_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateGlobalSetup*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateGlobalSetup_BenchmarkDotNet_Running_Target_System_Object_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateGlobalSetup(BenchmarkDotNet.Running.Target,System.Object)">CreateGlobalSetup(Target, Object)</h4>
+  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateGlobalSetup_BenchmarkDotNet_Running_Descriptor_System_Object_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateGlobalSetup(BenchmarkDotNet.Running.Descriptor,System.Object)">CreateGlobalSetup(Descriptor, Object)</h4>
   <div class="markdown level1 summary"><p>Creates global setup benchmark action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateGlobalSetup(Target target, object instance)</code></pre>
+    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateGlobalSetup(Descriptor descriptor, object instance)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -223,9 +264,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Running.Target.html">Target</a></td>
-        <td><span class="parametername">target</span></td>
-        <td><p>Target info.</p>
+        <td><a class="xref" href="BenchmarkDotNet.Running.Descriptor.html">Descriptor</a></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td><p>Descriptor info.</p>
 </td>
       </tr>
       <tr>
@@ -254,14 +295,14 @@
   </table>
   
   
-  <a id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateIdle_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateIdle*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateIdle_BenchmarkDotNet_Running_Target_System_Object_BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionCodegen_System_Int32_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateIdle(BenchmarkDotNet.Running.Target,System.Object,BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionCodegen,System.Int32)">CreateIdle(Target, Object, BenchmarkActionCodegen, Int32)</h4>
-  <div class="markdown level1 summary"><p>Creates idle benchmark action.</p>
+  <a id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateIterationCleanup_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateIterationCleanup*"></a>
+  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateIterationCleanup_BenchmarkDotNet_Running_Descriptor_System_Object_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateIterationCleanup(BenchmarkDotNet.Running.Descriptor,System.Object)">CreateIterationCleanup(Descriptor, Object)</h4>
+  <div class="markdown level1 summary"><p>Creates global cleanup benchmark action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateIdle(Target target, object instance, BenchmarkActionCodegen codegenMode, int unrollFactor)</code></pre>
+    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateIterationCleanup(Descriptor descriptor, object instance)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -274,9 +315,111 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Running.Target.html">Target</a></td>
-        <td><span class="parametername">target</span></td>
-        <td><p>Target info.</p>
+        <td><a class="xref" href="BenchmarkDotNet.Running.Descriptor.html">Descriptor</a></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td><p>Descriptor info.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance of target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Toolchains.InProcess.BenchmarkAction.html">BenchmarkAction</a></td>
+        <td><p>Cleanup benchmark action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateIterationSetup_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateIterationSetup*"></a>
+  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateIterationSetup_BenchmarkDotNet_Running_Descriptor_System_Object_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateIterationSetup(BenchmarkDotNet.Running.Descriptor,System.Object)">CreateIterationSetup(Descriptor, Object)</h4>
+  <div class="markdown level1 summary"><p>Creates global setup benchmark action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateIterationSetup(Descriptor descriptor, object instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Running.Descriptor.html">Descriptor</a></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td><p>Descriptor info.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance of target.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Toolchains.InProcess.BenchmarkAction.html">BenchmarkAction</a></td>
+        <td><p>Setup benchmark action.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateOverhead_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateOverhead*"></a>
+  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateOverhead_BenchmarkDotNet_Running_Descriptor_System_Object_BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionCodegen_System_Int32_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateOverhead(BenchmarkDotNet.Running.Descriptor,System.Object,BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionCodegen,System.Int32)">CreateOverhead(Descriptor, Object, BenchmarkActionCodegen, Int32)</h4>
+  <div class="markdown level1 summary"><p>Creates idle benchmark action.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateOverhead(Descriptor descriptor, object instance, BenchmarkActionCodegen codegenMode, int unrollFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Running.Descriptor.html">Descriptor</a></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td><p>Descriptor info.</p>
 </td>
       </tr>
       <tr>
@@ -317,116 +460,14 @@
   </table>
   
   
-  <a id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateIterationCleanup_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateIterationCleanup*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateIterationCleanup_BenchmarkDotNet_Running_Target_System_Object_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateIterationCleanup(BenchmarkDotNet.Running.Target,System.Object)">CreateIterationCleanup(Target, Object)</h4>
-  <div class="markdown level1 summary"><p>Creates global cleanup benchmark action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateIterationCleanup(Target target, object instance)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Running.Target.html">Target</a></td>
-        <td><span class="parametername">target</span></td>
-        <td><p>Target info.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">instance</span></td>
-        <td><p>Instance of target.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Toolchains.InProcess.BenchmarkAction.html">BenchmarkAction</a></td>
-        <td><p>Cleanup benchmark action.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateIterationSetup_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateIterationSetup*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateIterationSetup_BenchmarkDotNet_Running_Target_System_Object_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateIterationSetup(BenchmarkDotNet.Running.Target,System.Object)">CreateIterationSetup(Target, Object)</h4>
-  <div class="markdown level1 summary"><p>Creates global setup benchmark action.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateIterationSetup(Target target, object instance)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Running.Target.html">Target</a></td>
-        <td><span class="parametername">target</span></td>
-        <td><p>Target info.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">instance</span></td>
-        <td><p>Instance of target.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Toolchains.InProcess.BenchmarkAction.html">BenchmarkAction</a></td>
-        <td><p>Setup benchmark action.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateRun_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateRun*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateRun_BenchmarkDotNet_Running_Target_System_Object_BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionCodegen_System_Int32_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateRun(BenchmarkDotNet.Running.Target,System.Object,BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionCodegen,System.Int32)">CreateRun(Target, Object, BenchmarkActionCodegen, Int32)</h4>
+  <a id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateWorkload_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateWorkload*"></a>
+  <h4 id="BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionFactory_CreateWorkload_BenchmarkDotNet_Running_Descriptor_System_Object_BenchmarkDotNet_Toolchains_InProcess_BenchmarkActionCodegen_System_Int32_" data-uid="BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionFactory.CreateWorkload(BenchmarkDotNet.Running.Descriptor,System.Object,BenchmarkDotNet.Toolchains.InProcess.BenchmarkActionCodegen,System.Int32)">CreateWorkload(Descriptor, Object, BenchmarkActionCodegen, Int32)</h4>
   <div class="markdown level1 summary"><p>Creates run benchmark action.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateRun(Target target, object instance, BenchmarkActionCodegen codegenMode, int unrollFactor)</code></pre>
+    <pre><code class="lang-csharp hljs">public static BenchmarkAction CreateWorkload(Descriptor descriptor, object instance, BenchmarkActionCodegen codegenMode, int unrollFactor)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -439,9 +480,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Running.Target.html">Target</a></td>
-        <td><span class="parametername">target</span></td>
-        <td><p>Target info.</p>
+        <td><a class="xref" href="BenchmarkDotNet.Running.Descriptor.html">Descriptor</a></td>
+        <td><span class="parametername">descriptor</span></td>
+        <td><p>Descriptor info.</p>
 </td>
       </tr>
       <tr>

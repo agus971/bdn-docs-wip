@@ -8,7 +8,7 @@
     <title>Jobs | BenchmarkDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Jobs | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../../logo/icon-32.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -19,6 +19,47 @@
     
     <meta property="docfx:rel" content="../../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -84,8 +125,8 @@
 <p>There are several categories of characteristics which you can specify. Let's consider each category in detail.</p>
 <h3 id="id">Id</h3>
 <p>It's a single string characteristic. It allows to name your job. This name will be used in logs and a part of a folder name with generated files for this job. <code>Id</code> doesn't affect benchmark results, but it can be useful for diagnostics. If you don't specify <code>Id</code>, random value will be chosen based on other characteristics</p>
-<h3 id="env">Env</h3>
-<p><code>Env</code> specifies an environment of the job. You can specify the following characteristics:</p>
+<h3 id="environment">Environment</h3>
+<p><code>Environment</code> specifies an environment of the job. You can specify the following characteristics:</p>
 <ul>
 <li><code>Platform</code>: <code>x86</code> or <code>x64</code></li>
 <li><code>Runtime</code>:
@@ -112,6 +153,7 @@
 <li><code>AllowVeryLargeObjects</code>:  On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size</li>
 </ul>
 </li>
+<li><code>EnvironmentVariables</code>: customized environment variables for target benchmark. See also: <a class="xref" href="../samples/IntroEnvVars.html">Sample: IntroEnvVars</a></li>
 </ul>
 <p>BenchmarkDotNet will use host process environment characteristics for non specified values.</p>
 <h3 id="run">Run</h3>
@@ -130,6 +172,10 @@
 <li><code>IterationTime</code>: desired time of a single iteration</li>
 <li><code>UnrollFactor</code>: how many times the benchmark method will be invoked per one iteration of a generated loop</li>
 <li><code>InvocationCount</code>: count of invocation in a single iteration (if specified, <code>IterationTime</code> will be ignored), must be a multiple of <code>UnrollFactor</code></li>
+<li><code>MinIterationCount</code>: Minimum count of target iterations that should be performed, the default value is 15</li>
+<li><code>MaxIterationCount</code>: Maximum count of target iterations that should be performed, the default value is 100</li>
+<li><code>MinWarmupIterationCount</code>: Minimum count of warmup iterations that should be performed, the default value is 6</li>
+<li><code>MaxWarmupIterationCount</code>: Maximum count of warmup iterations that should be performed, the default value is 50</li>
 </ul>
 <p>Usually, you shouldn't specify such characteristics like <code>LaunchCount</code>, <code>WarmupCount</code>, <code>TargetCount</code>, or <code>IterationTime</code> because BenchmarkDotNet has a smart algorithm to choose these values automatically based on received measurements. You can specify it for testing purposes or when you are damn sure that you know the right characteristics for your benchmark (when you set <code>TargetCount</code> = <code>20</code> you should understand why <code>20</code> is a good value for your case).</p>
 <h3 id="accuracy">Accuracy</h3>
@@ -145,15 +191,14 @@
 <h3 id="infrastructure">Infrastructure</h3>
 <p>Usually, you shouldn't specify any characteristics from this section, it can be used for advanced cases only.</p>
 <ul>
-<li><code>Toolchain</code>: a toolchain which generate source code for target benchmark methods, build it, and execute it. BenchmarkDotNet has own toolchains for CoreCLR projects and classic projects (the last one is <code>RoslynToolchain</code>, you can find it in the <a href="https://www.nuget.org/packages/BenchmarkDotNet.Toolchains.Roslyn/">BenchmarkDotNet.Toolchains.Roslyn</a> NuGet package). If you want, you can define own toolchain.</li>
+<li><code>Toolchain</code>: a toolchain which generates source code for target benchmark methods, builds it, and executes it. BenchmarkDotNet has own toolchains for .NET, .NET Core, Mono and CoreRT projects. If you want, you can define own toolchain.</li>
 <li><code>Clock</code>: a clock which will be used for measurements. BenchmarkDotNet automatically choose the best available clock source, but you can specify own clock source.</li>
 <li><code>EngineFactory</code>: a provider for measurement engine which performs all the measurement magic. If you don't trust BenchmarkDotNet, you can define own engine and implement all the measurement stages manually.</li>
-<li><code>EnvironmentVariables</code>: customized environment variables for target benchmark. See also: <a class="xref" href="../samples/IntroEnvVars.html">Sample: IntroEnvVars</a></li>
 </ul>
 <h2 id="usage">Usage</h2>
 <p>There are several ways to specify a job.</p>
 <h3 id="object-style">Object style</h3>
-<p>You can create own jobs directly from the source code via a cusom config:</p>
+<p>You can create own jobs directly from the source code via a custom config:</p>
 <pre><code class="lang-cs">[Config(typeof(Config))]
 public class MyBenchmarks
 {
@@ -178,7 +223,7 @@ public class MyBenchmarks
                 .WithLaunchCount(5)
                 .WithIterationTime(TimeInterval.Millisecond * 200)
                 .WithMaxStdErrRelative(0.01)
-                .WithId(&quot;MySuperJob&quot;)); // IMPORTANT: Id assignment should be the last call in the chain or the id will be lost.
+                .WithId(&quot;MySuperJob&quot;));
         }
     }
     // Benchmarks
@@ -205,6 +250,41 @@ public class MyBenchmarks
 public class MyBenchmarkClass
 </code></pre>
 <p>Note that each of the attributes identifies a separate job, the sample above will result in 8 different jobs, not a single merged job.</p>
+<h3 id="attribute-style-for-merging-jobs">Attribute style for merging jobs</h3>
+<p>Sometimes you want to apply some changes to other jobs, without adding a new job to a config (which results in one extra benchmark run).</p>
+<p>To do that you can use following predefined job mutator attributes:</p>
+<ul>
+<li><code>[EvaluateOverhead]</code></li>
+<li><code>[GcConcurrent]</code></li>
+<li><code>[GcForce]</code></li>
+<li><code>[GcServer]</code></li>
+<li><code>[InnerIterationCount]</code></li>
+<li><code>[InvocationCount]</code></li>
+<li><code>[IterationCount]</code></li>
+<li><code>[IterationTime]</code></li>
+<li><code>[MaxAbsoluteError]</code></li>
+<li><code>[MaxIterationCount]</code></li>
+<li><code>[MaxRelativeError]</code></li>
+<li><code>[MinInvokeCount]</code></li>
+<li><code>[MinIterationCount]</code></li>
+<li><code>[MinIterationTime]</code></li>
+<li><code>[Outliers]</code></li>
+<li><code>[ProcessCount]</code></li>
+<li><code>[RunOncePerIteration]</code></li>
+<li><code>[WarmupCount]</code></li>
+<li><code>[MinWarmupCount]</code></li>
+<li><code>[MaxWarmupCount]</code></li>
+</ul>
+<p>So following example:</p>
+<pre><code class="lang-cs">[ClrJob, CoreJob]
+[GcServer(true)]
+public class MyBenchmarkClass
+</code></pre>
+<p>Is going to be merged to a config with two jobs:</p>
+<ul>
+<li>CoreJob with <code>GcServer=true</code></li>
+<li>ClrJob with <code>GcServer=true</code></li>
+</ul>
 <h4 id="custom-attributes">Custom attributes</h4>
 <p>You can also create your own custom attributes with your favourite set of jobs. Example:</p>
 <pre><code class="lang-cs">[AttributeUsage(AttributeTargets.Class | AttributeTargets.Assembly)]
@@ -223,6 +303,59 @@ public class MySuperJobAttribute : Attribute, IConfigSource
 [MySuperJob]
 public class MyBenchmarks
 </code></pre>
+<hr>
+<h2 id="sample-introgcmode">Sample: IntroGcMode</h2>
+<h3 id="source-code">Source code</h3>
+<pre><code class="lang-csharp" name="IntroGcMode.cs">using System.Runtime.CompilerServices;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Jobs;
+using BenchmarkDotNet.Order;
+
+namespace BenchmarkDotNet.Samples
+{
+    [Config(typeof(Config))]
+    [Orderer(SummaryOrderPolicy.FastestToSlowest)]
+    [MemoryDiagnoser]
+    public class IntroGcMode
+    {
+        private class Config : ManualConfig
+        {
+            public Config()
+            {
+                Add(Job.MediumRun.WithGcServer(true).WithGcForce(true).WithId(&quot;ServerForce&quot;));
+                Add(Job.MediumRun.WithGcServer(true).WithGcForce(false).WithId(&quot;Server&quot;));
+                Add(Job.MediumRun.WithGcServer(false).WithGcForce(true).WithId(&quot;Workstation&quot;));
+                Add(Job.MediumRun.WithGcServer(false).WithGcForce(false).WithId(&quot;WorkstationForce&quot;));
+            }
+        }
+
+        [Benchmark(Description = &quot;new byte[10kB]&quot;)]
+        public byte[] Allocate()
+        {
+            return new byte[10000];
+        }
+
+        [Benchmark(Description = &quot;stackalloc byte[10kB]&quot;)]
+        public unsafe void AllocateWithStackalloc()
+        {
+            var array = stackalloc byte[10000];
+            Consume(array);
+        }
+
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        private static unsafe void Consume(byte* input)
+        {
+        }
+    }
+}
+</code></pre><h3 id="output">Output</h3>
+<h3 id="links">Links</h3>
+<ul>
+<li><a class="xref" href="jobs.html">Jobs</a></li>
+<li>The permanent link to this sample: <a class="xref" href="../samples/IntroGcMode.html">Sample: IntroGcMode</a></li>
+</ul>
+<hr>
 </article>
           </div>
           

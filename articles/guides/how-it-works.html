@@ -8,7 +8,7 @@
     <title>How it works | BenchmarkDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="How it works | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../../logo/icon-32.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -19,6 +19,47 @@
     
     <meta property="docfx:rel" content="../../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -83,14 +124,14 @@
 <ol>
 <li><code>BenchmarkRunner</code> generates an isolated project per each runtime settings and builds it in Release mode.</li>
 <li>Next, we take each method/job/params combination and try to measure its performance by launching benchmark process several times (<code>LaunchCount</code>).</li>
-<li>An invocation of the target method is an <em>operation</em>. A bunch of operation is an <em>iteration</em>. If you have an <code>IterationSetup</code> method, it will be invoked before each iteration,
+<li>An invocation of the workload method is an <em>operation</em>. A bunch of operation is an <em>iteration</em>. If you have an <code>IterationSetup</code> method, it will be invoked before each iteration,
 but not between operations. We have the following type of iterations:
 <ul>
 <li><code>Pilot</code>: The best operation count will be chosen.</li>
-<li><code>IdleWarmup</code>, <code>IdleTarget</code>: BenchmarkDotNet overhead will be evaluated.</li>
-<li><code>MainWarmup</code>: Warmup of the main method.</li>
-<li><code>MainTarget</code>: Main measurements.</li>
-<li><code>Result</code> = <code>MainTarget</code> - <code>&lt;AverageOverhead&gt;</code></li>
+<li><code>OverheadWarmup</code>, <code>OverheadWorkload</code>: BenchmarkDotNet overhead will be evaluated.</li>
+<li><code>ActualWarmup</code>: Warmup of the workload method.</li>
+<li><code>ActualWorkload</code>: Actual measurements.</li>
+<li><code>Result</code> = <code>ActualWorkload</code> - <code>&lt;AverageOverhead&gt;</code></li>
 </ul>
 </li>
 <li>After all of the measurements, BenchmarkDotNet creates:
@@ -103,7 +144,7 @@ but not between operations. We have the following type of iterations:
 </ol>
 <h2 id="pseudocode">Pseudocode</h2>
 <p>If you don't understand our &quot;count terminology&quot;, then you might find following pseudocode useful:</p>
-<pre><code class="lang-cs">IEnumberable&lt;Results&gt; Run(Benchmark benchmark)
+<pre><code class="lang-cs">IEnumerable&lt;Results&gt; Run(Benchmark benchmark)
 {
     var toolchain = benchmark.GetToolchain();
 
@@ -114,24 +155,29 @@ but not between operations. We have the following type of iterations:
         yield return ParseResults(Process.Start(exe).Output); // calls ActualRun in a separate process
 }
 
-Result ActualRun(Method method)
+Result ActualRun(Method method, Job job)
 {
     GlobalSetup();
 
-    long perfectInvocationCount = Pilot(method);
+    int unrollFactor = job.Run.UnrollFactor; // 16 by default
 
-    Warmup(EMPTY_METHOD, perfectInvocationCount); // EMPTY_METHOD has same return type and arguments as benchmark
-    var overhead = Target(EMPTY_METHOD, perfectInvocationCount);
+    long perfectInvocationCount = Pilot(method, unrollFactor);
 
-    Warmup(method, perfectInvocationCount);
-    var result = Target(method, perfectInvocationCount);
+    WarmupStage(EMPTY_METHOD, perfectInvocationCount, unrollFactor); // EMPTY_METHOD has same return type and arguments as benchmark
+    var overhead = ActualStage(EMPTY_METHOD, perfectInvocationCount, unrollFactor);
+
+    WarmupStage(method, perfectInvocationCount, unrollFactor);
+    var result = ActualStage(method, perfectInvocationCount);
+
+    if (MemoryDiagnoser.IsEnabled)
+        var gcStats = MeasureGcStats(method, perfectInvocationCount, unrollFactor);
 
     GlobalCleanup(); 
 
-    return result - Avg(overhead);
+    return (result - Avg(overhead), gcStats);
 }
 
-long Pilot(Method method)
+long Pilot(Method method, int unrollFactor)
 {
     // invokeCount is the equivalent of InnerIterationCount from xunit-performance
     long invokeCount = minInvokeCount;
@@ -149,18 +195,18 @@ long Pilot(Method method)
     return invokeCount;
 }
 
-void Warmup(Method method, long invokeCount)
+void Warmup(Method method, long invokeCount, int unrollFactor)
 {
     while (true)
     {
         var measurement = RunIteration(method, invokeCount, unrollFactor);
 
-        if (heuristic.IsWamupRequirementMet(measurement))
+        if (heuristic.IsWarmupRequirementMet(measurement))
             break;
     }
 }
 
-IEnumberable&lt;Measurement&gt; Target(Method method, long invokeCount)
+IEnuberable&lt;Measurement&gt; Workload(Method method, long invokeCount, int unrollFactor)
 {
     while (true)
     {
@@ -169,7 +215,7 @@ IEnumberable&lt;Measurement&gt; Target(Method method, long invokeCount)
         if (measurement.IsNotOutlier)
             yield return measurement;
 
-        if (heuristic.IsTargetRequirementMet(measurement))
+        if (heuristic.IsWorkloadRequirementMet(measurement))
             yield break;
     }
 }
@@ -184,7 +230,7 @@ Measurement RunIteration(Method method, long invokeCount, long unrollFactor)
 
     for (long i = 0; i &lt; invokeCount / unrollFactor; i++)
     {
-        // we perform manuall loop unrolling!!
+        // we perform manual loop unrolling!!
         method(); // 1st call
         method(); // 2nd call
 
@@ -198,6 +244,39 @@ Measurement RunIteration(Method method, long invokeCount, long unrollFactor)
     MemoryCleanup();
 
     return Measurement(clockSpan);
+}
+
+GcStats MeasureGcStats(Method method, long invokeCount, long unrollFacto)
+{
+    // we enable monitoring after workload actual run, for this single iteration which is executed at the end
+    // so even if we enable AppDomain monitoring in separate process
+    // it does not matter, because we have already obtained the results!
+    EnableMonitoring(); 
+
+    IterationSetup();
+
+    var initialGcStats = GcStats.ReadInitial();
+
+    // we do NOT start any clock here, because the enabled monitoring might have some overhead
+    // so we just get the gc stats and ignore the timing
+    // it's last thing the process does before it dies, so also enabled monitoring is not an issue for next benchmarks
+    // because each of them is going to be executed in a new process
+
+    for (long i = 0; i &lt; invokeCount / unrollFactor; i++)
+    {
+        // we perform manual loop unrolling!!
+        method(); // 1st call
+        method(); // 2nd call
+
+        method(); // (unrollFactor - 1)'th call
+        method(); // unrollFactor'th call
+    }
+
+    var finalGcStats = GcStats.ReadFinal();
+
+    IterationCleanup();
+
+    return finalGcStats - initialGcStats; // the result is the difference between the stats collected after and before running the extra iteration
 }
 </code></pre>
 </article>

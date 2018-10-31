@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class RunMode
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -123,25 +164,16 @@
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateCharacteristic__1_System_String_">CharacteristicObject&lt;RunMode&gt;.CreateCharacteristic&lt;TC&gt;(String)</a>
     </div>
     <div>
+      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateHiddenCharacteristic__1_System_String_">CharacteristicObject&lt;RunMode&gt;.CreateHiddenCharacteristic&lt;TC&gt;(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject-1.html#BenchmarkDotNet_Characteristics_CharacteristicObject_1_CreateIgnoreOnApplyCharacteristic__1_System_String_">CharacteristicObject&lt;RunMode&gt;.CreateIgnoreOnApplyCharacteristic&lt;TC&gt;(String)</a>
+    </div>
+    <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_ResolveId_BenchmarkDotNet_Characteristics_CharacteristicObject_System_String_">CharacteristicObject.ResolveId(CharacteristicObject, String)</a>
     </div>
     <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_IdCharacteristic">CharacteristicObject.IdCharacteristic</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertNotFrozen">CharacteristicObject.AssertNotFrozen()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsRoot">CharacteristicObject.AssertIsRoot()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsNonFrozenRoot">CharacteristicObject.AssertIsNonFrozenRoot()</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_AssertIsAssignable_BenchmarkDotNet_Characteristics_Characteristic_System_Object_">CharacteristicObject.AssertIsAssignable(Characteristic, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_Owner">CharacteristicObject.Owner</a>
     </div>
     <div>
       <a class="xref" href="BenchmarkDotNet.Characteristics.CharacteristicObject.html#BenchmarkDotNet_Characteristics_CharacteristicObject_OwnerOrSelf">CharacteristicObject.OwnerOrSelf</a>
@@ -228,33 +260,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public RunMode()</code></pre>
   </div>
-  
-  
-  <a id="BenchmarkDotNet_Jobs_RunMode__ctor_" data-uid="BenchmarkDotNet.Jobs.RunMode.#ctor*"></a>
-  <h4 id="BenchmarkDotNet_Jobs_RunMode__ctor_System_String_" data-uid="BenchmarkDotNet.Jobs.RunMode.#ctor(System.String)">RunMode(String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RunMode(string id)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">id</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="fields">Fields
   </h3>
   
@@ -289,6 +294,30 @@
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;int&gt; InvocationCountCharacteristic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Characteristics.Characteristic-1.html">Characteristic</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BenchmarkDotNet_Jobs_RunMode_IterationCountCharacteristic" data-uid="BenchmarkDotNet.Jobs.RunMode.IterationCountCharacteristic">IterationCountCharacteristic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;int&gt; IterationCountCharacteristic</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -379,12 +408,36 @@
   </table>
   
   
-  <h4 id="BenchmarkDotNet_Jobs_RunMode_MaxTargetIterationCountCharacteristic" data-uid="BenchmarkDotNet.Jobs.RunMode.MaxTargetIterationCountCharacteristic">MaxTargetIterationCountCharacteristic</h4>
+  <h4 id="BenchmarkDotNet_Jobs_RunMode_MaxIterationCountCharacteristic" data-uid="BenchmarkDotNet.Jobs.RunMode.MaxIterationCountCharacteristic">MaxIterationCountCharacteristic</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;int&gt; MaxTargetIterationCountCharacteristic</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;int&gt; MaxIterationCountCharacteristic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Characteristics.Characteristic-1.html">Characteristic</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BenchmarkDotNet_Jobs_RunMode_MaxWarmupIterationCountCharacteristic" data-uid="BenchmarkDotNet.Jobs.RunMode.MaxWarmupIterationCountCharacteristic">MaxWarmupIterationCountCharacteristic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;int&gt; MaxWarmupIterationCountCharacteristic</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -427,12 +480,36 @@
   </table>
   
   
-  <h4 id="BenchmarkDotNet_Jobs_RunMode_MinTargetIterationCountCharacteristic" data-uid="BenchmarkDotNet.Jobs.RunMode.MinTargetIterationCountCharacteristic">MinTargetIterationCountCharacteristic</h4>
+  <h4 id="BenchmarkDotNet_Jobs_RunMode_MinIterationCountCharacteristic" data-uid="BenchmarkDotNet.Jobs.RunMode.MinIterationCountCharacteristic">MinIterationCountCharacteristic</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;int&gt; MinTargetIterationCountCharacteristic</code></pre>
+    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;int&gt; MinIterationCountCharacteristic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Characteristics.Characteristic-1.html">Characteristic</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BenchmarkDotNet_Jobs_RunMode_MinWarmupIterationCountCharacteristic" data-uid="BenchmarkDotNet.Jobs.RunMode.MinWarmupIterationCountCharacteristic">MinWarmupIterationCountCharacteristic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;int&gt; MinWarmupIterationCountCharacteristic</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -493,30 +570,6 @@
     <tbody>
       <tr>
         <td><a class="xref" href="BenchmarkDotNet.Jobs.RunMode.html">RunMode</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="BenchmarkDotNet_Jobs_RunMode_TargetCountCharacteristic" data-uid="BenchmarkDotNet.Jobs.RunMode.TargetCountCharacteristic">TargetCountCharacteristic</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly Characteristic&lt;int&gt; TargetCountCharacteristic</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Characteristics.Characteristic-1.html">Characteristic</a>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -625,9 +678,38 @@ If specified, it must be a multiple of <a class="xref" href="BenchmarkDotNet.Job
   </table>
   
   
+  <a id="BenchmarkDotNet_Jobs_RunMode_IterationCount_" data-uid="BenchmarkDotNet.Jobs.RunMode.IterationCount*"></a>
+  <h4 id="BenchmarkDotNet_Jobs_RunMode_IterationCount" data-uid="BenchmarkDotNet.Jobs.RunMode.IterationCount">IterationCount</h4>
+  <div class="markdown level1 summary"><p>How many target iterations should be performed
+If specified, <a class="xref" href="BenchmarkDotNet.Jobs.RunMode.html#BenchmarkDotNet_Jobs_RunMode_MinIterationCount">MinIterationCount</a> will be ignored.
+If specified, <a class="xref" href="BenchmarkDotNet.Jobs.RunMode.html#BenchmarkDotNet_Jobs_RunMode_MaxIterationCount">MaxIterationCount</a> will be ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IterationCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="BenchmarkDotNet_Jobs_RunMode_IterationTime_" data-uid="BenchmarkDotNet.Jobs.RunMode.IterationTime*"></a>
   <h4 id="BenchmarkDotNet_Jobs_RunMode_IterationTime" data-uid="BenchmarkDotNet.Jobs.RunMode.IterationTime">IterationTime</h4>
-  <div class="markdown level1 summary"><p>Desired time of execution of an iteration.</p>
+  <div class="markdown level1 summary"><p>Desired time of execution of an iteration. Used by Pilot stage to estimate the number of invocations per iteration.
+The default value is 500 milliseconds.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -677,8 +759,8 @@ If specified, it must be a multiple of <a class="xref" href="BenchmarkDotNet.Job
   </table>
   
   
-  <a id="BenchmarkDotNet_Jobs_RunMode_MaxTargetIterationCount_" data-uid="BenchmarkDotNet.Jobs.RunMode.MaxTargetIterationCount*"></a>
-  <h4 id="BenchmarkDotNet_Jobs_RunMode_MaxTargetIterationCount" data-uid="BenchmarkDotNet.Jobs.RunMode.MaxTargetIterationCount">MaxTargetIterationCount</h4>
+  <a id="BenchmarkDotNet_Jobs_RunMode_MaxIterationCount_" data-uid="BenchmarkDotNet.Jobs.RunMode.MaxIterationCount*"></a>
+  <h4 id="BenchmarkDotNet_Jobs_RunMode_MaxIterationCount" data-uid="BenchmarkDotNet.Jobs.RunMode.MaxIterationCount">MaxIterationCount</h4>
   <div class="markdown level1 summary"><p>Maximum count of target iterations that should be performed
 The default value is 100
 <remarks>If you set this value to below 15, then <a class="xref" href="BenchmarkDotNet.Analysers.MultimodalDistributionAnalyzer.html">MultimodalDistributionAnalyzer</a>  is not going to work</remarks></p>
@@ -686,7 +768,7 @@ The default value is 100
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MaxTargetIterationCount { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int MaxIterationCount { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -705,8 +787,35 @@ The default value is 100
   </table>
   
   
-  <a id="BenchmarkDotNet_Jobs_RunMode_MinTargetIterationCount_" data-uid="BenchmarkDotNet.Jobs.RunMode.MinTargetIterationCount*"></a>
-  <h4 id="BenchmarkDotNet_Jobs_RunMode_MinTargetIterationCount" data-uid="BenchmarkDotNet.Jobs.RunMode.MinTargetIterationCount">MinTargetIterationCount</h4>
+  <a id="BenchmarkDotNet_Jobs_RunMode_MaxWarmupIterationCount_" data-uid="BenchmarkDotNet.Jobs.RunMode.MaxWarmupIterationCount*"></a>
+  <h4 id="BenchmarkDotNet_Jobs_RunMode_MaxWarmupIterationCount" data-uid="BenchmarkDotNet.Jobs.RunMode.MaxWarmupIterationCount">MaxWarmupIterationCount</h4>
+  <div class="markdown level1 summary"><p>Maximum count of warmup iterations that should be performed
+The default value is 50</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxWarmupIterationCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BenchmarkDotNet_Jobs_RunMode_MinIterationCount_" data-uid="BenchmarkDotNet.Jobs.RunMode.MinIterationCount*"></a>
+  <h4 id="BenchmarkDotNet_Jobs_RunMode_MinIterationCount" data-uid="BenchmarkDotNet.Jobs.RunMode.MinIterationCount">MinIterationCount</h4>
   <div class="markdown level1 summary"><p>Minimum count of target iterations that should be performed
 The default value is 15
 <remarks>If you set this value to below 15, then <a class="xref" href="BenchmarkDotNet.Analysers.MultimodalDistributionAnalyzer.html">MultimodalDistributionAnalyzer</a> is not going to work</remarks></p>
@@ -714,7 +823,34 @@ The default value is 15
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int MinTargetIterationCount { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int MinIterationCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BenchmarkDotNet_Jobs_RunMode_MinWarmupIterationCount_" data-uid="BenchmarkDotNet.Jobs.RunMode.MinWarmupIterationCount*"></a>
+  <h4 id="BenchmarkDotNet_Jobs_RunMode_MinWarmupIterationCount" data-uid="BenchmarkDotNet.Jobs.RunMode.MinWarmupIterationCount">MinWarmupIterationCount</h4>
+  <div class="markdown level1 summary"><p>Minimum count of warmup iterations that should be performed
+The default value is 6</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinWarmupIterationCount { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -737,7 +873,8 @@ The default value is 15
   <h4 id="BenchmarkDotNet_Jobs_RunMode_RunStrategy" data-uid="BenchmarkDotNet.Jobs.RunMode.RunStrategy">RunStrategy</h4>
   <div class="markdown level1 summary"><p>Available values: Throughput and ColdStart.
 Throughput: default strategy which allows to get good precision level.
-ColdStart: should be used only for measuring cold start of the application or testing purpose.</p>
+ColdStart: should be used only for measuring cold start of the application or testing purpose.
+Monitoring: no overhead evaluating, with several target iterations. Perfect for macrobenchmarks without a steady state with high variance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -755,34 +892,6 @@ ColdStart: should be used only for measuring cold start of the application or te
     <tbody>
       <tr>
         <td><a class="xref" href="BenchmarkDotNet.Engines.RunStrategy.html">RunStrategy</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BenchmarkDotNet_Jobs_RunMode_TargetCount_" data-uid="BenchmarkDotNet.Jobs.RunMode.TargetCount*"></a>
-  <h4 id="BenchmarkDotNet_Jobs_RunMode_TargetCount" data-uid="BenchmarkDotNet.Jobs.RunMode.TargetCount">TargetCount</h4>
-  <div class="markdown level1 summary"><p>How many target iterations should be performed
-If specified, <a class="xref" href="BenchmarkDotNet.Jobs.RunMode.html#BenchmarkDotNet_Jobs_RunMode_MinTargetIterationCount">MinTargetIterationCount</a> will be ignored.
-If specified, <a class="xref" href="BenchmarkDotNet.Jobs.RunMode.html#BenchmarkDotNet_Jobs_RunMode_MaxTargetIterationCount">MaxTargetIterationCount</a> will be ignored.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int TargetCount { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
         <td></td>
       </tr>
     </tbody>

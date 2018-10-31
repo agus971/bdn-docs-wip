@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IDiagnoser
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -199,38 +240,13 @@
   </table>
   
   
-  <a id="BenchmarkDotNet_Diagnosers_IDiagnoser_GetColumnProvider_" data-uid="BenchmarkDotNet.Diagnosers.IDiagnoser.GetColumnProvider*"></a>
-  <h4 id="BenchmarkDotNet_Diagnosers_IDiagnoser_GetColumnProvider" data-uid="BenchmarkDotNet.Diagnosers.IDiagnoser.GetColumnProvider">GetColumnProvider()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IColumnProvider GetColumnProvider()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Columns.IColumnProvider.html">IColumnProvider</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="BenchmarkDotNet_Diagnosers_IDiagnoser_GetRunMode_" data-uid="BenchmarkDotNet.Diagnosers.IDiagnoser.GetRunMode*"></a>
-  <h4 id="BenchmarkDotNet_Diagnosers_IDiagnoser_GetRunMode_BenchmarkDotNet_Running_Benchmark_" data-uid="BenchmarkDotNet.Diagnosers.IDiagnoser.GetRunMode(BenchmarkDotNet.Running.Benchmark)">GetRunMode(Benchmark)</h4>
+  <h4 id="BenchmarkDotNet_Diagnosers_IDiagnoser_GetRunMode_BenchmarkDotNet_Running_BenchmarkCase_" data-uid="BenchmarkDotNet.Diagnosers.IDiagnoser.GetRunMode(BenchmarkDotNet.Running.BenchmarkCase)">GetRunMode(BenchmarkCase)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">RunMode GetRunMode(Benchmark benchmark)</code></pre>
+    <pre><code class="lang-csharp hljs">RunMode GetRunMode(BenchmarkCase benchmarkCase)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -243,8 +259,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Running.Benchmark.html">Benchmark</a></td>
-        <td><span class="parametername">benchmark</span></td>
+        <td><a class="xref" href="BenchmarkDotNet.Running.BenchmarkCase.html">BenchmarkCase</a></td>
+        <td><span class="parametername">benchmarkCase</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -304,7 +320,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void ProcessResults(DiagnoserResults results)</code></pre>
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;Metric&gt; ProcessResults(DiagnoserResults results)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,6 +335,21 @@
       <tr>
         <td><a class="xref" href="BenchmarkDotNet.Diagnosers.DiagnoserResults.html">DiagnoserResults</a></td>
         <td><span class="parametername">results</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="BenchmarkDotNet.Reports.Metric.html">Metric</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>

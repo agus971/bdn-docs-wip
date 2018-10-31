@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class GcModeExtensions
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -126,7 +167,10 @@
   
   <a id="BenchmarkDotNet_Jobs_GcModeExtensions_WithAllowVeryLargeObjects_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithAllowVeryLargeObjects*"></a>
   <h4 id="BenchmarkDotNet_Jobs_GcModeExtensions_WithAllowVeryLargeObjects_BenchmarkDotNet_Jobs_GcMode_System_Boolean_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithAllowVeryLargeObjects(BenchmarkDotNet.Jobs.GcMode,System.Boolean)">WithAllowVeryLargeObjects(GcMode, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size.
+<returns>false: Arrays greater than 2 GB in total size are not enabled. This is the default.</returns>
+<returns>true: Arrays greater than 2 GB in total size are enabled on 64-bit platforms.</returns></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -173,7 +217,10 @@
   
   <a id="BenchmarkDotNet_Jobs_GcModeExtensions_WithConcurrent_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithConcurrent*"></a>
   <h4 id="BenchmarkDotNet_Jobs_GcModeExtensions_WithConcurrent_BenchmarkDotNet_Jobs_GcMode_System_Boolean_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithConcurrent(BenchmarkDotNet.Jobs.GcMode,System.Boolean)">WithConcurrent(GcMode, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies whether the common language runtime runs garbage collection on a separate thread.
+<returns>false: Does not run garbage collection concurrently.</returns>
+<returns>true: Runs garbage collection concurrently. This is the default.</returns></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -220,7 +267,10 @@
   
   <a id="BenchmarkDotNet_Jobs_GcModeExtensions_WithCpuGroups_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithCpuGroups*"></a>
   <h4 id="BenchmarkDotNet_Jobs_GcModeExtensions_WithCpuGroups_BenchmarkDotNet_Jobs_GcMode_System_Boolean_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithCpuGroups(BenchmarkDotNet.Jobs.GcMode,System.Boolean)">WithCpuGroups(GcMode, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies whether garbage collection supports multiple CPU groups.
+<returns>false: Garbage collection does not support multiple CPU groups. This is the default.</returns>
+<returns>true: Garbage collection supports multiple CPU groups, if server garbage collection is enabled.</returns></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -267,7 +317,10 @@
   
   <a id="BenchmarkDotNet_Jobs_GcModeExtensions_WithForce_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithForce*"></a>
   <h4 id="BenchmarkDotNet_Jobs_GcModeExtensions_WithForce_BenchmarkDotNet_Jobs_GcMode_System_Boolean_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithForce(BenchmarkDotNet.Jobs.GcMode,System.Boolean)">WithForce(GcMode, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies whether the BenchmarkDotNet's benchmark runner forces full garbage collection after each benchmark invocation
+<returns>false: Does not force garbage collection.</returns>
+<returns>true: Forces full garbage collection after each benchmark invocation. This is the default.</returns></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -314,7 +367,8 @@
   
   <a id="BenchmarkDotNet_Jobs_GcModeExtensions_WithHeapAffinitizeMask_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithHeapAffinitizeMask*"></a>
   <h4 id="BenchmarkDotNet_Jobs_GcModeExtensions_WithHeapAffinitizeMask_BenchmarkDotNet_Jobs_GcMode_System_Int32_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithHeapAffinitizeMask(BenchmarkDotNet.Jobs.GcMode,System.Int32)">WithHeapAffinitizeMask(GcMode, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>process mask, see <a href="https://support.microsoft.com/en-us/help/4014604/may-2017-description-of-the-quality-rollup-for-the-net-framework-4-6-4">MSDN</a> for more.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -361,7 +415,10 @@
   
   <a id="BenchmarkDotNet_Jobs_GcModeExtensions_WithHeapCount_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithHeapCount*"></a>
   <h4 id="BenchmarkDotNet_Jobs_GcModeExtensions_WithHeapCount_BenchmarkDotNet_Jobs_GcMode_System_Int32_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithHeapCount(BenchmarkDotNet.Jobs.GcMode,System.Int32)">WithHeapCount(GcMode, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>specify the # of Server GC threads/heaps, must be smaller than the # of logical CPUs the process is allowed to run on,
+ie, if you don't specifically affinitize your process it means the # of total logical CPUs on the machine;
+otherwise this is the # of logical CPUs you affinitized your process to.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -408,7 +465,8 @@
   
   <a id="BenchmarkDotNet_Jobs_GcModeExtensions_WithNoAffinitize_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithNoAffinitize*"></a>
   <h4 id="BenchmarkDotNet_Jobs_GcModeExtensions_WithNoAffinitize_BenchmarkDotNet_Jobs_GcMode_System_Boolean_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithNoAffinitize(BenchmarkDotNet.Jobs.GcMode,System.Boolean)">WithNoAffinitize(GcMode, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>specify true to disable hard affinity of Server GC threads to CPUs</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -455,7 +513,9 @@
   
   <a id="BenchmarkDotNet_Jobs_GcModeExtensions_WithRetainVm_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithRetainVm*"></a>
   <h4 id="BenchmarkDotNet_Jobs_GcModeExtensions_WithRetainVm_BenchmarkDotNet_Jobs_GcMode_System_Boolean_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithRetainVm(BenchmarkDotNet.Jobs.GcMode,System.Boolean)">WithRetainVm(GcMode, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Put segments that should be deleted on a standby list for future use instead of releasing them back to the OS
+<remarks>The default is false</remarks></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -502,7 +562,10 @@
   
   <a id="BenchmarkDotNet_Jobs_GcModeExtensions_WithServer_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithServer*"></a>
   <h4 id="BenchmarkDotNet_Jobs_GcModeExtensions_WithServer_BenchmarkDotNet_Jobs_GcMode_System_Boolean_" data-uid="BenchmarkDotNet.Jobs.GcModeExtensions.WithServer(BenchmarkDotNet.Jobs.GcMode,System.Boolean)">WithServer(GcMode, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Specifies whether the common language runtime runs server garbage collection.
+<returns>false: Does not run server garbage collection. This is the default.</returns>
+<returns>true: Runs server garbage collection.</returns></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">

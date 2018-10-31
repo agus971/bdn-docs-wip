@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class ValidationParameters
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -125,12 +166,12 @@
   
   
   <a id="BenchmarkDotNet_Validators_ValidationParameters__ctor_" data-uid="BenchmarkDotNet.Validators.ValidationParameters.#ctor*"></a>
-  <h4 id="BenchmarkDotNet_Validators_ValidationParameters__ctor_System_Collections_Generic_IReadOnlyList_BenchmarkDotNet_Running_Benchmark__BenchmarkDotNet_Configs_IConfig_" data-uid="BenchmarkDotNet.Validators.ValidationParameters.#ctor(System.Collections.Generic.IReadOnlyList{BenchmarkDotNet.Running.Benchmark},BenchmarkDotNet.Configs.IConfig)">ValidationParameters(IReadOnlyList&lt;Benchmark&gt;, IConfig)</h4>
+  <h4 id="BenchmarkDotNet_Validators_ValidationParameters__ctor_System_Collections_Generic_IReadOnlyList_BenchmarkDotNet_Running_BenchmarkCase__BenchmarkDotNet_Configs_IConfig_" data-uid="BenchmarkDotNet.Validators.ValidationParameters.#ctor(System.Collections.Generic.IReadOnlyList{BenchmarkDotNet.Running.BenchmarkCase},BenchmarkDotNet.Configs.IConfig)">ValidationParameters(IReadOnlyList&lt;BenchmarkCase&gt;, IConfig)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ValidationParameters(IReadOnlyList&lt;Benchmark&gt; benchmarks, IConfig config)</code></pre>
+    <pre><code class="lang-csharp hljs">public ValidationParameters(IReadOnlyList&lt;BenchmarkCase&gt; benchmarks, IConfig config)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -143,7 +184,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="BenchmarkDotNet.Running.Benchmark.html">Benchmark</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="BenchmarkDotNet.Running.BenchmarkCase.html">BenchmarkCase</a>&gt;</td>
         <td><span class="parametername">benchmarks</span></td>
         <td></td>
       </tr>
@@ -164,7 +205,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;Benchmark&gt; Benchmarks { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;BenchmarkCase&gt; Benchmarks { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -176,7 +217,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="BenchmarkDotNet.Running.Benchmark.html">Benchmark</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="BenchmarkDotNet.Running.BenchmarkCase.html">BenchmarkCase</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -211,12 +252,12 @@
   
   
   <a id="BenchmarkDotNet_Validators_ValidationParameters_op_Implicit_" data-uid="BenchmarkDotNet.Validators.ValidationParameters.op_Implicit*"></a>
-  <h4 id="BenchmarkDotNet_Validators_ValidationParameters_op_Implicit_BenchmarkDotNet_Running_Benchmark____BenchmarkDotNet_Validators_ValidationParameters" data-uid="BenchmarkDotNet.Validators.ValidationParameters.op_Implicit(BenchmarkDotNet.Running.Benchmark[])~BenchmarkDotNet.Validators.ValidationParameters">Implicit(Benchmark[] to ValidationParameters)</h4>
+  <h4 id="BenchmarkDotNet_Validators_ValidationParameters_op_Implicit_BenchmarkDotNet_Running_BenchmarkCase____BenchmarkDotNet_Validators_ValidationParameters" data-uid="BenchmarkDotNet.Validators.ValidationParameters.op_Implicit(BenchmarkDotNet.Running.BenchmarkCase[])~BenchmarkDotNet.Validators.ValidationParameters">Implicit(BenchmarkCase[] to ValidationParameters)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator ValidationParameters(Benchmark[] benchmarks)</code></pre>
+    <pre><code class="lang-csharp hljs">public static implicit operator ValidationParameters(BenchmarkCase[] benchmarksCase)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -229,8 +270,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Running.Benchmark.html">Benchmark</a>[]</td>
-        <td><span class="parametername">benchmarks</span></td>
+        <td><a class="xref" href="BenchmarkDotNet.Running.BenchmarkCase.html">BenchmarkCase</a>[]</td>
+        <td><span class="parametername">benchmarksCase</span></td>
         <td></td>
       </tr>
     </tbody>

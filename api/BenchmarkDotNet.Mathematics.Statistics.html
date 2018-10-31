@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Statistics
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -774,14 +815,13 @@
   </table>
   
   
-  <a id="BenchmarkDotNet_Mathematics_Statistics_DivMean_" data-uid="BenchmarkDotNet.Mathematics.Statistics.DivMean*"></a>
-  <h4 id="BenchmarkDotNet_Mathematics_Statistics_DivMean_BenchmarkDotNet_Mathematics_Statistics_BenchmarkDotNet_Mathematics_Statistics_" data-uid="BenchmarkDotNet.Mathematics.Statistics.DivMean(BenchmarkDotNet.Mathematics.Statistics,BenchmarkDotNet.Mathematics.Statistics)">DivMean(Statistics, Statistics)</h4>
-  <div class="markdown level1 summary"><p>Mean for [X/Y].</p>
-</div>
+  <a id="BenchmarkDotNet_Mathematics_Statistics_Divide_" data-uid="BenchmarkDotNet.Mathematics.Statistics.Divide*"></a>
+  <h4 id="BenchmarkDotNet_Mathematics_Statistics_Divide_BenchmarkDotNet_Mathematics_Statistics_BenchmarkDotNet_Mathematics_Statistics_" data-uid="BenchmarkDotNet.Mathematics.Statistics.Divide(BenchmarkDotNet.Mathematics.Statistics,BenchmarkDotNet.Mathematics.Statistics)">Divide(Statistics, Statistics)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double DivMean(Statistics x, Statistics y)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Statistics Divide(Statistics x, Statistics y)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -815,21 +855,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Double</span></td>
+        <td><a class="xref" href="BenchmarkDotNet.Mathematics.Statistics.html">Statistics</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="BenchmarkDotNet_Mathematics_Statistics_DivVariance_" data-uid="BenchmarkDotNet.Mathematics.Statistics.DivVariance*"></a>
-  <h4 id="BenchmarkDotNet_Mathematics_Statistics_DivVariance_BenchmarkDotNet_Mathematics_Statistics_BenchmarkDotNet_Mathematics_Statistics_" data-uid="BenchmarkDotNet.Mathematics.Statistics.DivVariance(BenchmarkDotNet.Mathematics.Statistics,BenchmarkDotNet.Mathematics.Statistics)">DivVariance(Statistics, Statistics)</h4>
-  <div class="markdown level1 summary"><p>Variance for [X/Y].</p>
+  <a id="BenchmarkDotNet_Mathematics_Statistics_DivMean_" data-uid="BenchmarkDotNet.Mathematics.Statistics.DivMean*"></a>
+  <h4 id="BenchmarkDotNet_Mathematics_Statistics_DivMean_BenchmarkDotNet_Mathematics_Statistics_BenchmarkDotNet_Mathematics_Statistics_" data-uid="BenchmarkDotNet.Mathematics.Statistics.DivMean(BenchmarkDotNet.Mathematics.Statistics,BenchmarkDotNet.Mathematics.Statistics)">DivMean(Statistics, Statistics)</h4>
+  <div class="markdown level1 summary"><p>Mean for [X/Y].</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double DivVariance(Statistics x, Statistics y)</code></pre>
+    <pre><code class="lang-csharp hljs">public static double DivMean(Statistics x, Statistics y)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -959,13 +999,13 @@
   </table>
   
   
-  <a id="BenchmarkDotNet_Mathematics_Statistics_GetValues_" data-uid="BenchmarkDotNet.Mathematics.Statistics.GetValues*"></a>
-  <h4 id="BenchmarkDotNet_Mathematics_Statistics_GetValues" data-uid="BenchmarkDotNet.Mathematics.Statistics.GetValues">GetValues()</h4>
+  <a id="BenchmarkDotNet_Mathematics_Statistics_GetOriginalValues_" data-uid="BenchmarkDotNet.Mathematics.Statistics.GetOriginalValues*"></a>
+  <h4 id="BenchmarkDotNet_Mathematics_Statistics_GetOriginalValues" data-uid="BenchmarkDotNet.Mathematics.Statistics.GetOriginalValues">GetOriginalValues()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public IEnumerable&lt;double&gt; GetValues()</code></pre>
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;double&gt; GetOriginalValues()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -977,7 +1017,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<span class="xref">System.Double</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BenchmarkDotNet_Mathematics_Statistics_GetSortedValues_" data-uid="BenchmarkDotNet.Mathematics.Statistics.GetSortedValues*"></a>
+  <h4 id="BenchmarkDotNet_Mathematics_Statistics_GetSortedValues" data-uid="BenchmarkDotNet.Mathematics.Statistics.GetSortedValues">GetSortedValues()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;double&gt; GetSortedValues()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<span class="xref">System.Double</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -1225,80 +1290,6 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BenchmarkDotNet_Mathematics_Statistics_MulVariance_" data-uid="BenchmarkDotNet.Mathematics.Statistics.MulVariance*"></a>
-  <h4 id="BenchmarkDotNet_Mathematics_Statistics_MulVariance_BenchmarkDotNet_Mathematics_Statistics_BenchmarkDotNet_Mathematics_Statistics_" data-uid="BenchmarkDotNet.Mathematics.Statistics.MulVariance(BenchmarkDotNet.Mathematics.Statistics,BenchmarkDotNet.Mathematics.Statistics)">MulVariance(Statistics, Statistics)</h4>
-  <div class="markdown level1 summary"><p>Variance for [X*Y].</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static double MulVariance(Statistics x, Statistics y)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Mathematics.Statistics.html">Statistics</a></td>
-        <td><span class="parametername">x</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Mathematics.Statistics.html">Statistics</a></td>
-        <td><span class="parametername">y</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Double</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="BenchmarkDotNet_Mathematics_Statistics_Sqr_" data-uid="BenchmarkDotNet.Mathematics.Statistics.Sqr*"></a>
-  <h4 id="BenchmarkDotNet_Mathematics_Statistics_Sqr" data-uid="BenchmarkDotNet.Mathematics.Statistics.Sqr">Sqr()</h4>
-  <div class="markdown level1 summary"><p>Statistics for [X^2].</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Statistics Sqr()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="BenchmarkDotNet.Mathematics.Statistics.html">Statistics</a></td>
         <td></td>
       </tr>
     </tbody>

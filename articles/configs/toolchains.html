@@ -8,7 +8,7 @@
     <title>Toolchains | BenchmarkDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Toolchains | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../../logo/icon-32.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -19,6 +19,47 @@
     
     <meta property="docfx:rel" content="../../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -173,6 +214,11 @@ Frequency=2742185 Hz, Resolution=364.6727 ns, Timer=TSC
 
 Jit=RyuJit  
 </code></pre>
+<p>This feature is now also exposed with the <code>--cli</code> console argument.</p>
+<p>Example: <code>dotnet run -c Release -- --cli &quot;C:\Projects\machinelearning\Tools\dotnetcli\dotnet.exe&quot;</code></p>
+<h2 id="corerun">CoreRun</h2>
+<p>To use CoreRun for running the benchmarks you need to use <code>--coreRun</code>command line argument. You can combine it with <code>--cli</code> described above. This is most probably the easiest and most reliable way of running benchmarks against local CoreFX/CoreCLR builds.</p>
+<p>Example: <code>dotnet run -c Release -- --coreRun &quot;C:\Projects\corefx\bin\testhost\netcoreapp-Windows_NT-Release-x64\shared\Microsoft.NETCore.App\9.9.9\CoreRun.exe&quot;</code></p>
 <h2 id="custom-coreclr-and-corefx">Custom CoreCLR and CoreFX</h2>
 <p>BenchmarkDotNet allows the users to run their benchmarks against ANY CoreCLR and CoreFX builds. You can compare your local build vs MyGet feed or Debug vs Release or one version vs another.</p>
 <p>To avoid problems described <a href="https://github.com/dotnet/coreclr/blob/master/Documentation/workflow/UsingDotNetCli.md#update-coreclr-using-runtime-nuget-package">here</a> a temporary folder is used when restoring packages for local builds. This is why it takes 20-30s in total to build the benchmarks.</p>
@@ -240,36 +286,137 @@ Frequency=2533308 Hz, Resolution=394.7408 ns, Timer=TSC
   Job-IYZFNW : .NET Core ? (CoreCLR 4.6.26214.07, CoreFX 4.6.26215.01), 64bit RyuJIT
   Job-CTQFFQ : .NET Core ? (CoreCLR 4.6.26214.07, CoreFX 4.6.26313.0), 64bit RyuJIT
 </code></pre>
-<h2 id="inprocesstoolchain">InProcessToolchain</h2>
-<p>InProcessToolchain is our toolchain which does not generate any new executable. It emits IL on the fly and runs it from within the process itself. It can be usefull if want to run the benchmarks very fast or if you want to run them for framework which we don't support. An example could be a local build of CoreCLR.</p>
-<pre><code class="lang-cs">[Config(typeof(Config))]
-public class IntroInProcess
-{
-    private class Config : ManualConfig
-    {
-        public Config()
-        {
-            Add(Job.MediumRun
-                .WithLaunchCount(1)
-                .WithId(&quot;OutOfProc&quot;));
-
-            Add(Job.MediumRun
-                .WithLaunchCount(1)
-                .With(InProcessToolchain.Instance)
-                .WithId(&quot;InProcess&quot;));
-        }
-    }
-
-    [Benchmark(Description = &quot;new byte[10kB]&quot;)]
-    public byte[] Allocate() =&gt; new byte[10000];
-}
-</code></pre>
-<p>or just:</p>
+<hr>
+<h2 id="sample-introinprocess">Sample: IntroInProcess</h2>
+<p>InProcessToolchain is our toolchain which does not generate any new executable.
+It emits IL on the fly and runs it from within the process itself.
+It can be usefull if want to run the benchmarks very fast or
+if you want to run them for framework which we don't support.
+An example could be a local build of CoreCLR.</p>
+<h3 id="usage">Usage</h3>
 <pre><code class="lang-cs">[InProcessAttribute]
 public class TypeWithBenchmarks
 {
 }
 </code></pre>
+<h3 id="source-code">Source code</h3>
+<pre><code class="lang-csharp" name="IntroInProcess.cs">using System.Runtime.CompilerServices;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Jobs;
+using BenchmarkDotNet.Order;
+using BenchmarkDotNet.Toolchains.InProcess;
+
+namespace BenchmarkDotNet.Samples
+{
+    [Config(typeof(Config))]
+    [Orderer(SummaryOrderPolicy.FastestToSlowest)]
+    [MemoryDiagnoser]
+    public class IntroInProcess
+    {
+        private class Config : ManualConfig
+        {
+            public Config()
+            {
+                Add(Job.MediumRun
+                    .WithLaunchCount(1)
+                    .WithId(&quot;OutOfProc&quot;));
+
+                Add(Job.MediumRun
+                    .WithLaunchCount(1)
+                    .With(InProcessToolchain.Instance)
+                    .WithId(&quot;InProcess&quot;));
+            }
+        }
+
+        [Benchmark(Description = &quot;new byte[10kB]&quot;)]
+        public byte[] Allocate()
+        {
+            return new byte[10000];
+        }
+
+        [Benchmark(Description = &quot;stackalloc byte[10kB]&quot;)]
+        public unsafe void AllocateWithStackalloc()
+        {
+            var array = stackalloc byte[10000];
+            Consume(array);
+        }
+
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        private static unsafe void Consume(byte* input)
+        {
+        }
+    }
+}
+</code></pre><h3 id="output">Output</h3>
+<h3 id="links">Links</h3>
+<ul>
+<li><a class="xref" href="toolchains.html">Toolchains</a></li>
+<li>The permanent link to this sample: <a class="xref" href="../samples/IntroInProcess.html">Sample: IntroInProcess</a></li>
+</ul>
+<hr>
+<h2 id="sample-introinprocesswrongenv">Sample: IntroInProcessWrongEnv</h2>
+<h3 id="source-code">Source code</h3>
+<pre><code class="lang-csharp" name="IntroInProcessWrongEnv.cs">using System.Runtime.CompilerServices;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Configs;
+using BenchmarkDotNet.Environments;
+using BenchmarkDotNet.Jobs;
+using BenchmarkDotNet.Order;
+using BenchmarkDotNet.Portability;
+using BenchmarkDotNet.Toolchains.InProcess;
+
+namespace BenchmarkDotNet.Samples
+{
+    [Config(typeof(Config))]
+    [Orderer(SummaryOrderPolicy.FastestToSlowest)]
+    [MemoryDiagnoser]
+    public class IntroInProcessWrongEnv
+    {
+        private class Config : ManualConfig
+        {
+            public Config()
+            {
+                var wrongPlatform = RuntimeInformation.GetCurrentPlatform() == Platform.X86
+                    ? Platform.X64
+                    : Platform.X86;
+
+                Add(Job.MediumRun
+                    .WithLaunchCount(1)
+                    .With(wrongPlatform)
+                    .With(InProcessToolchain.Instance)
+                    .WithId(&quot;InProcess&quot;));
+
+                Add(InProcessValidator.DontFailOnError);
+            }
+        }
+
+        [Benchmark(Description = &quot;new byte[10kB]&quot;)]
+        public byte[] Allocate()
+        {
+            return new byte[10000];
+        }
+
+        [Benchmark(Description = &quot;stackalloc byte[10kB]&quot;)]
+        public unsafe void AllocateWithStackalloc()
+        {
+            var array = stackalloc byte[10000];
+            Consume(array);
+        }
+
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        private static unsafe void Consume(byte* input)
+        {
+        }
+    }
+}
+</code></pre><h3 id="output">Output</h3>
+<h3 id="links">Links</h3>
+<ul>
+<li><a class="xref" href="toolchains.html">Toolchains</a></li>
+<li>The permanent link to this sample: <a class="xref" href="../samples/IntroInProcessWrongEnv.html">Sample: IntroInProcessWrongEnv</a></li>
+</ul>
+<hr>
 <h2 id="corert">CoreRT</h2>
 <p>BenchmarkDotNet supports <a href="https://github.com/dotnet/corert">CoreRT</a>! However, you might want to know how it works to get a better understanding of the results that you get.</p>
 <ul>

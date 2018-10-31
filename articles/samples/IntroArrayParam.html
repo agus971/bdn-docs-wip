@@ -8,7 +8,7 @@
     <title>Sample: IntroArrayParam | BenchmarkDotNet </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Sample: IntroArrayParam | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../../logo/icon-32.png">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -19,6 +19,47 @@
     
     <meta property="docfx:rel" content="../../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -90,7 +131,6 @@ and the benchmark will not include this operation.</p>
 using System.Collections.Generic;
 using System.Linq;
 using BenchmarkDotNet.Attributes;
-using BenchmarkDotNet.Code;
 
 namespace BenchmarkDotNet.Samples
 {
@@ -114,13 +154,10 @@ namespace BenchmarkDotNet.Samples
 
         public IEnumerable&lt;object[]&gt; Data()
         {
-            yield return CreateArrayAndValue(new[] { 1, 2, 3 }, 4);
-            yield return CreateArrayAndValue(Enumerable.Range(0, 100).ToArray(), 4);
-            yield return CreateArrayAndValue(Enumerable.Range(0, 100).ToArray(), 101);
+            yield return new object[] { new int[] { 1, 2, 3 }, 4 };
+            yield return new object[] { Enumerable.Range(0, 100).ToArray(), 4 };
+            yield return new object[] { Enumerable.Range(0, 100).ToArray(), 101 };
         }
-
-        private object[] CreateArrayAndValue(int[] array, int value)
-            =&gt; new object[] { ArrayParam&lt;int&gt;.ForPrimitives(array), value };
     }
 }
 </code></pre><h3 id="output">Output</h3>
@@ -133,10 +170,12 @@ namespace BenchmarkDotNet.Samples
 |  ArrayIndexOf | Array[100] |   101 | 78.359 ns | 1.8853 ns | 2.0955 ns |       0 B |
 | ManualIndexOf | Array[100] |   101 | 80.421 ns | 0.6391 ns | 0.5978 ns |       0 B |
 </code></pre>
-<h3 id="see-also">See also</h3>
+<h3 id="links">Links</h3>
 <ul>
 <li><a class="xref" href="../features/parameterization.html">Parameterization</a></li>
+<li>The permanent link to this sample: <a class="xref" href="IntroArrayParam.html">Sample: IntroArrayParam</a></li>
 </ul>
+<hr>
 </article>
           </div>
           

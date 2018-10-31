@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class NetCoreAppSettings
    | BenchmarkDotNet ">
-    <meta name="generator" content="docfx 2.36.2.0">
+    <meta name="generator" content="docfx 2.37.1.0">
     
     <link rel="shortcut icon" href="../logo/icon-32.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -21,6 +21,47 @@
     
     <meta property="docfx:rel" content="../">
     
+  
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+      ga('create', 'UA-41419012-6', 'auto');
+      ga('send', 'pageview');
+  
+    </script>
+    <!-- /Google Analytics -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter40812449 = new Ya.Metrika({
+                        id:40812449,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true
+                    });
+                } catch(e) { }
+            });
+  
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+  
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/40812449" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
@@ -126,7 +167,7 @@
   
   
   <a id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings__ctor_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.#ctor*"></a>
-  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings__ctor_System_String_System_String_System_String_System_String_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.#ctor(System.String,System.String,System.String,System.String)">NetCoreAppSettings(String, String, String, String)</h4>
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings__ctor_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_TimeSpan__" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.#ctor(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.TimeSpan})">NetCoreAppSettings(String, String, String, String, String, Nullable&lt;TimeSpan&gt;)</h4>
   <div class="markdown level1 summary"><param name="targetFrameworkMoniker">
 sample values: netcoreapp2.0, netcoreapp2.1
 
@@ -141,11 +182,13 @@ display name used for showing the results
 customize dotnet cli path if default is not desired
 simply ignored if null
 
+<param name="packagesPath">the directory to restore packages to
+<param name="timeout">timeout to build the benchmark
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NetCoreAppSettings(string targetFrameworkMoniker, string runtimeFrameworkVersion, string name, string customDotNetCliPath = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public NetCoreAppSettings(string targetFrameworkMoniker, string runtimeFrameworkVersion, string name, string customDotNetCliPath = null, string packagesPath = null, TimeSpan? timeout = default(TimeSpan? ))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,10 +220,68 @@ simply ignored if null
         <td><span class="parametername">customDotNetCliPath</span></td>
         <td></td>
       </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packagesPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
     </tbody>
   </table>
   <h3 id="fields">Fields
   </h3>
+  
+  
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_Current" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.Current">Current</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly Lazy&lt;NetCoreAppSettings&gt; Current</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Lazy</span>&lt;<a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.html">NetCoreAppSettings</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_DefaultBuildTimeout" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.DefaultBuildTimeout">DefaultBuildTimeout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly TimeSpan DefaultBuildTimeout</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_NetCoreApp20" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.NetCoreApp20">NetCoreApp20</h4>
@@ -253,6 +354,30 @@ simply ignored if null
       </tr>
     </tbody>
   </table>
+  
+  
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_NetCoreApp30" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.NetCoreApp30">NetCoreApp30</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly NetCoreAppSettings NetCoreApp30</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.html">NetCoreAppSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -290,6 +415,32 @@ simply ignored if null
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_PackagesPath_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.PackagesPath*"></a>
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_PackagesPath" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.PackagesPath">PackagesPath</h4>
+  <div class="markdown level1 summary"><p>The directory to restore packages to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PackagesPath { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -357,6 +508,32 @@ simply ignored if null
       </tr>
     </tbody>
   </table>
+  
+  
+  <a id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_Timeout_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.Timeout*"></a>
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_Timeout" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.Timeout">Timeout</h4>
+  <div class="markdown level1 summary"><p>timeout to build the benchmark</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan Timeout { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
@@ -367,7 +544,7 @@ simply ignored if null
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public NetCoreAppSettings WithCustomDotNetCliPath(string customDotNetCliPath, string displayName)</code></pre>
+    <pre><code class="lang-csharp hljs">public NetCoreAppSettings WithCustomDotNetCliPath(string customDotNetCliPath, string displayName = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -387,6 +564,95 @@ simply ignored if null
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">displayName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.html">NetCoreAppSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_WithCustomPackagesRestorePath_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.WithCustomPackagesRestorePath*"></a>
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_WithCustomPackagesRestorePath_System_String_System_String_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.WithCustomPackagesRestorePath(System.String,System.String)">WithCustomPackagesRestorePath(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetCoreAppSettings WithCustomPackagesRestorePath(string packagesPath, string displayName = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packagesPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">displayName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.html">NetCoreAppSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_WithTimeout_" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.WithTimeout*"></a>
+  <h4 id="BenchmarkDotNet_Toolchains_DotNetCli_NetCoreAppSettings_WithTimeout_System_Nullable_System_TimeSpan__" data-uid="BenchmarkDotNet.Toolchains.DotNetCli.NetCoreAppSettings.WithTimeout(System.Nullable{System.TimeSpan})">WithTimeout(Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetCoreAppSettings WithTimeout(TimeSpan? timeOut)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="parametername">timeOut</span></td>
         <td></td>
       </tr>
     </tbody>
